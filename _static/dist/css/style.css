@@ -399,6 +399,8 @@ html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   overflow-x: hidden;
+  width: 100VW;
+  background-color: rgb(252, 206, 206);
 }
 
 *,
@@ -423,8 +425,29 @@ ul {
 XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
 /*XDの行送り値（px）÷ フォントサイズ（px）をline-heightに指定
 // 28÷15=1.8666...なので1.86。¸line-height : 1.86 ;*/
-.header {
-  /* pc 1920px以上  */
+.button {
+  width: 155px;
+  height: 37px;
+  background-color: #fa41cc;
+  border-color: #707070;
+  border-radius: 10px;
+  background: linear-gradient(#fa41cc 0%, #6020b0 100%);
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  text-align: center;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+#top-page-body {
+  background-color: rgb(197, 194, 194);
+  width: 100vw;
+  max-width: 1366px;
+  height: auto;
+  height: 2000px;
+  margin: 0 auto;
+  top: 0;
+  /* pc 1367px以上  */
   /* 1920px 以上 */
   /* PC */
   /* $** pxを含まずそれより小さい */
@@ -433,6 +456,237 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
 }
+@media not all and (min-width: 1366px) {
+  #top-page-body {
+    width: 100vw;
+    max-width: 1366px;
+    height: 2000px;
+  }
+}
+#top-page-body .header {
+  z-index: 999;
+  background-color: #ffffff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+  width: 100vw;
+  max-width: 1366px;
+  height: 94px;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  /* pc 1367px以上  */
+  /* 1920px 以上 */
+  /* PC */
+  /* $** pxを含まずそれより小さい */
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
+  /* スマートフォン */
+  /* $** pxを含まずそれより小さい */
+}
+#top-page-body .header__inner {
+  background-color: #ffffff;
+  margin: 0 auto;
+  display: flex;
+  /* pc 1367px以上  */
+  /* 1920px 以上 */
+  /* PC */
+  /* $** pxを含まずそれより小さい */
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
+  /* スマートフォン */
+  /* $** pxを含まずそれより小さい */
+}
+@media (min-width: 1367px) {
+  #top-page-body .header__inner {
+    width: 100vw;
+    max-width: 1022px;
+    height: 100%;
+  }
+}
+@media not all and (min-width: 1366px) {
+  #top-page-body .header__inner {
+    max-width: 1022px;
+    height: 100%;
+  }
+}
+#top-page-body .header .header-logo {
+  width: 47px;
+  height: 47px;
+  margin: 24px 0 23px 20px;
+  /* pc 1367px以上  */
+  /* 1920px 以上 */
+  /* PC */
+  /* $** pxを含まずそれより小さい */
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
+  /* スマートフォン */
+  /* $** pxを含まずそれより小さい */
+}
+#top-page-body .header .header-logo .logo-img {
+  width: 100%;
+  height: auto;
+}
+@media not all and (min-width: 1366px) {
+  #top-page-body .header .header-logo {
+    margin: 24px 0 23px 20px;
+  }
+}
+#top-page-body .header .tagline-txt {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.2;
+  display: inline-block;
+  margin: 35px 0 35px 16px;
+  /* pc 1367px以上  */
+  /* 1920px 以上 */
+  /* PC */
+  /* $** pxを含まずそれより小さい */
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
+  /* スマートフォン */
+  /* $** pxを含まずそれより小さい */
+}
+#top-page-body .header li {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.18;
+  display: inline-block;
+}
+#top-page-body .header li:first-child {
+  margin: 39px 0 39px 136px;
+  /* pc 1367px以上  */
+  /* 1920px 以上 */
+  /* PC */
+  /* $** pxを含まずそれより小さい */
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
+  /* スマートフォン */
+  /* $** pxを含まずそれより小さい */
+}
+#top-page-body .header li:nth-child(2) {
+  margin: 39px 0 39px 46px;
+  /* pc 1367px以上  */
+  /* 1920px 以上 */
+  /* PC */
+  /* $** pxを含まずそれより小さい */
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
+  /* スマートフォン */
+  /* $** pxを含まずそれより小さい */
+}
+#top-page-body .header li:nth-child(3) {
+  margin: 39px 0 39px 46px;
+  /* pc 1367px以上  */
+  /* 1920px 以上 */
+  /* PC */
+  /* $** pxを含まずそれより小さい */
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
+  /* スマートフォン */
+  /* $** pxを含まずそれより小さい */
+}
+#top-page-body .header .button {
+  margin: 29px 0 29px 184px;
+  /* pc 1367px以上  */
+  /* 1920px 以上 */
+  /* PC */
+  /* $** pxを含まずそれより小さい */
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
+  /* スマートフォン */
+  /* $** pxを含まずそれより小さい */
+}
+#top-page-body .fv-inner {
+  width: 1366px;
+  height: 768px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* pc 1367px以上  */
+  /* 1920px 以上 */
+  /* PC */
+  /* $** pxを含まずそれより小さい */
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
+  /* スマートフォン */
+  /* $** pxを含まずそれより小さい */
+}
+#top-page-body .fv-inner__first-line {
+  max-width: 360px;
+  height: 140px;
+  margin-top: 262px;
+  margin-left: 192px;
+  /* pc 1367px以上  */
+  /* 1920px 以上 */
+  /* PC */
+  /* $** pxを含まずそれより小さい */
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
+  /* スマートフォン */
+  /* $** pxを含まずそれより小さい */
+}
+#top-page-body .fv-inner__first-line p {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.1875;
+  text-align: left;
+}
+#top-page-body .fv-inner__second-line {
+  max-width: 260px;
+  height: 100px;
+  margin-top: 38px;
+  margin-left: 192px;
+  /* pc 1367px以上  */
+  /* 1920px 以上 */
+  /* PC */
+  /* $** pxを含まずそれより小さい */
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
+  /* スマートフォン */
+  /* $** pxを含まずそれより小さい */
+}
+#top-page-body .fv-inner__second-line p {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.1875;
+  text-align: left;
+}
+#top-page-body .fv-inner .fv-inquiry-button {
+  display: inline-block;
+  background: linear-gradient(#fa41cc 0%, #6020b0 100%);
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  margin-top: 38px;
+  margin-left: 192px;
+  /* pc 1367px以上  */
+  /* 1920px 以上 */
+  /* PC */
+  /* $** pxを含まずそれより小さい */
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
+  /* スマートフォン */
+  /* $** pxを含まずそれより小さい */
+}
+#top-page-body .fv-inner .fv-img-01 {
+  z-index: 10;
+  position: absolute;
+  top: -30px;
+  left: 810px;
+}
+#top-page-body .fv-inner .fv-img-01 .fv-img-circle {
+  width: 708px;
+  height: 711px;
+}
+#top-page-body .fv-inner .fv-img-02 {
+  z-index: 20;
+  position: absolute;
+  top: 225px;
+  left: 745px;
+}
+#top-page-body .fv-inner .fv-img-02 .fv-img-main {
+  width: 518px;
+  height: 430px;
+}
+
 .body {
   width: 100vw;
   color: #444444;

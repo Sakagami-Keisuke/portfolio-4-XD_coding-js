@@ -6,15 +6,41 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
 /*XDの行送り値（px）÷ フォントサイズ（px）をline-heightに指定
 // 28÷15=1.8666...なので1.86。¸line-height : 1.86 ;*/
 
-// header＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+.button {
+    width: 155px;
+    height: 37px;
+    background-color: #fa41cc;
+    border-color: #707070;
+    border-radius: 10px;
+    background: linear-gradient(#fa41cc 0%, #6020b0 100%);
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    text-align: center;
+    color: #ffffff;
+    // font-weight: 400;//regular
+    font-weight: 700; //bold
+    font-size: 14px;
+}
 
-.header {
-    /* pc 1920px以上  */
-    @include mixin.pc-l(1920px) {
+// ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+#top-page-body {
+    background-color: rgb(197, 194, 194);
+    width: 100vw;
+    max-width: 1366px;
+    height: auto;
+    height: 2000px; //仮
+    margin: 0 auto;
+    top: 0;
+
+    /* pc 1367px以上  */
+    @include mixin.pc-l(1367px) {
     }
 
     /* PC */
-    @include mixin.pc(1920px) {
+    @include mixin.pc(1366px) {
+        width: 100vw;
+        max-width: 1366px;
+        height: 2000px; //仮
     }
 
     /* タブレット */
@@ -24,4 +50,348 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
     /* スマートフォン */
     @include mixin.sp(600px) {
     }
+
+    // header＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+    .header {
+        z-index: 999;
+        background-color: #ffffff;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+        width: 100vw;
+        max-width: 1366px;
+        height: 94px;
+        display: flex;
+        justify-content: center;
+        position: fixed;
+
+        /* pc 1367px以上  */
+        @include mixin.pc-l(1367px) {
+        }
+
+        /* PC */
+        @include mixin.pc(1366px) {
+        }
+
+        /* タブレット */
+        @include mixin.tab(1025px) {
+        }
+
+        /* スマートフォン */
+        @include mixin.sp(600px) {
+        }
+
+        // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+        &__inner {
+            background-color: #ffffff;
+            margin: 0 auto;
+            display: flex;
+
+            /* pc 1367px以上  */
+            @include mixin.pc-l(1367px) {
+                width: 100vw;
+                max-width: 1022px;
+                height: 100%;
+            }
+
+            /* PC */
+            @include mixin.pc(1366px) {
+                max-width: 1022px;
+                // width: レスポンシブ;
+                height: 100%;
+            }
+
+            /* タブレット */
+            @include mixin.tab(1025px) {
+            }
+
+            /* スマートフォン */
+            @include mixin.sp(600px) {
+            }
+        }
+
+        // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+        .header-logo {
+            width: 47px;
+            height: 47px;
+            margin: 24px 0 23px 20px;
+
+            .logo-img {
+                width: 100%;
+                height: auto;
+            }
+
+            /* pc 1367px以上  */
+            @include mixin.pc-l(1367px) {
+                // margin: 24px 0 23px 20px;
+            }
+
+            /* PC */
+            @include mixin.pc(1366px) {
+                margin: 24px 0 23px 20px;
+            }
+
+            /* タブレット */
+            @include mixin.tab(1025px) {
+            }
+
+            /* スマートフォン */
+            @include mixin.sp(600px) {
+            }
+        }
+
+        // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+        .tagline-txt {
+            // font-weight: 400;//regular
+            font-weight: 700; //bold
+            font-size: 24px;
+            line-height: 1.2; // 17/14
+            display: inline-block;
+            margin: 35px 0 35px 16px;
+
+            /* pc 1367px以上  */
+            @include mixin.pc-l(1367px) {
+            }
+
+            /* PC */
+            @include mixin.pc(1366px) {
+            }
+
+            /* タブレット */
+            @include mixin.tab(1025px) {
+            }
+
+            /* スマートフォン */
+            @include mixin.sp(600px) {
+            }
+        }
+
+        // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+        li {
+            // font-weight: 400;//regular
+            font-weight: 700; //bold
+            font-size: 16px;
+            line-height: 1.18; // 19/16
+            display: inline-block;
+        }
+
+        li:first-child {
+            margin: 39px 0 39px 136px;
+
+            /* pc 1367px以上  */
+            @include mixin.pc-l(1367px) {
+            }
+
+            /* PC */
+            @include mixin.pc(1366px) {
+            }
+
+            /* タブレット */
+            @include mixin.tab(1025px) {
+            }
+
+            /* スマートフォン */
+            @include mixin.sp(600px) {
+            }
+        }
+
+        li:nth-child(2) {
+            margin: 39px 0 39px 46px;
+
+            /* pc 1367px以上  */
+            @include mixin.pc-l(1367px) {
+            }
+
+            /* PC */
+            @include mixin.pc(1366px) {
+            }
+
+            /* タブレット */
+            @include mixin.tab(1025px) {
+            }
+
+            /* スマートフォン */
+            @include mixin.sp(600px) {
+            }
+        }
+
+        li:nth-child(3) {
+            margin: 39px 0 39px 46px;
+
+            /* pc 1367px以上  */
+            @include mixin.pc-l(1367px) {
+            }
+
+            /* PC */
+            @include mixin.pc(1366px) {
+            }
+
+            /* タブレット */
+            @include mixin.tab(1025px) {
+            }
+
+            /* スマートフォン */
+            @include mixin.sp(600px) {
+            }
+        }
+
+        .button {
+            margin: 29px 0 29px 184px;
+
+            /* pc 1367px以上  */
+            @include mixin.pc-l(1367px) {
+            }
+
+            /* PC */
+            @include mixin.pc(1366px) {
+            }
+
+            /* タブレット */
+            @include mixin.tab(1025px) {
+            }
+
+            /* スマートフォン */
+            @include mixin.sp(600px) {
+            }
+        }
+    }
+    // header＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+    // section１＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+    .fv-inner {
+        width: 1366px;
+        height: 768px; //674px+94px(固定ヘッダ)
+        background-color: #fff;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        /* pc 1367px以上  */
+        @include mixin.pc-l(1367px) {
+        }
+
+        /* PC */
+        @include mixin.pc(1366px) {
+        }
+
+        /* タブレット */
+        @include mixin.tab(1025px) {
+        }
+
+        /* スマートフォン */
+        @include mixin.sp(600px) {
+        }
+
+        &__first-line {
+            max-width: 360px;
+            height: 140px;
+            margin-top: 262px;
+            margin-left: 192px;
+            p {
+                // font-weight: 400;//regular
+                font-weight: 700; //bold
+                font-size: 32px;
+                line-height: 1.1875; // 38/32
+                text-align: left;
+            }
+
+            /* pc 1367px以上  */
+            @include mixin.pc-l(1367px) {
+            }
+
+            /* PC */
+            @include mixin.pc(1366px) {
+            }
+
+            /* タブレット */
+            @include mixin.tab(1025px) {
+            }
+
+            /* スマートフォン */
+            @include mixin.sp(600px) {
+            }
+        }
+        &__second-line {
+            max-width: 260px;
+            height: 100px;
+            margin-top: 38px;
+            margin-left: 192px;
+            p {
+                // font-weight: 400;//regular
+                font-weight: 700; //bold
+                font-size: 16px;
+                line-height: 1.1875; // 19/16
+                text-align: left;
+            }
+
+            /* pc 1367px以上  */
+            @include mixin.pc-l(1367px) {
+            }
+
+            /* PC */
+            @include mixin.pc(1366px) {
+            }
+
+            /* タブレット */
+            @include mixin.tab(1025px) {
+            }
+
+            /* スマートフォン */
+            @include mixin.sp(600px) {
+            }
+        }
+
+        .fv-inquiry-button {
+            display: inline-block;
+            background: linear-gradient(#fa41cc 0%, #6020b0 100%);
+            box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+            margin-top: 38px;
+            margin-left: 192px;
+
+            /* pc 1367px以上  */
+            @include mixin.pc-l(1367px) {
+            }
+
+            /* PC */
+            @include mixin.pc(1366px) {
+            }
+
+            /* タブレット */
+            @include mixin.tab(1025px) {
+            }
+
+            /* スマートフォン */
+            @include mixin.sp(600px) {
+            }
+        }
+
+        .fv-img-01 {
+            z-index: 10;
+            position: absolute;
+            top: -30px;
+            left:810px;
+
+            .fv-img-circle {
+                width: 708px;
+                height: 711px;
+            }
+        }
+        .fv-img-02 {
+            z-index:20;
+            position: absolute;
+            top: 225px;
+            left:745px;
+
+            .fv-img-main {
+                width: 518px;
+                height: 430px;
+            }
+        }
+    }
 }
+// section１＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
