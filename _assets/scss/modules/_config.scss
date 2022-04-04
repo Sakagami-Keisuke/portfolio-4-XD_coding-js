@@ -1,0 +1,38 @@
+// ウェブフォント--------------------------------------------------------
+//google fonts Noto Sans Japanese
+// @import廃止
+// @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+// src/index.html <head>に記述
+// ウェブフォント--------------------------------------------------------
+
+html {
+  /* @font-faceのfont-familyでつけた名前を指定 */
+  font-family: "Noto Sans JP", sans-serif;
+  // root=10px=1rem
+  font-size: 62.5%;
+  // font-size: 16px;
+  // 親要素（基準）のフォントサイズ指定  デフォルト16px=1rem, ⇨×0.625で10px相当
+  // 100% = 1em = 1rem = 16px = 12pt
+ 
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}

@@ -1,0 +1,4 @@
+// _index.scssを読み込みコンパイルする用（エントリポイント）
+@charset "UTF-8";
+
+@use './modules/index';

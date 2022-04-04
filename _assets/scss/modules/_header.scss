@@ -1,0 +1,380 @@
+@use "mixin";
+
+/*XDのAV(トラッキング値)letter-spacing”em”で設定
+XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
+
+/*XDの行送り値（px）÷ フォントサイズ（px）をline-heightに指定
+// 28÷15=1.8666...なので1.86。¸line-height : 1.86 ;*/
+
+// header＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+.header {
+    /* pc 1920px以上  */
+    @include mixin.pc-l(1920px) {
+        width: 1920px;
+        height: 130px;
+    }
+
+    /* PC */
+    @include mixin.pc(1920px) {
+        width: 100vw;
+        height: auto;
+    }
+
+    /* タブレット */
+    @include mixin.tab(1025px) {
+        width: 100vw;
+        height: auto;
+        padding-bottom: 10px;
+    }
+
+    /* スマートフォン */
+    @include mixin.sp(600px) {
+        width: 100vw;
+        padding-bottom: 0px;
+    }
+
+    // =======================================
+
+    &_container {
+        /* pc 1920px以上  */
+        @include mixin.pc-l(1920px) {
+            width: 1180px;
+            height: 100%;
+            height: 100%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* PC */
+        @include mixin.pc(1920px) {
+            width: mixin.clampPc(1180, 1000);
+            height: 100%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* タブレット */
+        @include mixin.tab(1025px) {
+            width: auto;
+            flex-direction: column;
+        }
+
+        /* スマートフォン */
+        @include mixin.sp(600px) {
+            flex-direction: column;
+        }
+
+        // ========================================
+
+        .header__top-left {
+            /* pc 1920px以上  */
+            @include mixin.pc-l(1920px) {
+                width: 350px;
+                height: 73px;
+                margin-left: 20px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                align-items: center;
+            }
+
+            /* PC */
+            @include mixin.pc(1920px) {
+                width: mixin.clampPc(300, 200);
+                height: 73px;
+                margin-left: 20px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                align-items: center;
+            }
+
+            /* タブレット */
+            @include mixin.tab(1025px) {
+                width: auto;
+                padding-top: mixin.clampTab(40, 25);
+                margin-left: 0;
+            }
+
+            /* スマートフォン */
+            @include mixin.sp(600px) {
+                height: mixin.clampSp(73, 50);
+            }
+
+            // ==============================================
+
+            &-logo {
+                img {
+                    max-width: 100%;
+                    height: auto;
+                }
+
+                /* pc 1920px以上  */
+                @include mixin.pc-l(1920px) {
+                    width: 73px;
+                    height: 73px;
+                }
+
+                /* PC */
+                @include mixin.pc(1920px) {
+                    width: mixin.clampPc(73, 65);
+                }
+
+                /* タブレット */
+                @include mixin.tab(1025px) {
+                    width: mixin.clampTab(73, 70);
+                    height: mixin.clampTab(73, 70);
+                }
+
+                /* スマートフォン */
+                @include mixin.sp(600px) {
+                    width: mixin.clampSp(73, 35);
+                    height: mixin.clampSp(50, 35);
+                }
+            }
+
+            // ================================================
+
+            &-tagline {
+                /* pc 1920px以上  */
+                @include mixin.pc-l(1920px) {
+                    width: 190px;
+                    height: 73px;
+                }
+
+                /* PC */
+                @include mixin.pc(1920px) {
+                    width: 100%;
+                    height: mixin.clampPc(73, 45);
+                }
+
+                /* タブレット */
+                @include mixin.tab(1025px) {
+                    height: mixin.clampTab(73, 60);
+                }
+
+                /* スマートフォン */
+                @include mixin.sp(600px) {
+                    height: mixin.clampSp(50, 35);
+                }
+
+                // =========================================
+
+                &--upper {
+                    font-weight: 400; //regular
+                    /* pc 1920px以上  */
+                    @include mixin.pc-l(1920px) {
+                        padding-left: 9px;
+                        font-size: 3rem;
+                        line-height: 28px;
+                        text-align: left;
+                    }
+
+                    /* PC */
+                    @include mixin.pc(1920px) {
+                        height: mixin.clampPc(30, 20);
+                        font-size: mixin.variableFontPc(3, 2);
+                        text-align: center;
+                    }
+
+                    /* タブレット */
+                    @include mixin.tab(1025px) {
+                        width: auto;
+                        font-size: mixin.variableFontTab(2.2, 1.8);
+                    }
+
+                    /* スマートフォン */
+                    @include mixin.sp(600px) {
+                        height: auto;
+                        font-size: mixin.variableFontSp(2, 1.4);
+                        text-align: center;
+                    }
+                }
+
+                // =================================================
+
+                &--lower {
+                    font-weight: 400; //regular
+                    /* pc 1920px以上  */
+                    @include mixin.pc-l(1920px) {
+                        padding-left: 12px;
+                        font-size: 3rem;
+                        text-align: center;
+                        line-height: 48px;
+                    }
+
+                    /* PC */
+                    @include mixin.pc(1920px) {
+                        height: mixin.clampPc(48, 40);
+                        font-size: mixin.variableFontPc(3, 2);
+                        text-align: center;
+                        padding-top: mixin.clampPc(4, 1);
+                    }
+
+                    /* タブレット */
+                    @include mixin.tab(1025px) {
+                        width: auto;
+                        font-size: mixin.variableFontTab(2.2, 1.8);
+                    }
+
+                    /* スマートフォン */
+                    @include mixin.sp(600px) {
+                        font-size: mixin.variableFontSp(2, 1.4);
+                        padding-top: mixin.clampSp(5, 0);
+                    }
+                }
+            }
+        }
+
+        // =======================================================
+
+        .header__top-right {
+            /* pc 1920px以上  */
+            @include mixin.pc-l(1920px) {
+                width: 300px;
+                height: 73px;
+                margin-right: 20px;
+            }
+
+            /* PC */
+            @include mixin.pc(1920px) {
+                width: mixin.clampPc(460, 260);
+                height: mixin.clampPc(73, 50);
+                margin-right: 20px;
+            }
+
+            /* タブレット */
+            @include mixin.tab(1025px) {
+                text-align: center;
+                margin-right: 0;
+                margin-top: mixin.clampTab(15, 10);
+            }
+
+            /* スマートフォン */
+            @include mixin.sp(600px) {
+                margin-top: mixin.clampSp(25, 15);
+            }
+
+            // =======================================================
+
+            &--reception {
+                font-weight: 400; //regular
+                /* pc 1920px以上  */
+                @include mixin.pc-l(1920px) {
+                    font-size: 1.4rem;
+                    text-align: right;
+                    padding-right: 4px;
+                    margin-top: 7px;
+                }
+
+                /* PC */
+                @include mixin.pc(1920px) {
+                    font-size: mixin.variableFontPc(1.4, 1.2);
+                    text-align: right;
+                    padding-right: 4px;
+                    margin-top: 7px;
+                }
+
+                /* タブレット */
+                @include mixin.tab(1025px) {
+                    text-align: center;
+                    font-size: mixin.variableFontPc(1.4, 1.2);
+                    margin-top: 0;
+                    padding-right: 0;
+                }
+
+                /* スマートフォン */
+                @include mixin.sp(600px) {
+                    font-size: mixin.variableFontSp(1.2, 1.2);
+                }
+            }
+
+            // ============================================
+
+            &--tel::before {
+                content: "";
+                background: url("../images/受話器の線画アイコン.jpg") no-repeat;
+                background-size: contain;
+                // position: relative;
+
+                /* pc 1920px以上  */
+                @include mixin.pc-l(1920px) {
+                    display: inline-block;
+                    width: 25px;
+                    height: 25px;
+                    margin-right: 16px;
+                    position: relative;
+                    top: 5px;
+                }
+
+                /* PC */
+                @include mixin.pc(1920px) {
+                    display: inline-block;
+                    width: mixin.clampPc(25, 16);
+                    height: mixin.clampPc(25, 16);
+                    margin-top: 1.5px;
+                    margin-right: mixin.clampPc(17, 15);
+                }
+
+                /* タブレット */
+                @include mixin.tab(1025px) {
+                    margin-top: mixin.clampTab(10, 5);
+                }
+
+                /* スマートフォン */
+                @include mixin.sp(600px) {
+                    margin-top: mixin.clampSp(15, 10);
+                    width: mixin.clampSp(14, 10);
+                    height: mixin.clampSp(14, 10);
+                    margin-right: mixin.clampSp(12, 5);
+                    position: relative;
+                }
+            }
+
+            // ==========================================
+
+            &--tel {
+                font-weight: 700; //bold
+                text-align: right;
+                color: #21a937;
+
+                /* pc 1920px以上  */
+                @include mixin.pc-l(1920px) {
+                    font-size: 2.2rem;
+                    letter-spacing: 0.25px;
+                    margin-top: 11px;
+                }
+
+                /* PC */
+                @include mixin.pc(1920px) {
+                    font-size: mixin.variableFontPc(2.2, 1.6);
+                    letter-spacing: 1px;
+                    margin-top: 11px;
+                }
+
+                /* タブレット */
+                @include mixin.tab(1025px) {
+                    font-size: mixin.variableFontTab(1.5, 1.2);
+                    width: auto;
+                    text-align: center;
+                    margin-top: 0;
+                }
+
+                /* スマートフォン */
+                @include mixin.sp(600px) {
+                    font-size: mixin.variableFontSp(1.5, 1.2);
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+}
