@@ -1,10 +1,31 @@
-https://tips-web.net/gulp4-mac/
+mkdir _gulp/
 
 cd _gulp/
 
-npx gulp
+npm init -y
+ package.json
+
+ npm i gulp gulp-dart-sass gulp-plumber gulp-notify browser-sync
+  node_modules
+  package-lock.json
+
+  touch gulpfile.js
+  　https://tips-web.net/gulp4-mac/ コピペ
+
+  const watchFiles = () => {
+  gulp.watch(srcPath.scss, gulp.series(cssSass, browserSyncReload))　追加
+
+cd
+
+mkdir _assets/scss/modules
+
+mkdir _static/src
+
+cd _gulp/
+ npx gulp
 
 
+要件
 開発要件
 ・ヘッダーは固定（追随する）
 
