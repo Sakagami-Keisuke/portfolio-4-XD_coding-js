@@ -678,6 +678,24 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   }
 }
 
+.cmn-content-ttl {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.1875;
+  padding-top: 80px;
+  text-align: center;
+  /* スマートフォン */
+  /* $** pxを含まずそれより小さい */
+}
+.cmn-content-sub_ttl {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.187;
+  padding-top: 19px;
+  text-align: center;
+  /* スマートフォン */
+  /* $** pxを含まずそれより小さい */
+}
 .fv-inner {
   position: relative;
   width: 100vw;
@@ -850,24 +868,6 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
     height: 2500px;
   }
 }
-.feature-inner .feature-ttl {
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 1.1875;
-  padding-top: 80px;
-  text-align: center;
-  /* スマートフォン */
-  /* $** pxを含まずそれより小さい */
-}
-.feature-inner .feature-subttl {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.187;
-  padding-top: 19px;
-  text-align: center;
-  /* スマートフォン */
-  /* $** pxを含まずそれより小さい */
-}
 .feature-inner .lower-ttl {
   font-weight: 700;
   font-size: 28px;
@@ -952,7 +952,97 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
 
 .price-inner {
   height: 744px;
-  background-color: rgb(161, 245, 235);
+  display: flex;
+  background-color: #eefbfb;
+  display: flex;
+  flex-direction: column;
+  /* スマートフォン */
+  /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 600px) {
+  .price-inner {
+    height: auto;
+    padding-bottom: 50px;
+    background-color: red;
+  }
+}
+.price-inner .price-container {
+  margin-top: 71px;
+  margin-bottom: 41px;
+}
+.price-inner .price-container .price-table {
+  width: 67.79%;
+  max-width: 926px;
+  height: 410px;
+  background-color: #fff;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  margin: 0 auto;
+  /* スマートフォン */
+  /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 600px) {
+  .price-inner .price-container .price-table {
+    width: 85%;
+  }
+}
+.price-inner .price-container .price-table__body {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.75;
+  /* スマートフォン */
+  /* $** pxを含まずそれより小さい */
+}
+.price-inner .price-container .price-table__header {
+  text-align: left;
+  vertical-align: middle;
+  padding: 40px 36.5px 35.5px 19px;
+  border: solid 1px;
+  border-color: #e5e5e5;
+  width: 300px;
+  /* スマートフォン */
+  /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 600px) {
+  .price-inner .price-container .price-table__header {
+    padding: 0;
+    display: block;
+    width: 100%;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    /*左右中央揃え*/
+    align-items: center;
+    /*上下中央揃え*/
+  }
+}
+.price-inner .price-container .price-table__data {
+  text-align: left;
+  vertical-align: middle;
+  padding-left: 35.5px;
+  border: solid 1px;
+  border-color: #e5e5e5;
+  /* スマートフォン */
+  /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 600px) {
+  .price-inner .price-container .price-table__data {
+    padding: 0;
+    display: block;
+    width: 100%;
+    height: 55px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    /*左右中央揃え*/
+    align-items: center;
+    /*上下中央揃え*/
+  }
+}
+.price-inner .price-table-under-txt {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.75;
+  text-align: center;
 }
 
 .faq-inner {

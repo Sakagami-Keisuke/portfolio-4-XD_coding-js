@@ -1,5 +1,31 @@
 @use "mixin";
 
+.cmn-content-ttl {
+  // font-weight: 400;//regular
+  font-weight: 700; //bold
+  font-size: 32px;
+  line-height: 1.1875; // 38/32
+  padding-top: 80px;
+  text-align: center;
+  /* スマートフォン */
+  @include mixin.sp(600px) {
+  }
+}
+
+// ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+.cmn-content-sub_ttl {
+  // font-weight: 400;//regular
+  font-weight: 700; //bold
+  font-size: 16px;
+  line-height: 1.187; // 19/16
+  padding-top: 19px;
+  text-align: center;
+  /* スマートフォン */
+  @include mixin.sp(600px) {
+  }
+}
+
 //  section1  first-view ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
 .fv-inner {
@@ -26,7 +52,7 @@
 
   /* スマートフォン */
   @include mixin.sp(600px) {
-    background-image: url("/images/circle.png")  ; //localhost:3000 distからのパス
+    background-image: url("/images/circle.png"); //localhost:3000 distからのパス
     background-repeat: no-repeat;
     background-size: 700px 700px;
     background-position: bottom;
@@ -71,7 +97,6 @@
         line-height: 1.1875; // 38/32
         text-align: center;
       }
-  
     }
   }
 
@@ -136,7 +161,7 @@
     /* スマートフォン */
     @include mixin.sp(600px) {
       margin-top: 20px;
-          margin-left: 0px;
+      margin-left: 0px;
     }
   }
 
@@ -147,21 +172,20 @@
     position: absolute;
     top: -30px;
     left: 810px;
-        /* スマートフォン */
-        @include mixin.sp(600px) {
-          display: none;
-        }
+    /* スマートフォン */
+    @include mixin.sp(600px) {
+      display: none;
+    }
 
     // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
     .fv-img-circle {
       width: 708px;
       height: 711px;
-            /* スマートフォン */
-            @include mixin.sp(600px) {
-             display: none;
-            }
-    
+      /* スマートフォン */
+      @include mixin.sp(600px) {
+        display: none;
+      }
     }
   }
 
@@ -172,23 +196,23 @@
     position: absolute;
     top: 225px;
     left: 745px;
-          /* スマートフォン */
-          @include mixin.sp(600px) {
-            z-index: 200;
-            top: 525px;
-            left: calc( ( 100vw - 250px ) / 2 );
-           }
+    /* スマートフォン */
+    @include mixin.sp(600px) {
+      z-index: 200;
+      top: 525px;
+      left: calc((100vw - 250px) / 2);
+    }
 
     // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
     .fv-img-main {
       width: 518px;
       height: 430px;
-            /* スマートフォン */
-            @include mixin.sp(600px) {
-              width:250px;
-              height: 200px;
-             }
+      /* スマートフォン */
+      @include mixin.sp(600px) {
+        width: 250px;
+        height: 200px;
+      }
     }
   }
 }
@@ -207,31 +231,31 @@
 
   // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
-  .feature-ttl {
-    // font-weight: 400;//regular
-    font-weight: 700; //bold
-    font-size: 32px;
-    line-height: 1.1875; // 38/32
-    padding-top: 80px;
-    text-align: center;
-    /* スマートフォン */
-    @include mixin.sp(600px) {
-    }
-  }
+  // .cmn-content-ttl {
+  //   // font-weight: 400;//regular
+  //   font-weight: 700; //bold
+  //   font-size: 32px;
+  //   line-height: 1.1875; // 38/32
+  //   padding-top: 80px;
+  //   text-align: center;
+  //   /* スマートフォン */
+  //   @include mixin.sp(600px) {
+  //   }
+  // }
 
   // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
-  .feature-subttl {
-    // font-weight: 400;//regular
-    font-weight: 700; //bold
-    font-size: 16px;
-    line-height: 1.187; // 19/16
-    padding-top: 19px;
-    text-align: center;
-    /* スマートフォン */
-    @include mixin.sp(600px) {
-    }
-  }
+  // .cmn-content-sub_ttl {
+  //   // font-weight: 400;//regular
+  //   font-weight: 700; //bold
+  //   font-size: 16px;
+  //   line-height: 1.187; // 19/16
+  //   padding-top: 19px;
+  //   text-align: center;
+  //   /* スマートフォン */
+  //   @include mixin.sp(600px) {
+  //   }
+  // }
 
   // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
@@ -262,7 +286,6 @@
       width: 100vw;
       margin-left: 0px;
       align-items: center;
-
     }
 
     .ft-img-wrapper {
@@ -278,7 +301,7 @@
       margin-left: 157px;
       /* スマートフォン */
       @include mixin.sp(600px) {
-          margin-left: 0px;
+        margin-left: 0px;
       }
 
       // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
@@ -291,7 +314,6 @@
         /* スマートフォン */
         @include mixin.sp(600px) {
           text-align: center;
-
         }
       }
 
@@ -326,7 +348,7 @@
     flex-direction: row-reverse;
     /* スマートフォン */
     @include mixin.sp(600px) {
-      flex-direction: column ;
+      flex-direction: column;
     }
   }
 }
@@ -335,8 +357,96 @@
 //  section3 price ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 .price-inner {
   height: 744px;
-  background-color: rgb(161, 245, 235);
+  display: flex;
+  background-color: #eefbfb;
+  display: flex;
+  flex-direction: column;
+
+        /* スマートフォン */
+        @include mixin.sp(600px) {
+         height: auto;
+         padding-bottom: 50px;
+         background-color: red;
+        }
+
+  .price-container {
+    margin-top: 71px;
+    margin-bottom: 41px;
+
+    .price-table {
+      width: 67.79%; // 926/1366*100=67.79
+      max-width: 926px;
+      height: 410px;
+      background-color: #fff;
+      box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+      margin: 0 auto;
+
+      /* スマートフォン */
+      @include mixin.sp(600px) {
+        width: 85%;
+      }
+
+      &__body {
+        // font-weight: 400;//regular
+        font-weight: 700; //bold
+        font-size: 16px;
+        line-height: 1.75; // 28/16
+
+        /* スマートフォン */
+        @include mixin.sp(600px) {
+        }
+      }
+      &__row {
+      }
+      &__header {
+        text-align: left;
+        vertical-align: middle;
+        padding: 40px 36.5px 35.5px 19px;
+        border: solid 1px;
+        border-color: #e5e5e5;
+        width: 300px;
+
+        /* スマートフォン */
+        @include mixin.sp(600px) {
+          padding: 0;
+          display: block;
+          width: 100%;
+          height: 55px;
+          display: flex;
+          justify-content: center; /*左右中央揃え*/
+          align-items: center;     /*上下中央揃え*/
+        }
+      }
+      &__data {
+        text-align: left;
+        vertical-align: middle;
+        padding-left: 35.5px;
+        border: solid 1px;
+        border-color: #e5e5e5;
+
+        /* スマートフォン */
+        @include mixin.sp(600px) {
+          padding: 0;
+          display: block;
+          width: 100%;
+          height: 55px;
+          text-align: center;
+          display: flex;
+          justify-content: center; /*左右中央揃え*/
+          align-items: center;     /*上下中央揃え*/
+        }
+      }
+    }
+  }
+  .price-table-under-txt {
+    // font-weight: 400;//regular
+    font-weight: 700; //bold
+    font-size: 16px;
+    line-height: 1.75; // 28/16
+    text-align: center;
+  }
 }
+
 //  section3 price ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
 //  section4 FAQ ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
