@@ -421,10 +421,6 @@ ul {
   list-style: none;
 }
 
-/*XDのAV(トラッキング値)letter-spacing”em”で設定
-XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
-/*XDの行送り値（px）÷ フォントサイズ（px）をline-heightに指定
-// 28÷15=1.8666...なので1.86。¸line-height : 1.86 ;*/
 .button {
   width: 155px;
   height: 37px;
@@ -439,12 +435,17 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   font-size: 14px;
 }
 
+.body {
+  width: 100vw;
+  color: #444444;
+}
+
 #top-page-body {
   background-color: rgb(197, 194, 194);
   width: 100vw;
   max-width: 1366px;
   height: auto;
-  height: 2000px;
+  height: 6309px;
   margin: 0 auto;
   top: 0;
   /* pc 1367px以上  */
@@ -463,7 +464,11 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
     height: 2000px;
   }
 }
-#top-page-body .header {
+/*XDのAV(トラッキング値)letter-spacing”em”で設定
+XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
+/*XDの行送り値（px）÷ フォントサイズ（px）をline-heightに指定
+// 28÷15=1.8666...なので1.86。¸line-height : 1.86 ;*/
+.header {
   z-index: 999;
   background-color: #ffffff;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
@@ -482,7 +487,12 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
 }
-#top-page-body .header__inner {
+@media not all and (min-width: 600px) {
+  .header {
+    justify-content: flex-start;
+  }
+}
+.header__inner {
   background-color: #ffffff;
   margin: 0 auto;
   display: flex;
@@ -496,19 +506,34 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   /* $** pxを含まずそれより小さい */
 }
 @media (min-width: 1367px) {
-  #top-page-body .header__inner {
+  .header__inner {
     width: 100vw;
     max-width: 1022px;
     height: 100%;
   }
 }
 @media not all and (min-width: 1366px) {
-  #top-page-body .header__inner {
+  .header__inner {
     max-width: 1022px;
     height: 100%;
   }
 }
-#top-page-body .header .header-logo {
+@media not all and (min-width: 600px) {
+  .header__inner {
+    width: 100vw;
+    margin: 0;
+  }
+}
+.header__inner .gnav {
+  /* スマートフォン */
+  /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 600px) {
+  .header__inner .gnav {
+    display: none;
+  }
+}
+.header .header-logo {
   width: 47px;
   height: 47px;
   margin: 24px 0 23px 20px;
@@ -521,21 +546,34 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
 }
-#top-page-body .header .header-logo .logo-img {
+.header .header-logo .logo-img {
   width: 100%;
   height: auto;
 }
 @media not all and (min-width: 1366px) {
-  #top-page-body .header .header-logo {
+  .header .header-logo {
     margin: 24px 0 23px 20px;
   }
 }
-#top-page-body .header .tagline-txt {
+@media not all and (min-width: 600px) {
+  .header .header-logo {
+    width: clamp(30px, 8vw, 47px);
+    height: clamp(30px, 8vw, 47px);
+  }
+}
+.header a {
+  display: inline-block;
+  width: auto;
+  height: 50px;
+  margin-top: 22px;
+}
+.header a .tagline-txt {
   font-weight: 700;
   font-size: 24px;
   line-height: 1.2;
+  vertical-align: top;
   display: inline-block;
-  margin: 35px 0 35px 16px;
+  margin: 10px 0 35px 16px;
   /* pc 1367px以上  */
   /* 1920px 以上 */
   /* PC */
@@ -545,14 +583,30 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
 }
-#top-page-body .header li {
+@media not all and (min-width: 1366px) {
+  .header a .tagline-txt {
+    font-size: calc(18px + ((1vw - 10.25px)) * 1.7543859649);
+  }
+}
+@media not all and (min-width: 1025px) {
+  .header a .tagline-txt {
+    font-size: calc(16px + ((1vw - 6px)) * 1.8867924528);
+  }
+}
+@media not all and (min-width: 600px) {
+  .header a .tagline-txt {
+    font-size: calc(14px + ((1vw - 3.75px)) * 4.4642857143);
+  }
+}
+.header ul li {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.18;
   display: inline-block;
+  margin-top: 36px;
 }
-#top-page-body .header li:first-child {
-  margin: 39px 0 39px 136px;
+.header ul li:first-child {
+  margin-left: 136px;
   /* pc 1367px以上  */
   /* 1920px 以上 */
   /* PC */
@@ -562,8 +616,13 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
 }
-#top-page-body .header li:nth-child(2) {
-  margin: 39px 0 39px 46px;
+@media not all and (min-width: 1366px) {
+  .header ul li:first-child {
+    margin-left: clamp(100px, 10vw, 136px);
+  }
+}
+.header ul li:nth-child(2) {
+  margin-left: 46px;
   /* pc 1367px以上  */
   /* 1920px 以上 */
   /* PC */
@@ -573,8 +632,9 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
 }
-#top-page-body .header li:nth-child(3) {
-  margin: 39px 0 39px 46px;
+.header ul li:nth-child(3) {
+  letter-spacing: 2px;
+  margin-left: 46px;
   /* pc 1367px以上  */
   /* 1920px 以上 */
   /* PC */
@@ -584,7 +644,7 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
 }
-#top-page-body .header .button {
+.header .button {
   margin: 29px 0 29px 184px;
   /* pc 1367px以上  */
   /* 1920px 以上 */
@@ -595,8 +655,35 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
 }
-#top-page-body .fv-inner {
-  width: 1366px;
+@media not all and (min-width: 600px) {
+  .header .button {
+    display: none;
+  }
+}
+.header .fa-bars {
+  display: none;
+  /* pc 1367px以上  */
+  /* 1920px 以上 */
+  /* PC */
+  /* $** pxを含まずそれより小さい */
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
+  /* スマートフォン */
+  /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 600px) {
+  .header .fa-bars {
+    display: block;
+    margin-top: 24px;
+    margin-left: clamp(150px, 38vw, 230px);
+    color: blue;
+  }
+}
+
+.fv-inner {
+  position: relative;
+  width: 100vw;
+  max-width: 1366px;
   height: 768px;
   background-color: #fff;
   display: flex;
@@ -611,7 +698,7 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
 }
-#top-page-body .fv-inner__first-line {
+.fv-inner__first-line {
   max-width: 360px;
   height: 140px;
   margin-top: 262px;
@@ -625,13 +712,13 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
 }
-#top-page-body .fv-inner__first-line p {
+.fv-inner__first-line p {
   font-weight: 700;
   font-size: 32px;
   line-height: 1.1875;
   text-align: left;
 }
-#top-page-body .fv-inner__second-line {
+.fv-inner__second-line {
   max-width: 260px;
   height: 100px;
   margin-top: 38px;
@@ -645,13 +732,13 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
 }
-#top-page-body .fv-inner__second-line p {
+.fv-inner__second-line p {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.1875;
   text-align: left;
 }
-#top-page-body .fv-inner .fv-inquiry-button {
+.fv-inner .fv-inquiry-button {
   display: inline-block;
   background: linear-gradient(#fa41cc 0%, #6020b0 100%);
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
@@ -666,49 +753,140 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
 }
-#top-page-body .fv-inner .fv-img-01 {
+.fv-inner .fv-img-01 {
   z-index: 10;
   position: absolute;
   top: -30px;
   left: 810px;
 }
-#top-page-body .fv-inner .fv-img-01 .fv-img-circle {
+.fv-inner .fv-img-01 .fv-img-circle {
   width: 708px;
   height: 711px;
 }
-#top-page-body .fv-inner .fv-img-02 {
+.fv-inner .fv-img-02 {
   z-index: 20;
   position: absolute;
   top: 225px;
   left: 745px;
 }
-#top-page-body .fv-inner .fv-img-02 .fv-img-main {
+.fv-inner .fv-img-02 .fv-img-main {
   width: 518px;
   height: 430px;
 }
 
-.body {
-  width: 100vw;
-  color: #444444;
+.feature-inner {
+  height: 1809px;
+  background-color: rgb(246, 142, 142);
 }
-.body .top-page_wrapper {
+
+.price-inner {
+  height: 744px;
+  background-color: rgb(161, 245, 235);
+}
+
+.faq-inner {
+  height: 686px;
+  background-color: rgb(192, 245, 161);
+}
+
+.blog-inner {
+  height: 668px;
+  background-color: rgb(161, 172, 245);
+}
+
+.works-inner {
+  height: 701px;
+  background-color: rgb(245, 161, 225);
+}
+
+.contact-inner {
+  height: 1027px;
+  background-color: rgb(237, 245, 161);
+}
+
+/*XDのAV(トラッキング値)letter-spacing”em”で設定
+XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
+/*XDの行送り値（px）÷ フォントサイズ（px）をline-heightに指定
+// 28÷15=1.8666...なので1.86。¸line-height : 1.86 ;*/
+.footer {
   width: 100vw;
-  height: auto;
-  margin: 0 auto;
-  /* pc 1920px以上  */
-  /* 1920px 以上 */
-  /* PC */
-  /* $** pxを含まずそれより小さい */
-  /* タブレット */
-  /* $** pxを含まずそれより小さい */
+  max-width: 1366px;
+  background-color: #f8f8f8;
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
 }
-@media (min-width: 1920px) {
-  .body .top-page_wrapper {
-    width: 1920px;
-    height: auto;
-    margin-left: calc((100vw - 1920px) / 2);
+.footer-inner {
+  width: 100%;
+  height: 100%;
+  /* スマートフォン */
+  /* $** pxを含まずそれより小さい */
+}
+.footer-inner p.footer-ttl {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.166;
+  text-align: center;
+  padding-top: 50px;
+  /* スマートフォン */
+  /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 600px) {
+  .footer-inner p.footer-ttl {
+    font-size: calc(16px + ((1vw - 3.75px)) * 3.5714285714);
+  }
+}
+.footer-inner ul.footer-list {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.75;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* スマートフォン */
+  /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 600px) {
+  .footer-inner ul.footer-list {
+    flex-direction: column;
+    text-align: center;
+    font-size: calc(12px + ((1vw - 3.75px)) * 1.7857142857);
+    padding-top: 15px;
+  }
+}
+.footer-inner ul.footer-list li {
+  /* スマートフォン */
+  /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 600px) {
+  .footer-inner ul.footer-list li {
+    display: inline-block;
+  }
+}
+.footer-inner ul.footer-list li:first-child {
+  padding-right: 30px;
+  /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 600px) {
+  .footer-inner ul.footer-list li:first-child {
+    padding-right: 0px;
+    padding-top: 25px;
+  }
+}
+.footer-inner p.footer-copylight {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.214;
+  text-align: center;
+  padding-top: 59px;
+  padding-bottom: 50px;
+  /* スマートフォン */
+  /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 600px) {
+  .footer-inner p.footer-copylight {
+    font-size: calc(12px + ((1vw - 3.75px)) * 0.8928571429);
+    padding-top: 25px;
   }
 }
 /*# sourceMappingURL=style.css.map */

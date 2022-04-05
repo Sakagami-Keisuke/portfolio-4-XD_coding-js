@@ -1,27 +1,52 @@
 @use "mixin";
 
-// body ==========================================
+//  section1  first-view ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
-.body {
+.fv-inner {
+  position: relative;
   width: 100vw;
-  color: #444444;
+  max-width: 1366px;
+  height: 768px; //674px+94px(固定ヘッダ)
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 
-  // =========================
+  /* pc 1367px以上  */
+  @include mixin.pc-l(1367px) {
+  }
 
-  .top-page_wrapper {
-    width: 100vw;
-    height: auto;
-    margin: 0 auto;
+  /* PC */
+  @include mixin.pc(1366px) {
+  }
 
-    /* pc 1920px以上  */
-    @include mixin.pc-l(1920px) {
-      width: 1920px;
-      height: auto;
-      margin-left: calc((100vw - 1920px) / 2); //中央揃え
+  /* タブレット */
+  @include mixin.tab(1025px) {
+  }
+
+  /* スマートフォン */
+  @include mixin.sp(600px) {
+  }
+
+  &__first-line {
+    max-width: 360px;
+    height: 140px;
+    margin-top: 262px;
+    margin-left: 192px;
+    p {
+      // font-weight: 400;//regular
+      font-weight: 700; //bold
+      font-size: 32px;
+      line-height: 1.1875; // 38/32
+      text-align: left;
+    }
+
+    /* pc 1367px以上  */
+    @include mixin.pc-l(1367px) {
     }
 
     /* PC */
-    @include mixin.pc(1920px) {
+    @include mixin.pc(1366px) {
     }
 
     /* タブレット */
@@ -31,12 +56,124 @@
     /* スマートフォン */
     @include mixin.sp(600px) {
     }
+  }
+  &__second-line {
+    max-width: 260px;
+    height: 100px;
+    margin-top: 38px;
+    margin-left: 192px;
+    p {
+      // font-weight: 400;//regular
+      font-weight: 700; //bold
+      font-size: 16px;
+      line-height: 1.1875; // 19/16
+      text-align: left;
+    }
 
-    // body ============================================
+    /* pc 1367px以上  */
+    @include mixin.pc-l(1367px) {
+    }
 
-    // section 1 =======================================
+    /* PC */
+    @include mixin.pc(1366px) {
+    }
 
+    /* タブレット */
+    @include mixin.tab(1025px) {
+    }
 
-    
+    /* スマートフォン */
+    @include mixin.sp(600px) {
+    }
+  }
+
+  .fv-inquiry-button {
+    display: inline-block;
+    background: linear-gradient(#fa41cc 0%, #6020b0 100%);
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    margin-top: 38px;
+    margin-left: 192px;
+
+    /* pc 1367px以上  */
+    @include mixin.pc-l(1367px) {
+    }
+
+    /* PC */
+    @include mixin.pc(1366px) {
+    }
+
+    /* タブレット */
+    @include mixin.tab(1025px) {
+    }
+
+    /* スマートフォン */
+    @include mixin.sp(600px) {
+    }
+  }
+
+  .fv-img-01 {
+    z-index: 10;
+    position: absolute;
+    top: -30px;
+    left: 810px;
+
+    .fv-img-circle {
+      width: 708px;
+      height: 711px;
+    }
+  }
+  .fv-img-02 {
+    z-index: 20;
+    position: absolute;
+    top: 225px;
+    left: 745px;
+
+    .fv-img-main {
+      width: 518px;
+      height: 430px;
+    }
   }
 }
+//  section1  first-view ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+//  section2 feature ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+.feature-inner{
+  height: 1809px;
+  background-color: rgb(246, 142, 142);
+}
+//  section2 feature ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+//  section3 price ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+.price-inner{
+  height: 744px;
+  background-color: rgb(161, 245, 235);
+}
+//  section3 price ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+//  section4 FAQ ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+.faq-inner{
+  height: 686px;
+  background-color: rgb(192, 245, 161);
+}
+//  section4 FAQ ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+//  section5 blog ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+.blog-inner{
+  height: 668px;
+  background-color: rgb(161, 172, 245);
+}
+//  section5 blog ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+//  section6 works ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+.works-inner{
+  height: 701px;
+  background-color: rgb(245, 161, 225);
+}
+//  section6 works ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+//  section7 contact ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+.contact-inner{
+  height: 1027px;
+  background-color: rgb(237, 245, 161);
+}
+//  section7 contact ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝

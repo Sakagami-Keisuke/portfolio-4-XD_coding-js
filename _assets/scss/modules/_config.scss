@@ -39,3 +39,21 @@ a {
 ul {
   list-style: none;
 }
+
+//button ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+.button {
+  width: 155px;
+  height: 37px;
+  background-color: #fa41cc;
+  border-color: #707070;
+  border-radius: 10px;
+  background: linear-gradient(#fa41cc 0%, #6020b0 100%);
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  text-align: center;
+  color: #ffffff;
+  // font-weight: 400;//regular
+  font-weight: 700; //bold
+  font-size: 14px;
+}
+
+//button ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝

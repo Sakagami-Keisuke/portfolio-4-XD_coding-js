@@ -1,0 +1,38 @@
+@use "mixin";
+
+// body ==========================================
+
+.body {
+    width: 100vw;
+    color: #444444;
+  }
+// ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+#top-page-body {
+    background-color: rgb(197, 194, 194);
+    width: 100vw;
+    max-width: 1366px;
+    height: auto;
+    height: 6309px; //6647px-94px-244px
+    margin: 0 auto;
+    top: 0;
+
+    /* pc 1367px以上  */
+    @include mixin.pc-l(1367px) {
+    }
+
+    /* PC */
+    @include mixin.pc(1366px) {
+        width: 100vw;
+        max-width: 1366px;
+        height: 2000px; //仮
+    }
+
+    /* タブレット */
+    @include mixin.tab(1025px) {
+    }
+
+    /* スマートフォン */
+    @include mixin.sp(600px) {
+    }
+}
