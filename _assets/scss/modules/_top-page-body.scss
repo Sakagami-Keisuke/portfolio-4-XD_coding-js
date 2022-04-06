@@ -7,9 +7,9 @@
   line-height: 1.1875; // 38/32
   padding-top: 80px;
   text-align: center;
+
   /* スマートフォン */
-  @include mixin.sp(600px) {
-  }
+  @include mixin.sp(600px) {}
 }
 
 // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
@@ -21,9 +21,9 @@
   line-height: 1.187; // 19/16
   padding-top: 19px;
   text-align: center;
+
   /* スマートフォン */
-  @include mixin.sp(600px) {
-  }
+  @include mixin.sp(600px) {}
 }
 
 //  section1  first-view ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
@@ -39,16 +39,13 @@
   align-items: flex-start;
 
   /* pc 1367px以上  */
-  @include mixin.pc-l(1367px) {
-  }
+  @include mixin.pc-l(1367px) {}
 
   /* PC */
-  @include mixin.pc(1366px) {
-  }
+  @include mixin.pc(1366px) {}
 
   /* タブレット */
-  @include mixin.tab(1025px) {
-  }
+  @include mixin.tab(1025px) {}
 
   /* スマートフォン */
   @include mixin.sp(600px) {
@@ -66,6 +63,7 @@
     height: 140px;
     margin-top: 262px;
     margin-left: 192px;
+
     p {
       // font-weight: 400;//regular
       font-weight: 700; //bold
@@ -75,21 +73,19 @@
     }
 
     /* pc 1367px以上  */
-    @include mixin.pc-l(1367px) {
-    }
+    @include mixin.pc-l(1367px) {}
 
     /* PC */
-    @include mixin.pc(1366px) {
-    }
+    @include mixin.pc(1366px) {}
 
     /* タブレット */
-    @include mixin.tab(1025px) {
-    }
+    @include mixin.tab(1025px) {}
 
     /* スマートフォン */
     @include mixin.sp(600px) {
       margin-top: 170px;
       margin-left: 0px;
+
       p {
         // font-weight: 400;//regular
         font-weight: 700; //bold
@@ -107,6 +103,7 @@
     height: 100px;
     margin-top: 38px;
     margin-left: 192px;
+
     p {
       // font-weight: 400;//regular
       font-weight: 700; //bold
@@ -116,21 +113,19 @@
     }
 
     /* pc 1367px以上  */
-    @include mixin.pc-l(1367px) {
-    }
+    @include mixin.pc-l(1367px) {}
 
     /* PC */
-    @include mixin.pc(1366px) {
-    }
+    @include mixin.pc(1366px) {}
 
     /* タブレット */
-    @include mixin.tab(1025px) {
-    }
+    @include mixin.tab(1025px) {}
 
     /* スマートフォン */
     @include mixin.sp(600px) {
       margin-top: 20px;
       margin-left: 0px;
+
       p {
         text-align: center;
       }
@@ -147,16 +142,13 @@
     margin-left: 192px;
 
     /* pc 1367px以上  */
-    @include mixin.pc-l(1367px) {
-    }
+    @include mixin.pc-l(1367px) {}
 
     /* PC */
-    @include mixin.pc(1366px) {
-    }
+    @include mixin.pc(1366px) {}
 
     /* タブレット */
-    @include mixin.tab(1025px) {
-    }
+    @include mixin.tab(1025px) {}
 
     /* スマートフォン */
     @include mixin.sp(600px) {
@@ -172,6 +164,7 @@
     position: absolute;
     top: -30px;
     left: 810px;
+
     /* スマートフォン */
     @include mixin.sp(600px) {
       display: none;
@@ -182,6 +175,7 @@
     .fv-img-circle {
       width: 708px;
       height: 711px;
+
       /* スマートフォン */
       @include mixin.sp(600px) {
         display: none;
@@ -196,6 +190,7 @@
     position: absolute;
     top: 225px;
     left: 745px;
+
     /* スマートフォン */
     @include mixin.sp(600px) {
       z-index: 200;
@@ -208,6 +203,7 @@
     .fv-img-main {
       width: 518px;
       height: 430px;
+
       /* スマートフォン */
       @include mixin.sp(600px) {
         width: 250px;
@@ -216,6 +212,7 @@
     }
   }
 }
+
 //  section1  first-view ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
 //  section2 feature ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
@@ -224,6 +221,7 @@
   height: 1809px;
   // background-color: rgb(232, 221, 221);
   background-color: #fff;
+
   /* スマートフォン */
   @include mixin.sp(600px) {
     height: 2500px;
@@ -267,9 +265,9 @@
     margin-top: 93px;
     margin-bottom: 64px;
     text-align: center;
+
     /* スマートフォン */
-    @include mixin.sp(600px) {
-    }
+    @include mixin.sp(600px) {}
   }
 
   // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
@@ -279,6 +277,7 @@
     margin-left: 192px;
     display: flex;
     justify-content: space-between;
+
     // background-color: rgb(200, 140, 140);
     /* スマートフォン */
     @include mixin.sp(600px) {
@@ -290,15 +289,16 @@
 
     .ft-img-wrapper {
       display: inline-block;
+
       /* スマートフォン */
-      @include mixin.sp(600px) {
-      }
+      @include mixin.sp(600px) {}
     }
 
     // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
     .description-box {
       margin-left: 157px;
+
       /* スマートフォン */
       @include mixin.sp(600px) {
         margin-left: 0px;
@@ -311,6 +311,7 @@
         font-weight: 700; //bold
         font-size: 24px;
         line-height: 2; // 48/24
+
         /* スマートフォン */
         @include mixin.sp(600px) {
           text-align: center;
@@ -325,6 +326,7 @@
         font-size: 16px;
         line-height: 1.625; // 26/16
         padding-top: 54px;
+
         /* スマートフォン */
         @include mixin.sp(600px) {
           text-align: center;
@@ -336,9 +338,9 @@
 
     .desc-box02 {
       margin-left: 0px;
+
       /* スマートフォン */
-      @include mixin.sp(600px) {
-      }
+      @include mixin.sp(600px) {}
     }
   }
 
@@ -346,12 +348,14 @@
 
   .ft-container-rev {
     flex-direction: row-reverse;
+
     /* スマートフォン */
     @include mixin.sp(600px) {
       flex-direction: column;
     }
   }
 }
+
 //  section2 feature ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
 //  section3 price ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
@@ -362,12 +366,12 @@
   display: flex;
   flex-direction: column;
 
-        /* スマートフォン */
-        @include mixin.sp(600px) {
-         height: auto;
-         padding-bottom: 50px;
-         background-color: red;
-        }
+  /* スマートフォン */
+  @include mixin.sp(600px) {
+    height: auto;
+    padding-bottom: 50px;
+    background-color: red;
+  }
 
   .price-container {
     margin-top: 71px;
@@ -393,11 +397,11 @@
         line-height: 1.75; // 28/16
 
         /* スマートフォン */
-        @include mixin.sp(600px) {
-        }
+        @include mixin.sp(600px) {}
       }
-      &__row {
-      }
+
+      &__row {}
+
       &__header {
         text-align: left;
         vertical-align: middle;
@@ -413,10 +417,13 @@
           width: 100%;
           height: 55px;
           display: flex;
-          justify-content: center; /*左右中央揃え*/
-          align-items: center;     /*上下中央揃え*/
+          justify-content: center;
+          /*左右中央揃え*/
+          align-items: center;
+          /*上下中央揃え*/
         }
       }
+
       &__data {
         text-align: left;
         vertical-align: middle;
@@ -432,12 +439,15 @@
           height: 55px;
           text-align: center;
           display: flex;
-          justify-content: center; /*左右中央揃え*/
-          align-items: center;     /*上下中央揃え*/
+          justify-content: center;
+          /*左右中央揃え*/
+          align-items: center;
+          /*上下中央揃え*/
         }
       }
     }
   }
+
   .price-table-under-txt {
     // font-weight: 400;//regular
     font-weight: 700; //bold
@@ -451,9 +461,102 @@
 
 //  section4 FAQ ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 .faq-inner {
-  height: 686px;
+  height: auto;
   background-color: rgb(192, 245, 161);
+
+
+
+  .faq-ttl {
+    padding-top: 64px;
+
+  }
+
+
+  .accordion {
+    width: 907px;
+    margin: 0 auto;
+    margin-top: 33px;
+    padding-bottom: 86px;
+
+    /* スマートフォン */
+    @include mixin.sp(600px) {
+      width: 85%;
+    }
+
+  }
+
+
+  .acd-check {
+    display: none;
+  }
+
+
+  .acd-label {
+    border: 1px solid;
+    border-color: #E5E5E5;
+    height: 58px;
+    display: block;
+    margin: 0px auto;
+    padding-top: 18px;
+    background: #FFFFFF;
+    color: #333333;
+    // font-weight: 400;//regular
+    font-weight: 700; //bold
+    font-size: 14px;
+    line-height: 1.86; // 26/14
+    text-align: center;
+    cursor: pointer;
+
+    /* スマートフォン */
+    @include mixin.sp(600px) {
+      font-size: mixin.variableFontSp(14, 11);
+      letter-spacing: -1px;
+    }
+  }
+
+
+
+  .acd-content {
+    height: 0;
+    background: #F2F2F2;
+    transition: 0.5s;
+    overflow: hidden;
+
+
+    p {
+      color: #333333;
+      // font-weight: 400;//regular
+      font-weight: 700; //bold
+      font-size: 14px;
+      line-height: 1.86; // 26/14
+      text-align: left;
+      padding-top: 21px;
+      padding-left: 35px;
+
+      /* スマートフォン */
+      @include mixin.sp(600px) {
+        font-size: mixin.variableFontSp(14, 12);
+        letter-spacing: -1px;
+        padding-top: 15px;
+        padding-right: 35px;
+        padding-bottom: 15px;
+      }
+    }
+
+  }
+
+  .acd-check:checked+.acd-label+.acd-content {
+    height: 93px;
+
+    /* スマートフォン */
+    @include mixin.sp(600px) {
+      height: auto;
+    }
+
+
+  }
 }
+
 //  section4 FAQ ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
 //  section5 blog ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
@@ -461,6 +564,7 @@
   height: 668px;
   background-color: rgb(161, 172, 245);
 }
+
 //  section5 blog ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
 //  section6 works ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
@@ -468,6 +572,7 @@
   height: 701px;
   background-color: rgb(245, 161, 225);
 }
+
 //  section6 works ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
 //  section7 contact ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
@@ -475,4 +580,5 @@
   height: 1027px;
   background-color: rgb(237, 245, 161);
 }
+
 //  section7 contact ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝

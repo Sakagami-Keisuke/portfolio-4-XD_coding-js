@@ -1046,8 +1046,86 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
 }
 
 .faq-inner {
-  height: 686px;
+  height: auto;
   background-color: rgb(192, 245, 161);
+}
+.faq-inner .faq-ttl {
+  padding-top: 64px;
+}
+.faq-inner .accordion {
+  width: 907px;
+  margin: 0 auto;
+  margin-top: 33px;
+  padding-bottom: 86px;
+  /* スマートフォン */
+  /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 600px) {
+  .faq-inner .accordion {
+    width: 85%;
+  }
+}
+.faq-inner .acd-check {
+  display: none;
+}
+.faq-inner .acd-label {
+  border: 1px solid;
+  border-color: #E5E5E5;
+  height: 58px;
+  display: block;
+  margin: 0px auto;
+  padding-top: 18px;
+  background: #FFFFFF;
+  color: #333333;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.86;
+  text-align: center;
+  cursor: pointer;
+  /* スマートフォン */
+  /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 600px) {
+  .faq-inner .acd-label {
+    font-size: calc(11px + ((1vw - 3.75px)) * 1.3392857143);
+    letter-spacing: -1px;
+  }
+}
+.faq-inner .acd-content {
+  height: 0;
+  background: #F2F2F2;
+  transition: 0.5s;
+  overflow: hidden;
+}
+.faq-inner .acd-content p {
+  color: #333333;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.86;
+  text-align: left;
+  padding-top: 21px;
+  padding-left: 35px;
+  /* スマートフォン */
+  /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 600px) {
+  .faq-inner .acd-content p {
+    font-size: calc(12px + ((1vw - 3.75px)) * 0.8928571429);
+    letter-spacing: -1px;
+    padding-top: 15px;
+    padding-right: 35px;
+    padding-bottom: 15px;
+  }
+}
+.faq-inner .acd-check:checked + .acd-label + .acd-content {
+  height: 93px;
+  /* スマートフォン */
+  /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 600px) {
+  .faq-inner .acd-check:checked + .acd-label + .acd-content {
+    height: auto;
+  }
 }
 
 .blog-inner {
