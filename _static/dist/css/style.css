@@ -437,6 +437,7 @@ ul {
 .body {
   width: 100vw;
   color: #444444;
+  background-color: rgb(203, 142, 142);
 }
 
 #top-page-body {
@@ -620,7 +621,7 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   }
 }
 .header ul li:nth-child(2) {
-  margin-left: 46px;
+  margin-left: 45px;
   /* pc 1367px以上  */
   /* 1920px 以上 */
   /* PC */
@@ -631,8 +632,7 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   /* $** pxを含まずそれより小さい */
 }
 .header ul li:nth-child(3) {
-  letter-spacing: 2px;
-  margin-left: 46px;
+  margin-left: 44px;
   /* pc 1367px以上  */
   /* 1920px 以上 */
   /* PC */
@@ -726,7 +726,7 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
 .fv-inner__first-line {
   max-width: 360px;
   height: 140px;
-  margin-top: 262px;
+  margin-top: 250px;
   margin-left: 192px;
   /* pc 1367px以上  */
   /* 1920px 以上 */
@@ -740,7 +740,7 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
 .fv-inner__first-line p {
   font-weight: 700;
   font-size: 32px;
-  line-height: 1.1875;
+  line-height: 1.7;
   text-align: left;
 }
 @media not all and (min-width: 600px) {
@@ -758,7 +758,7 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
 .fv-inner__second-line {
   max-width: 260px;
   height: 100px;
-  margin-top: 38px;
+  margin-top: 43px;
   margin-left: 192px;
   /* pc 1367px以上  */
   /* 1920px 以上 */
@@ -772,7 +772,7 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
 .fv-inner__second-line p {
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.1875;
+  line-height: 1.7;
   text-align: left;
 }
 @media not all and (min-width: 600px) {
@@ -788,7 +788,7 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   display: inline-block;
   background: linear-gradient(#fa41cc 0%, #6020b0 100%);
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
-  margin-top: 38px;
+  margin-top: 42px;
   margin-left: 192px;
   /* pc 1367px以上  */
   /* 1920px 以上 */
@@ -809,7 +809,7 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   z-index: 10;
   position: absolute;
   top: -30px;
-  left: 810px;
+  left: 744px;
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
 }
@@ -833,7 +833,7 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   z-index: 20;
   position: absolute;
   top: 225px;
-  left: 745px;
+  left: 676px;
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
 }
@@ -868,12 +868,44 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
     height: 2500px;
   }
 }
+.feature-inner .ft-ttl {
+  line-height: 1.1875;
+  padding-top: 76px;
+  padding-right: 5px;
+  text-align: center;
+  /* スマートフォン */
+  /* $** pxを含まずそれより小さい */
+}
+.feature-inner .ft-sub-ttl {
+  line-height: 1.187;
+  padding-top: 16px;
+  padding-right: 9px;
+  text-align: center;
+  /* スマートフォン */
+  /* $** pxを含まずそれより小さい */
+}
 .feature-inner .lower-ttl {
   font-weight: 700;
   font-size: 28px;
   line-height: 1.214;
-  margin-top: 93px;
-  margin-bottom: 64px;
+  /* スマートフォン */
+  /* $** pxを含まずそれより小さい */
+}
+.feature-inner .ft-lower-ttl01 {
+  margin-top: 62px;
+  margin-bottom: 54px;
+  text-align: center;
+  /* スマートフォン */
+  /* $** pxを含まずそれより小さい */
+}
+.feature-inner .ft-lower-ttl-02 {
+  margin-top: 62px;
+  text-align: center;
+  /* スマートフォン */
+  /* $** pxを含まずそれより小さい */
+}
+.feature-inner .ft-lower-ttl-03 {
+  margin-top: 140px;
   text-align: center;
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
@@ -882,7 +914,8 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   width: 1050px;
   margin-left: 192px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  margin-bottom: 85px;
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
 }
@@ -899,8 +932,16 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
 }
+.feature-inner .ft-container .ft-img02 {
+  padding-top: 62px;
+  padding-left: 83px;
+}
+.feature-inner .ft-container .ft-img03 {
+  padding-top: 65px;
+  padding-left: 31px;
+}
 .feature-inner .ft-container .description-box {
-  margin-left: 157px;
+  margin-left: 158px;
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
 }
@@ -912,7 +953,10 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
 .feature-inner .ft-container .description-box .description--strong {
   font-weight: 700;
   font-size: 24px;
+  padding-top: 37.5px;
+  text-align: left;
   line-height: 2;
+  letter-spacing: -0.15px;
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
 }
@@ -925,7 +969,6 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   font-weight: 700;
   font-size: 16px;
   line-height: 1.625;
-  padding-top: 54px;
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
 }
@@ -934,13 +977,44 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
     text-align: center;
   }
 }
+.feature-inner .ft-container .description-box .feature-desc01 {
+  padding-top: 39px;
+}
+.feature-inner .ft-container .description-box .feature-desc02 {
+  padding-top: 30px;
+  padding-left: 63px;
+}
+.feature-inner .ft-container .description-box .feature-desc03 {
+  padding-top: 24px;
+  padding-left: 20px;
+  line-height: 1.7;
+}
 .feature-inner .ft-container .desc-box02 {
-  margin-left: 0px;
+  /* スマートフォン */
+  /* $** pxを含まずそれより小さい */
+}
+.feature-inner .ft-container .desc-box02 .feature-desc-str02 {
+  padding-top: 62px;
+  padding-left: 63px;
+  /* スマートフォン */
+  /* $** pxを含まずそれより小さい */
+}
+.feature-inner .ft-container .desc-box03 {
+  /* スマートフォン */
+  /* $** pxを含まずそれより小さい */
+}
+.feature-inner .ft-container .desc-box03 .feature-desc-str03 {
+  padding-top: 82px;
+  padding-left: 14px;
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
 }
 .feature-inner .ft-container-rev {
   flex-direction: row-reverse;
+  justify-content: flex-end;
+  margin-left: 0px;
+  width: 100vw;
+  max-width: 1366px;
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
 }
@@ -966,14 +1040,17 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
     background-color: red;
   }
 }
+.price-inner .price-ttl {
+  padding-top: 58px;
+}
 .price-inner .price-container {
   margin-top: 71px;
-  margin-bottom: 41px;
+  margin-bottom: 33px;
 }
 .price-inner .price-container .price-table {
   width: 67.79%;
   max-width: 926px;
-  height: 410px;
+  height: 412px;
   background-color: #fff;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
   margin: 0 auto;
@@ -993,12 +1070,12 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   /* $** pxを含まずそれより小さい */
 }
 .price-inner .price-container .price-table__header {
+  width: 290px;
   text-align: left;
   vertical-align: middle;
-  padding: 40px 36.5px 35.5px 19px;
+  padding: 30px 30px 30px 19px;
   border: solid 1px;
   border-color: #e5e5e5;
-  width: 300px;
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
 }
@@ -1015,10 +1092,24 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
     /*上下中央揃え*/
   }
 }
+.price-inner .price-container .price-table .pice-table-hd01 {
+  height: 97px;
+}
+.price-inner .price-container .price-table .pice-table-hd02 {
+  height: 100px;
+  padding-top: 36px;
+}
+.price-inner .price-container .price-table .pice-table-hd03 {
+  height: 102px;
+}
+.price-inner .price-container .price-table .pice-table-hd04 {
+  height: 114px;
+  padding-top: 20px;
+}
 .price-inner .price-container .price-table__data {
   text-align: left;
-  vertical-align: middle;
-  padding-left: 35.5px;
+  vertical-align: top;
+  padding-left: 30px;
   border: solid 1px;
   border-color: #e5e5e5;
   /* スマートフォン */
@@ -1038,6 +1129,18 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
     /*上下中央揃え*/
   }
 }
+.price-inner .price-container .price-table .pice-table-dt01 {
+  padding-top: 35px;
+}
+.price-inner .price-container .price-table .pice-table-dt02 {
+  padding-top: 40px;
+}
+.price-inner .price-container .price-table .pice-table-dt03 {
+  padding-top: 35px;
+}
+.price-inner .price-container .price-table .pice-table-dt04 {
+  padding-top: 35px;
+}
 .price-inner .price-table-under-txt {
   font-weight: 700;
   font-size: 16px;
@@ -1047,15 +1150,19 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
 
 .faq-inner {
   height: auto;
-  background-color: rgb(192, 245, 161);
+  background-color: white;
 }
 .faq-inner .faq-ttl {
-  padding-top: 64px;
+  padding-top: 60px;
+}
+.faq-inner .faq-sub-ttl {
+  padding-top: 16px;
+  padding-right: 3px;
 }
 .faq-inner .accordion {
   width: 907px;
-  margin: 0 auto;
-  margin-top: 33px;
+  margin-left: 240px;
+  margin-top: 34px;
   padding-bottom: 86px;
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
@@ -1070,12 +1177,11 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
 }
 .faq-inner .acd-label {
   border: 1px solid;
-  border-color: #E5E5E5;
+  border-color: #e5e5e5;
   height: 58px;
   display: block;
   margin: 0px auto;
-  padding-top: 18px;
-  background: #FFFFFF;
+  background: #ffffff;
   color: #333333;
   font-weight: 700;
   font-size: 14px;
@@ -1091,25 +1197,33 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
     letter-spacing: -1px;
   }
 }
-.faq-inner .acd-content {
+.faq-inner .acd-lbl01 {
+  padding-top: 17px;
+}
+.faq-inner .acd-lbl02 {
+  padding-top: 17px;
+}
+.faq-inner .acd-lbl03 {
+  padding-top: 17px;
+}
+.faq-inner .acd-content01 {
   height: 0;
-  background: #F2F2F2;
+  background: #f2f2f2;
   transition: 0.5s;
   overflow: hidden;
 }
-.faq-inner .acd-content p {
+.faq-inner .acd-content01 p {
   color: #333333;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.86;
   text-align: left;
-  padding-top: 21px;
-  padding-left: 35px;
+  padding: 16px 0px 0px 35px;
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
 }
 @media not all and (min-width: 600px) {
-  .faq-inner .acd-content p {
+  .faq-inner .acd-content01 p {
     font-size: calc(12px + ((1vw - 3.75px)) * 0.8928571429);
     letter-spacing: -1px;
     padding-top: 15px;
@@ -1117,30 +1231,206 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
     padding-bottom: 15px;
   }
 }
-.faq-inner .acd-check:checked + .acd-label + .acd-content {
+.faq-inner .acd-content02 {
+  height: 0;
+  background: #f2f2f2;
+  transition: 0.5s;
+  overflow: hidden;
+}
+.faq-inner .acd-content02 p {
+  color: #333333;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.86;
+  text-align: left;
+  padding: 19px 0px 0px 36px;
+  /* スマートフォン */
+  /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 600px) {
+  .faq-inner .acd-content02 p {
+    font-size: calc(12px + ((1vw - 3.75px)) * 0.8928571429);
+    letter-spacing: -1px;
+    padding-top: 15px;
+    padding-right: 35px;
+    padding-bottom: 15px;
+  }
+}
+.faq-inner .acd-content03 {
+  height: 0;
+  background: #f2f2f2;
+  transition: 0.5s;
+  overflow: hidden;
+}
+.faq-inner .acd-content03 p {
+  color: #333333;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.86;
+  text-align: left;
+  padding: 21px 0px 0px 36px;
+  /* スマートフォン */
+  /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 600px) {
+  .faq-inner .acd-content03 p {
+    font-size: calc(12px + ((1vw - 3.75px)) * 0.8928571429);
+    letter-spacing: -1px;
+    padding-top: 15px;
+    padding-right: 35px;
+    padding-bottom: 15px;
+  }
+}
+.faq-inner .acd-check:checked + .acd-label + .acd-content01 {
   height: 93px;
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
 }
 @media not all and (min-width: 600px) {
-  .faq-inner .acd-check:checked + .acd-label + .acd-content {
+  .faq-inner .acd-check:checked + .acd-label + .acd-content01 {
+    height: auto;
+  }
+}
+.faq-inner .acd-check:checked + .acd-label + .acd-content02 {
+  height: 70px;
+  /* スマートフォン */
+  /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 600px) {
+  .faq-inner .acd-check:checked + .acd-label + .acd-content02 {
+    height: auto;
+  }
+}
+.faq-inner .acd-check:checked + .acd-label + .acd-content03 {
+  height: 95px;
+  /* スマートフォン */
+  /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 600px) {
+  .faq-inner .acd-check:checked + .acd-label + .acd-content03 {
     height: auto;
   }
 }
 
 .blog-inner {
   height: 668px;
-  background-color: rgb(161, 172, 245);
+  height: auto;
+  background-color: #eefbfb;
+  display: flex;
+  flex-direction: column;
+}
+.blog-inner .blog-ttl {
+  padding-top: 64px;
+}
+
+.swiper-blog-cards__container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 55px;
+}
+.swiper-blog-cards__container div:nth-child(2) {
+  margin: 0 30px 0 30px;
+}
+.swiper-blog-cards__container .blog-card {
+  background-color: rgb(198, 188, 188);
+  width: 389px;
+  height: 387px;
+  background: #fff;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  margin-bottom: 91px;
+}
+.swiper-blog-cards__container .blog-card .card-item {
+  width: 100%;
+  height: 100%;
+}
+.swiper-blog-cards__container .blog-card .card-item .card-img-wrapper .card-img {
+  width: 389px;
+  height: 69%;
+}
+.swiper-blog-cards__container .blog-card .card-item .card-body {
+  width: 88%;
+  height: 31%;
+  text-align: left;
+  position: relative;
+}
+.swiper-blog-cards__container .blog-card .card-item .card-body .card-ttl-txt {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.33;
+  padding-top: 19px;
+}
+.swiper-blog-cards__container .blog-card .card-item .card-body .datetime {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.625;
+  position: absolute;
+  bottom: 0px;
+  right: 38px;
 }
 
 .works-inner {
+  background-color: #fff;
   height: 701px;
-  background-color: rgb(245, 161, 225);
+  display: flex;
+  flex-direction: column;
+}
+.works-inner .works-ttl {
+  padding-top: 64px;
 }
 
-.contact-inner {
-  height: 1027px;
-  background-color: rgb(237, 245, 161);
+.swiper {
+  width: 1356px;
+  margin-top: 69px;
+  margin-bottom: 90px;
+}
+
+.swiper-wrapper {
+  transition-timing-function: linear;
+  display: flex;
+  flex-direction: row;
+}
+
+.works-card {
+  background-color: #ffffff;
+  margin-right: 56px;
+}
+.works-card .works-card-item {
+  width: 315px;
+  height: 400px;
+  box-sizing: content-box;
+  border: solid 1px;
+  border-radius: 20px;
+  border-color: #dddddd;
+  display: flex;
+  flex-direction: column;
+}
+.works-card .works-card-item .works-card__img-wrapper {
+  width: 315px;
+}
+.works-card .works-card-item .works-card__img-wrapper .works-card-img {
+  width: 100%;
+  height: auto;
+  border: 0px;
+  border-radius: 19px 19px 0 0;
+}
+.works-card .works-card-item .works-card-body {
+  width: 280px;
+  height: 48.4%;
+  text-align: left;
+  padding-left: 23px;
+  margin: 0 auto;
+}
+.works-card .works-card-item .works-card-body .works-card-ttl {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.214;
+  padding-top: 20px;
+}
+.works-card .works-card-item .works-card-body .detail {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.625;
+  padding-top: 30px;
 }
 
 /*XDのAV(トラッキング値)letter-spacing”em”で設定

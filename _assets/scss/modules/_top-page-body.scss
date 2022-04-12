@@ -61,14 +61,14 @@
   &__first-line {
     max-width: 360px;
     height: 140px;
-    margin-top: 262px;
+    margin-top: 250px;
     margin-left: 192px;
 
     p {
       // font-weight: 400;//regular
       font-weight: 700; //bold
       font-size: 32px;
-      line-height: 1.1875; // 38/32
+      line-height: 1.7;
       text-align: left;
     }
 
@@ -101,14 +101,14 @@
   &__second-line {
     max-width: 260px;
     height: 100px;
-    margin-top: 38px;
+    margin-top: 43px;
     margin-left: 192px;
 
     p {
       // font-weight: 400;//regular
       font-weight: 700; //bold
       font-size: 16px;
-      line-height: 1.1875; // 19/16
+      line-height: 1.7; // 19/16
       text-align: left;
     }
 
@@ -138,7 +138,7 @@
     display: inline-block;
     background: linear-gradient(#fa41cc 0%, #6020b0 100%);
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
-    margin-top: 38px;
+    margin-top: 42px;
     margin-left: 192px;
 
     /* pc 1367px以上  */
@@ -163,7 +163,7 @@
     z-index: 10;
     position: absolute;
     top: -30px;
-    left: 810px;
+    left: 744px;
 
     /* スマートフォン */
     @include mixin.sp(600px) {
@@ -189,7 +189,7 @@
     z-index: 20;
     position: absolute;
     top: 225px;
-    left: 745px;
+    left: 676px;
 
     /* スマートフォン */
     @include mixin.sp(600px) {
@@ -219,7 +219,6 @@
 
 .feature-inner {
   height: 1809px;
-  // background-color: rgb(232, 221, 221);
   background-color: #fff;
 
   /* スマートフォン */
@@ -229,31 +228,28 @@
 
   // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
-  // .cmn-content-ttl {
-  //   // font-weight: 400;//regular
-  //   font-weight: 700; //bold
-  //   font-size: 32px;
-  //   line-height: 1.1875; // 38/32
-  //   padding-top: 80px;
-  //   text-align: center;
-  //   /* スマートフォン */
-  //   @include mixin.sp(600px) {
-  //   }
-  // }
+  .ft-ttl {
+    line-height: 1.1875; // 38/32
+    padding-top: 76px;
+    padding-right: 5px;
+    text-align: center;
+
+
+    /* スマートフォン */
+    @include mixin.sp(600px) {}
+  }
 
   // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
-  // .cmn-content-sub_ttl {
-  //   // font-weight: 400;//regular
-  //   font-weight: 700; //bold
-  //   font-size: 16px;
-  //   line-height: 1.187; // 19/16
-  //   padding-top: 19px;
-  //   text-align: center;
-  //   /* スマートフォン */
-  //   @include mixin.sp(600px) {
-  //   }
-  // }
+  .ft-sub-ttl {
+    line-height: 1.187; // 19/16
+    padding-top: 16px;
+    padding-right: 9px;
+    text-align: center;
+
+    /* スマートフォン */
+    @include mixin.sp(600px) {}
+  }
 
   // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
@@ -262,8 +258,34 @@
     font-weight: 700; //bold
     font-size: 28px;
     line-height: 1.214; // 34/28
-    margin-top: 93px;
-    margin-bottom: 64px;
+
+    /* スマートフォン */
+    @include mixin.sp(600px) {}
+  }
+
+  // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+  .ft-lower-ttl01 {
+    margin-top: 62px;
+    margin-bottom: 54px;
+    text-align: center;
+
+    /* スマートフォン */
+    @include mixin.sp(600px) {}
+  }
+
+  // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+  .ft-lower-ttl-02 {
+    margin-top: 62px;
+    text-align: center;
+
+    /* スマートフォン */
+    @include mixin.sp(600px) {}
+  }
+
+  .ft-lower-ttl-03 {
+    margin-top: 140px;
     text-align: center;
 
     /* スマートフォン */
@@ -276,9 +298,9 @@
     width: 1050px;
     margin-left: 192px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    margin-bottom: 85px;
 
-    // background-color: rgb(200, 140, 140);
     /* スマートフォン */
     @include mixin.sp(600px) {
       flex-direction: column;
@@ -294,10 +316,21 @@
       @include mixin.sp(600px) {}
     }
 
+    .ft-img02 {
+      padding-top: 62px;
+      padding-left: 83px;
+    }
+
+    .ft-img03 {
+      padding-top: 65px;
+      padding-left: 31px;
+    }
+
+
     // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
     .description-box {
-      margin-left: 157px;
+      margin-left: 158px;
 
       /* スマートフォン */
       @include mixin.sp(600px) {
@@ -310,7 +343,10 @@
         // font-weight: 400;//regular
         font-weight: 700; //bold
         font-size: 24px;
+        padding-top: 37.5px;
+        text-align: left;
         line-height: 2; // 48/24
+        letter-spacing: -0.15px;
 
         /* スマートフォン */
         @include mixin.sp(600px) {
@@ -325,35 +361,82 @@
         font-weight: 700; //bold
         font-size: 16px;
         line-height: 1.625; // 26/16
-        padding-top: 54px;
+        // padding-top: 39px;
 
         /* スマートフォン */
         @include mixin.sp(600px) {
           text-align: center;
         }
       }
+
+      // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+      .feature-desc01 {
+        padding-top: 39px;
+      }
+
+      // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+      .feature-desc02 {
+        padding-top: 30px;
+        padding-left: 63px;
+      }
+
+      // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+      .feature-desc03 {
+        padding-top: 24px;
+        padding-left: 20px;
+        line-height: 1.7;
+      }
     }
 
     // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
     .desc-box02 {
-      margin-left: 0px;
 
       /* スマートフォン */
       @include mixin.sp(600px) {}
+
+      .feature-desc-str02 {
+        padding-top: 62px;
+        padding-left: 63px;
+
+        /* スマートフォン */
+        @include mixin.sp(600px) {}
+      }
     }
+
+    .desc-box03 {
+
+      /* スマートフォン */
+      @include mixin.sp(600px) {}
+
+      .feature-desc-str03 {
+        padding-top: 82px;
+        padding-left: 14px;
+
+        /* スマートフォン */
+        @include mixin.sp(600px) {}
+      }
+    }
+
   }
 
   // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
   .ft-container-rev {
     flex-direction: row-reverse;
+    justify-content: flex-end;
+    margin-left: 0px;
+    width: 100vw;
+    max-width: 1366px;
 
     /* スマートフォン */
     @include mixin.sp(600px) {
       flex-direction: column;
     }
   }
+
 }
 
 //  section2 feature ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
@@ -373,14 +456,23 @@
     background-color: red;
   }
 
+  .price-ttl {
+    padding-top: 58px;
+  }
+
+
+  // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
   .price-container {
     margin-top: 71px;
-    margin-bottom: 41px;
+    margin-bottom: 33px;
+
+    // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
     .price-table {
       width: 67.79%; // 926/1366*100=67.79
       max-width: 926px;
-      height: 410px;
+      height: 412px;
       background-color: #fff;
       box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
       margin: 0 auto;
@@ -389,6 +481,8 @@
       @include mixin.sp(600px) {
         width: 85%;
       }
+
+      // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
       &__body {
         // font-weight: 400;//regular
@@ -400,15 +494,16 @@
         @include mixin.sp(600px) {}
       }
 
-      &__row {}
+      // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
       &__header {
+        width: 290px;
         text-align: left;
         vertical-align: middle;
-        padding: 40px 36.5px 35.5px 19px;
+        padding: 30px 30px 30px 19px;
         border: solid 1px;
         border-color: #e5e5e5;
-        width: 300px;
+
 
         /* スマートフォン */
         @include mixin.sp(600px) {
@@ -424,10 +519,30 @@
         }
       }
 
+      .pice-table-hd01 {
+        height: 97px;
+      }
+
+      .pice-table-hd02 {
+        height: 100px;
+        padding-top: 36px;
+      }
+
+      .pice-table-hd03 {
+        height: 102px;
+      }
+
+      .pice-table-hd04 {
+        height: 114px;
+        padding-top: 20px;
+      }
+
+      // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
       &__data {
         text-align: left;
-        vertical-align: middle;
-        padding-left: 35.5px;
+        vertical-align: top;
+        padding-left: 30px;
         border: solid 1px;
         border-color: #e5e5e5;
 
@@ -445,8 +560,23 @@
           /*上下中央揃え*/
         }
       }
+
+      .pice-table-dt01{
+        padding-top: 35px;
+      }
+      .pice-table-dt02{
+        padding-top: 40px;
+      }
+      .pice-table-dt03{
+        padding-top: 35px;
+      }
+      .pice-table-dt04{
+        padding-top: 35px;
+      }
     }
   }
+
+  // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
   .price-table-under-txt {
     // font-weight: 400;//regular
@@ -460,45 +590,50 @@
 //  section3 price ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
 //  section4 FAQ ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
 .faq-inner {
   height: auto;
-  background-color: rgb(192, 245, 161);
+  background-color: #FFFF;
 
-
+  // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
   .faq-ttl {
-    padding-top: 64px;
-
+    padding-top: 60px;
   }
 
+  .faq-sub-ttl{
+    padding-top: 16px;
+    padding-right: 3px;
+  }
+  // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
   .accordion {
     width: 907px;
-    margin: 0 auto;
-    margin-top: 33px;
+    margin-left: 240px;
+    margin-top: 34px;
     padding-bottom: 86px;
 
     /* スマートフォン */
     @include mixin.sp(600px) {
       width: 85%;
     }
-
   }
 
+  // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
   .acd-check {
     display: none;
   }
 
+  // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
   .acd-label {
     border: 1px solid;
-    border-color: #E5E5E5;
+    border-color: #e5e5e5;
     height: 58px;
     display: block;
     margin: 0px auto;
-    padding-top: 18px;
-    background: #FFFFFF;
+    background: #ffffff;
     color: #333333;
     // font-weight: 400;//regular
     font-weight: 700; //bold
@@ -514,14 +649,25 @@
     }
   }
 
+  .acd-lbl01{
+    padding-top: 17px;
+  }
+  .acd-lbl02{
+    padding-top: 17px;
+  }
+  .acd-lbl03{
+    padding-top: 17px;
+  }
 
 
-  .acd-content {
+
+  // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+  .acd-content01 {
     height: 0;
-    background: #F2F2F2;
+    background: #f2f2f2;
     transition: 0.5s;
     overflow: hidden;
-
 
     p {
       color: #333333;
@@ -530,8 +676,7 @@
       font-size: 14px;
       line-height: 1.86; // 26/14
       text-align: left;
-      padding-top: 21px;
-      padding-left: 35px;
+      padding: 16px 0px 0px 35px;
 
       /* スマートフォン */
       @include mixin.sp(600px) {
@@ -542,43 +687,288 @@
         padding-bottom: 15px;
       }
     }
-
   }
 
-  .acd-check:checked+.acd-label+.acd-content {
+  // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+  .acd-content02 {
+    height: 0;
+    background: #f2f2f2;
+    transition: 0.5s;
+    overflow: hidden;
+
+    p {
+      color: #333333;
+      // font-weight: 400;//regular
+      font-weight: 700; //bold
+      font-size: 14px;
+      line-height: 1.86; // 26/14
+      text-align: left;
+            padding: 19px 0px 0px 36px;
+
+      /* スマートフォン */
+      @include mixin.sp(600px) {
+        font-size: mixin.variableFontSp(14, 12);
+        letter-spacing: -1px;
+        padding-top: 15px;
+        padding-right: 35px;
+        padding-bottom: 15px;
+      }
+    }
+  }
+
+  // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+  .acd-content03 {
+    height: 0;
+    background: #f2f2f2;
+    transition: 0.5s;
+    overflow: hidden;
+
+    p {
+      color: #333333;
+      // font-weight: 400;//regular
+      font-weight: 700; //bold
+      font-size: 14px;
+      line-height: 1.86; // 26/14
+      text-align: left;
+      padding:21px 0px 0px 36px;
+
+      /* スマートフォン */
+      @include mixin.sp(600px) {
+        font-size: mixin.variableFontSp(14, 12);
+        letter-spacing: -1px;
+        padding-top: 15px;
+        padding-right: 35px;
+        padding-bottom: 15px;
+      }
+    }
+  }
+
+
+  // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+  .acd-check:checked+.acd-label+.acd-content01 {
     height: 93px;
 
     /* スマートフォン */
     @include mixin.sp(600px) {
       height: auto;
     }
-
-
   }
+  .acd-check:checked+.acd-label+.acd-content02 {
+    height: 70px;
+
+    /* スマートフォン */
+    @include mixin.sp(600px) {
+      height: auto;
+    }
+  }
+  .acd-check:checked+.acd-label+.acd-content03 {
+    height: 95px;
+
+    /* スマートフォン */
+    @include mixin.sp(600px) {
+      height: auto;
+    }
+  }
+
+
+
+
+
+
+
 }
 
 //  section4 FAQ ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
 //  section5 blog ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
 .blog-inner {
   height: 668px;
-  background-color: rgb(161, 172, 245);
+  height: auto;
+  background-color: #eefbfb;
+  display: flex;
+  flex-direction: column;
+
+  .blog-ttl {
+    padding-top: 64px;
+  }
+}
+
+// ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+
+.swiper-blog-cards__container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 55px;
+
+  // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+  div:nth-child(2) {
+    margin: 0 30px 0 30px;
+  }
+
+  // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+  .blog-card {
+    background-color: rgb(198, 188, 188);
+    width: 389px;
+    height: 387px;
+    background: #fff;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    margin-bottom: 91px;
+
+    // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+    .card-item {
+      width: 100%;
+      height: 100%;
+      // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+      .card-img-wrapper {
+        .card-img {
+          width: 389px;
+          height: 69%; // 267px / 387px
+        }
+      }
+
+      // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+      .card-body {
+        width: 88%;
+        height: 31%; //  (387 -267) / 387
+        text-align: left;
+        position: relative;
+
+        .card-ttl-txt {
+          // font-weight: 400;//regular
+          font-weight: 700; //bold
+          font-size: 18px;
+          line-height: 1.33; // 26/18
+          padding-top: 19px;
+        }
+
+        // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+        .datetime {
+          // font-weight: 400;//regular
+          font-weight: 700; //bold
+          font-size: 16px;
+          line-height: 1.625; // 26/16
+          position: absolute;
+          bottom: 0px;
+          right: 38px;
+        }
+      }
+    }
+  }
 }
 
 //  section5 blog ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
 //  section6 works ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 .works-inner {
+  background-color: #fff;
   height: 701px;
-  background-color: rgb(245, 161, 225);
+  // background-color: rgb(245, 161, 225);
+  display: flex;
+  flex-direction: column;
+
+  // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+  .works-ttl {
+    padding-top: 64px;
+  }
 }
+
+// ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+// div:nth-child(2) {
+//   margin: 0 30px 0 30px;
+// }
+
+// ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+.swiper {
+  width: 1356px;
+  margin-top: 69px;
+  margin-bottom: 90px;
+}
+
+.swiper-wrapper {
+  //ループ時のアニメーションの緩急を一定にする（デフォルトはease-out）
+  transition-timing-function: linear;
+
+  display: flex;
+  flex-direction: row;
+}
+
+
+.works-card {
+  // width: 322px;
+  // height: 407px;
+  background-color: #ffffff;
+  margin-right: 56px;
+
+  // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+  .works-card-item {
+    width: 315px;
+    height: 400px;
+    box-sizing: content-box; //線を外側にする
+    border: solid 1px;
+    border-radius: 20px;
+    border-color: #dddddd;
+    display: flex;
+    flex-direction: column;
+    // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+    .works-card__img-wrapper {
+      width: 315px;
+
+      .works-card-img {
+        width: 100%;
+        height: auto;
+        border: 0px;
+        border-radius: 19px 19px 0 0;
+      }
+    }
+
+    // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+    .works-card-body {
+      width: 280px;
+      height: 48.4%; // 100% - 51.6
+      text-align: left;
+      padding-left: 23px;
+      margin: 0 auto;
+
+      .works-card-ttl {
+        // font-weight: 400;//regular
+        font-weight: 700; //bold
+        font-size: 16px;
+        line-height: 1.214; // 19/16
+        padding-top: 20px;
+      }
+
+      // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+      .detail {
+        // font-weight: 400;//regular
+        font-weight: 700; //bold
+        font-size: 14px;
+        line-height: 1.625; // 17/14
+        padding-top: 30px;
+      }
+    }
+  }
+}
+
+
 
 //  section6 works ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
-
-//  section7 contact ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
-.contact-inner {
-  height: 1027px;
-  background-color: rgb(237, 245, 161);
-}
 
 //  section7 contact ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝

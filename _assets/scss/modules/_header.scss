@@ -185,7 +185,7 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
         }
 
         li:nth-child(2) {
-            margin-left: 46px;
+            margin-left: 45px;
 
             /* pc 1367px以上  */
             @include mixin.pc-l(1367px) {
@@ -205,8 +205,7 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
         }
 
         li:nth-child(3) {
-            letter-spacing: 2px;
-            margin-left: 46px;
+            margin-left: 44px;
 
             /* pc 1367px以上  */
             @include mixin.pc-l(1367px) {
