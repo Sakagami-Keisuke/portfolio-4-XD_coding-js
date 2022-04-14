@@ -981,20 +981,20 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   padding-top: 39px;
 }
 .feature-inner .ft-container .description-box .feature-desc02 {
-  padding-top: 30px;
+  padding-top: 31px;
   padding-left: 63px;
 }
 .feature-inner .ft-container .description-box .feature-desc03 {
   padding-top: 24px;
   padding-left: 20px;
-  line-height: 1.7;
+  line-height: 1.75;
 }
 .feature-inner .ft-container .desc-box02 {
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
 }
 .feature-inner .ft-container .desc-box02 .feature-desc-str02 {
-  padding-top: 62px;
+  padding-top: 59px;
   padding-left: 63px;
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
@@ -1004,7 +1004,7 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   /* $** pxを含まずそれより小さい */
 }
 .feature-inner .ft-container .desc-box03 .feature-desc-str03 {
-  padding-top: 82px;
+  padding-top: 80px;
   padding-left: 14px;
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
@@ -1045,12 +1045,12 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
 }
 .price-inner .price-container {
   margin-top: 71px;
-  margin-bottom: 33px;
 }
 .price-inner .price-container .price-table {
   width: 67.79%;
   max-width: 926px;
   height: 412px;
+  height: auto;
   background-color: #fff;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
   margin: 0 auto;
@@ -1093,17 +1093,17 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   }
 }
 .price-inner .price-container .price-table .pice-table-hd01 {
-  height: 97px;
+  height: 94px;
 }
 .price-inner .price-container .price-table .pice-table-hd02 {
   height: 100px;
-  padding-top: 36px;
+  padding-top: 41px;
 }
 .price-inner .price-container .price-table .pice-table-hd03 {
-  height: 102px;
+  height: 103px;
 }
 .price-inner .price-container .price-table .pice-table-hd04 {
-  height: 114px;
+  height: 113px;
   padding-top: 20px;
 }
 .price-inner .price-container .price-table__data {
@@ -1130,22 +1130,23 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   }
 }
 .price-inner .price-container .price-table .pice-table-dt01 {
-  padding-top: 35px;
+  padding-top: 34px;
 }
 .price-inner .price-container .price-table .pice-table-dt02 {
-  padding-top: 40px;
+  padding-top: 41px;
 }
 .price-inner .price-container .price-table .pice-table-dt03 {
-  padding-top: 35px;
+  padding-top: 36px;
 }
 .price-inner .price-container .price-table .pice-table-dt04 {
-  padding-top: 35px;
+  padding-top: 37px;
 }
 .price-inner .price-table-under-txt {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.75;
   text-align: center;
+  padding-top: 34px;
 }
 
 .faq-inner {
@@ -1153,7 +1154,7 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   background-color: white;
 }
 .faq-inner .faq-ttl {
-  padding-top: 60px;
+  padding-top: 59px;
 }
 .faq-inner .faq-sub-ttl {
   padding-top: 16px;
@@ -1162,7 +1163,7 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
 .faq-inner .accordion {
   width: 907px;
   margin-left: 240px;
-  margin-top: 34px;
+  margin-top: 35px;
   padding-bottom: 86px;
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
@@ -1198,13 +1199,15 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   }
 }
 .faq-inner .acd-lbl01 {
-  padding-top: 17px;
+  padding-top: 15px;
 }
 .faq-inner .acd-lbl02 {
-  padding-top: 17px;
+  padding-top: 15px;
+  padding-left: 5px;
 }
 .faq-inner .acd-lbl03 {
-  padding-top: 17px;
+  padding-top: 13px;
+  padding-right: 20px;
 }
 .faq-inner .acd-content01 {
   height: 0;
@@ -1216,9 +1219,9 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   color: #333333;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.86;
+  line-height: 1.83;
   text-align: left;
-  padding: 16px 0px 0px 35px;
+  padding: 15.5px 0px 0px 35px;
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
 }
@@ -1268,6 +1271,7 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   font-size: 14px;
   line-height: 1.86;
   text-align: left;
+  letter-spacing: -0.1px;
   padding: 21px 0px 0px 36px;
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
@@ -1323,7 +1327,7 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   padding-top: 60px;
 }
 .blog-inner .blog-sub-ttl {
-  padding-right: 1px;
+  padding-right: 3px;
 }
 
 .blog-cards__container {
@@ -1360,11 +1364,14 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
 .blog-cards__container .blog-card .card-item .card-body .card-ttl-txt {
   display: inline-block;
   width: 100%;
-  padding-top: 15px;
+  padding-top: 14px;
   padding-left: 19px;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.42;
+}
+.blog-cards__container .blog-card .card-item .card-body .card-ttl-txt01 {
+  letter-spacing: -0.2px;
 }
 .blog-cards__container .blog-card .card-item .card-body .datetime {
   font-weight: 700;
@@ -1373,6 +1380,7 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   position: absolute;
   bottom: 2px;
   right: 10px;
+  letter-spacing: -0.5px;
 }
 
 .works-inner {
@@ -1382,7 +1390,11 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   flex-direction: column;
 }
 .works-inner .works-ttl {
-  padding-top: 64px;
+  padding-top: 60px;
+}
+.works-inner .works-sub-ttl {
+  padding-top: 17px;
+  padding-left: 5px;
 }
 
 .swiper {
@@ -1398,46 +1410,61 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
 }
 
 .works-card {
+  height: 415px;
   background-color: #ffffff;
-  margin-right: 56px;
 }
 .works-card .works-card-item {
-  width: 315px;
-  height: 400px;
+  width: 320px;
+  height: 405px;
   box-sizing: content-box;
   border: solid 1px;
-  border-radius: 20px;
+  border-radius: 8px;
   border-color: #dddddd;
   display: flex;
   flex-direction: column;
 }
 .works-card .works-card-item .works-card__img-wrapper {
-  width: 315px;
+  width: 320px;
 }
 .works-card .works-card-item .works-card__img-wrapper .works-card-img {
   width: 100%;
   height: auto;
   border: 0px;
-  border-radius: 19px 19px 0 0;
+  border-radius: 8px 8px 0 0;
 }
 .works-card .works-card-item .works-card-body {
-  width: 280px;
+  width: 300px;
   height: 48.4%;
   text-align: left;
-  padding-left: 23px;
+  padding-left: 11px;
   margin: 0 auto;
 }
 .works-card .works-card-item .works-card-body .works-card-ttl {
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.214;
-  padding-top: 20px;
+  line-height: 1.65;
+  padding-top: 18px;
+}
+.works-card .works-card-item .works-card-body .wk-cd-ttl02 {
+  letter-spacing: 0.8px;
+}
+.works-card .works-card-item .works-card-body .wk-cd-ttl03 {
+  padding-top: 25px;
+  padding-left: 3px;
+  letter-spacing: 0px;
+}
+.works-card .works-card-item .works-card-body .wk-cd-ttl04 {
+  padding-top: 19px;
+  padding-left: 3px;
+  letter-spacing: 0px;
 }
 .works-card .works-card-item .works-card-body .detail {
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.625;
-  padding-top: 30px;
+  line-height: 1.65;
+  padding-top: 25.5px;
+  padding-left: 1px;
+  letter-spacing: -0.1px;
 }
 
 /*XDのAV(トラッキング値)letter-spacing”em”で設定
