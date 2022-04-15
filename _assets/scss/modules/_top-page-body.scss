@@ -480,6 +480,10 @@
   .price-ttl {
     padding-top: 58px;
   }
+  .price-sub-ttl {
+    transform: translate(-2px,-1px);
+    letter-spacing: 0.2px;
+  }
 
   // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
@@ -583,19 +587,23 @@
       }
 
       .pice-table-dt01 {
-        padding-top: 34px;
+        padding-top: 33.5px;
+        letter-spacing: -0.3px;
       }
 
       .pice-table-dt02 {
-        padding-top: 41px;
+        padding-top: 42px;
+        transform: translate(-1px,0px);
       }
 
       .pice-table-dt03 {
-        padding-top: 36px;
+        padding-top: 36.5px;
+        transform: translate(-1px,0px);
       }
 
       .pice-table-dt04 {
-        padding-top: 37px;
+        padding-top: 37.5px;
+        transform: translate(-1px,0px);
       }
     }
   }
@@ -704,7 +712,7 @@
       font-size: 14px;
       line-height: 1.83; // 26/14
       text-align: left;
-      padding: 15.5px 0px 0px 35px;
+      padding: 14.5px 0px 0px 35px;
 
       /* スマートフォン */
       @include mixin.sp(600px) {
@@ -820,7 +828,9 @@
   }
 
   .blog-sub-ttl {
-    padding-right: 3px;
+   transform: translate(-1px,-2px);
+   letter-spacing: 0.5px;
+    
   }
 }
 
@@ -891,6 +901,7 @@
         }
 
         .card-ttl-txt03 {
+          transform: translate(0px,-1px);
         }
 
         // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
@@ -928,8 +939,7 @@
   }
 
   .works-sub-ttl {
-    padding-top: 17px;
-    padding-left: 5px;
+    transform: translate(2px,-2px);
   }
 }
 
@@ -996,15 +1006,15 @@
         padding-top: 18px;
       }
 
-      .wk-cd-ttl02{
+      .wk-cd-ttl02 {
         letter-spacing: 0.8px;
       }
-      .wk-cd-ttl03{
+      .wk-cd-ttl03 {
         padding-top: 25px;
         padding-left: 3px;
         letter-spacing: 0px;
       }
-      .wk-cd-ttl04{
+      .wk-cd-ttl04 {
         padding-top: 19px;
         padding-left: 3px;
         letter-spacing: 0px;
@@ -1030,7 +1040,205 @@
 //   margin-right: 0px;
 // }
 
-
 //  section6 works ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+//  section7 contact ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+.contact {
+  width: 1366px;
+  height: 1027px;
+  background: linear-gradient(90deg, #05a5fa 0%, #63fbd7 100%, #67ffd6 100%);
+
+  // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+  .contact-inner {
+    width: 100%;
+    height: 100%;
+    // background-color: red;
+    display: flex;
+    flex-direction: column;
+
+    // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+    .contact-ttl {
+      color: #ffffff;
+      padding-top: 68px;
+    }
+
+    .contact-sub-ttl {
+      color: #ffffff;
+     transform: translate(3px,-5.5px);
+     letter-spacing: 0.5px;
+    }
+
+    .contact-l3-header {
+      // font-weight: 400;//regular
+      font-weight: 700; //bold
+      font-size: 16px;
+      line-height: 1.7;
+      text-align: center;
+      color: #ffffff;
+      padding-top: 30px;
+      padding-left: 0px;
+    }
+  }
+
+  .contact-form-container {
+    width: 908px;
+    height: 689px;
+    background: #fff;
+    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16));
+    margin: 0 auto;
+    margin-top: 39px;
+
+    .form__name {
+      display: flex;
+      flex-direction: column;
+
+      .form-label-name {
+        // font-weight: 400;//regular
+        font-weight: 700; //bold
+        font-size: 16px;
+        line-height: 26px; // 19/16
+        text-align: left;
+        color: #333;
+        padding-top: 32px;
+        padding-left: 63px;
+      }
+
+      .form-input-name {
+        width: 499px;
+        height: 43px;
+        background: #eefbfb;
+        margin-top: 32px;
+        margin-left: 64px;
+        border: none;
+      }
+    }
+    .form__email {
+      display: flex;
+      flex-direction: column;
+
+      .form-label-email {
+        // font-weight: 400;//regular
+        font-weight: 700; //bold
+        font-size: 16px;
+        line-height: 26px; // 19/16
+        text-align: left;
+        letter-spacing: -0.3px;
+        color: #333;
+        padding-top: 28px;
+        padding-left: 63px;
+      }
+
+      .form-input-email {
+        width: 499px;
+        height: 43px;
+        background: #eefbfb;
+        margin-top: 33px;
+        margin-left: 64px;
+        border: none;
+      }
+    }
+    .form__inquiry {
+      display: flex;
+      flex-direction: column;
+
+      .form-label-inquiry {
+        // font-weight: 400;//regular
+        font-weight: 700; //bold
+        font-size: 16px;
+        line-height: 26px; // 19/16
+        letter-spacing: 2.5px;
+        text-align: left;
+        color: #333;
+        padding-top: 21px;
+        padding-left: 63px;
+      }
+
+      .form-textarea-inquiry {
+        width: 783px;
+        height: 179px;
+        background: #eefbfb;
+        margin-top: 33px;
+        margin-left: 64px;
+        border: none;
+      }
+    }
+
+    .cmn-required-label {
+      // font-weight: 400;//regular
+      font-weight: 700; //bold
+      font-size: 14px;
+      line-height: 26px;
+      text-align: center;
+      color: #fff;
+      
+      display: inline-block;
+      width: 60px;
+      height: 30px;
+      background: #0c449b;
+      border-radius: 10px;
+      margin-left: 19px;
+      //微調整
+      transform: translate(0px,-3px);
+    }
+
+.rqurd-lbl02{
+//微調整
+transform: translate(-1px,-1px);
+}
+
+.rqurd-lbl03{
+//微調整
+transform: translate(-4px,-2px);
+}
+
+  }
+
+  .privacy-policy-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    margin-top: 25px;
+
+    .form-checkbox {
+      transform: scale(1.75);
+      margin-top: 2px;
+      margin-left: 1px;
+    }
+
+    .privacy-policy-agreement-label {
+      // font-weight: 400;//regular
+      font-weight: 700; //bold
+      font-size: 16px;
+      line-height: 28px;
+      text-align: center;
+      text-align: left;
+      color: #333;
+      padding-left: 13px;
+    }
+  }
+
+  .submit-btn {
+    //disabledの時はグレー
+
+    // font-weight: 400;//regular
+    font-weight: 700; //bold
+    font-size: 14px;
+    line-height: 1.5;
+    color: #ffffff;
+
+    width: 155px;
+    height: 37px;
+    background: linear-gradient(#fa41cc 0%, #6020b0 100%);
+    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16));
+    display: block;
+    margin: 0 auto;
+    margin-top: 28px;
+  }
+}
 
 //  section7 contact ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝

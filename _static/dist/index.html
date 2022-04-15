@@ -208,7 +208,7 @@
           <div class="price-inner">
 
             <h2 class="cmn-content-ttl price-ttl">価格</h2>
-            <p class="cmn-content-sub_ttl">PRICE</p>
+            <p class="cmn-content-sub_ttl price-sub-ttl">PRICE</p>
 
             <div class="price-container">
               <table class="price-table">
@@ -326,8 +326,6 @@
         </section>
         <!-- section5 blog -->
 
-
-
         <!-- section6 works -->
         <section>
           <div class="works-inner">
@@ -336,8 +334,6 @@
 
             <div class="swiper slider1">
               <div class="swiper-wrapper">
-
-
 
                 <!-- Slides01 -->
                 <div class="swiper-slide works-card works-card01">
@@ -354,8 +350,6 @@
                     </div>
                   </article>
                 </div>
-
-
 
                 <!-- Slides02 -->
                 <div class="swiper-slide works-card works-card02">
@@ -420,27 +414,59 @@
                   </div>
                 </article>
               </div>
-
-
-
-
             </div>
           </section>
           <!-- section6 works -->
 
-
-
           <!-- section7 contact -->
-          <section>
-            <div class="contact-inner"></div>
+          <section class="contact">
+            <div class="contact-inner">
+              <h2 class="cmn-content-ttl contact-ttl">お問い合わせ</h2>
+              <p class="cmn-content-sub_ttl contact-sub-ttl">CONTACT</p>
+              <h3 class="contact-l3-header">コーディングの人出が足りないとき、<br>
+                あなたの力になります</h3>
+
+              <div class="contact-form-container">
+                <form action="">
+
+                  <div class="form__name">
+                    <label for="name" class="form-label-name">お名前
+                      <span class="cmn-required-label">必須</span>
+                    </label>
+                    <input type="text" required class="form-input-name">
+                  </div>
+                  <div class="form__email">
+                    <label for="name" class="form-label-email">メールアドレス
+                      <span class="cmn-required-label rqurd-lbl02">必須</span>
+                    </label>
+                    <input type="text" required class="form-input-email">
+                  </div>
+                  <div class="form__inquiry">
+                    <label for="name" class="form-label-inquiry">お問い合せ内容
+                      <span class="cmn-required-label  rqurd-lbl03">必須</span>
+                    </label>
+                    <textarea required class="form-textarea-inquiry"></textarea>
+                  </div>
+
+                  <div class="privacy-policy-wrapper">
+                    <input type="checkbox" required class="form-checkbox">
+                    <label class="privacy-policy-agreement-label">プライバシーポリシーに同意する
+                      <!-- <p class="privacy-policy-agreement">プライバシーポリシーに同意する</p> -->
+                    </label>
+                  </div>
+
+                    <input type="submit"
+                      value="送信する" class="button submit-btn" disabled>
+                </form>
+              </div>
+            </div>
           </section>
           <!-- section7 contact -->
-
         </main>
         <!-- main -->
 
-        <!-- footer -->
 
+        <!-- footer -->
         <footer>
           <div class="footer">
             <div class="footer-inner">
@@ -456,9 +482,6 @@
               <p class="footer-copylight">©ユアコーディング, All Rights Reserved.</p>
             </div>
           </div>
-
-
-
         </footer>
         <!-- footer -->
       </div>

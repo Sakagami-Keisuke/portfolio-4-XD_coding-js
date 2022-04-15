@@ -1043,6 +1043,10 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
 .price-inner .price-ttl {
   padding-top: 58px;
 }
+.price-inner .price-sub-ttl {
+  transform: translate(-2px, -1px);
+  letter-spacing: 0.2px;
+}
 .price-inner .price-container {
   margin-top: 71px;
 }
@@ -1130,16 +1134,20 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   }
 }
 .price-inner .price-container .price-table .pice-table-dt01 {
-  padding-top: 34px;
+  padding-top: 33.5px;
+  letter-spacing: -0.3px;
 }
 .price-inner .price-container .price-table .pice-table-dt02 {
-  padding-top: 41px;
+  padding-top: 42px;
+  transform: translate(-1px, 0px);
 }
 .price-inner .price-container .price-table .pice-table-dt03 {
-  padding-top: 36px;
+  padding-top: 36.5px;
+  transform: translate(-1px, 0px);
 }
 .price-inner .price-container .price-table .pice-table-dt04 {
-  padding-top: 37px;
+  padding-top: 37.5px;
+  transform: translate(-1px, 0px);
 }
 .price-inner .price-table-under-txt {
   font-weight: 700;
@@ -1221,7 +1229,7 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   font-size: 14px;
   line-height: 1.83;
   text-align: left;
-  padding: 15.5px 0px 0px 35px;
+  padding: 14.5px 0px 0px 35px;
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
 }
@@ -1327,7 +1335,8 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   padding-top: 60px;
 }
 .blog-inner .blog-sub-ttl {
-  padding-right: 3px;
+  transform: translate(-1px, -2px);
+  letter-spacing: 0.5px;
 }
 
 .blog-cards__container {
@@ -1373,6 +1382,9 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
 .blog-cards__container .blog-card .card-item .card-body .card-ttl-txt01 {
   letter-spacing: -0.2px;
 }
+.blog-cards__container .blog-card .card-item .card-body .card-ttl-txt03 {
+  transform: translate(0px, -1px);
+}
 .blog-cards__container .blog-card .card-item .card-body .datetime {
   font-weight: 700;
   font-size: 16px;
@@ -1393,8 +1405,7 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   padding-top: 60px;
 }
 .works-inner .works-sub-ttl {
-  padding-top: 17px;
-  padding-left: 5px;
+  transform: translate(2px, -2px);
 }
 
 .swiper {
@@ -1467,6 +1478,164 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   letter-spacing: -0.1px;
 }
 
+.contact {
+  width: 1366px;
+  height: 1027px;
+  background: linear-gradient(90deg, #05a5fa 0%, #63fbd7 100%, #67ffd6 100%);
+}
+.contact .contact-inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.contact .contact-inner .contact-ttl {
+  color: #ffffff;
+  padding-top: 68px;
+}
+.contact .contact-inner .contact-sub-ttl {
+  color: #ffffff;
+  transform: translate(3px, -5.5px);
+  letter-spacing: 0.5px;
+}
+.contact .contact-inner .contact-l3-header {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.7;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 30px;
+  padding-left: 0px;
+}
+.contact .contact-form-container {
+  width: 908px;
+  height: 689px;
+  background: #fff;
+  filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16));
+  margin: 0 auto;
+  margin-top: 39px;
+}
+.contact .contact-form-container .form__name {
+  display: flex;
+  flex-direction: column;
+}
+.contact .contact-form-container .form__name .form-label-name {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: left;
+  color: #333;
+  padding-top: 32px;
+  padding-left: 63px;
+}
+.contact .contact-form-container .form__name .form-input-name {
+  width: 499px;
+  height: 43px;
+  background: #eefbfb;
+  margin-top: 32px;
+  margin-left: 64px;
+  border: none;
+}
+.contact .contact-form-container .form__email {
+  display: flex;
+  flex-direction: column;
+}
+.contact .contact-form-container .form__email .form-label-email {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: left;
+  letter-spacing: -0.3px;
+  color: #333;
+  padding-top: 28px;
+  padding-left: 63px;
+}
+.contact .contact-form-container .form__email .form-input-email {
+  width: 499px;
+  height: 43px;
+  background: #eefbfb;
+  margin-top: 33px;
+  margin-left: 64px;
+  border: none;
+}
+.contact .contact-form-container .form__inquiry {
+  display: flex;
+  flex-direction: column;
+}
+.contact .contact-form-container .form__inquiry .form-label-inquiry {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 2.5px;
+  text-align: left;
+  color: #333;
+  padding-top: 21px;
+  padding-left: 63px;
+}
+.contact .contact-form-container .form__inquiry .form-textarea-inquiry {
+  width: 783px;
+  height: 179px;
+  background: #eefbfb;
+  margin-top: 33px;
+  margin-left: 64px;
+  border: none;
+}
+.contact .contact-form-container .cmn-required-label {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+  color: #fff;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+  background: #0c449b;
+  border-radius: 10px;
+  margin-left: 19px;
+  transform: translate(0px, -3px);
+}
+.contact .contact-form-container .rqurd-lbl02 {
+  transform: translate(-1px, -1px);
+}
+.contact .contact-form-container .rqurd-lbl03 {
+  transform: translate(-4px, -2px);
+}
+.contact .privacy-policy-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  margin-top: 25px;
+}
+.contact .privacy-policy-wrapper .form-checkbox {
+  transform: scale(1.75);
+  margin-top: 2px;
+  margin-left: 1px;
+}
+.contact .privacy-policy-wrapper .privacy-policy-agreement-label {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  text-align: left;
+  color: #333;
+  padding-left: 13px;
+}
+.contact .submit-btn {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #ffffff;
+  width: 155px;
+  height: 37px;
+  background: linear-gradient(#fa41cc 0%, #6020b0 100%);
+  filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16));
+  display: block;
+  margin: 0 auto;
+  margin-top: 28px;
+}
+
 /*XDのAV(トラッキング値)letter-spacing”em”で設定
 XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
 /*XDの行送り値（px）÷ フォントサイズ（px）をline-heightに指定
@@ -1474,6 +1643,7 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
 .footer {
   width: 100vw;
   max-width: 1366px;
+  height: 244px;
   background-color: #f8f8f8;
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
@@ -1489,7 +1659,8 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   font-size: 24px;
   line-height: 1.166;
   text-align: center;
-  padding-top: 50px;
+  padding-top: 45px;
+  padding-left: 4px;
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
 }
@@ -1502,7 +1673,7 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   font-weight: 700;
   font-size: 16px;
   line-height: 1.75;
-  padding-top: 30px;
+  padding-top: 23px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -1527,13 +1698,15 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   }
 }
 .footer-inner ul.footer-list li:first-child {
-  padding-right: 30px;
+  padding-left: 31px;
+  padding-right: 32px;
+  letter-spacing: -0.1px;
   /* $** pxを含まずそれより小さい */
 }
 @media not all and (min-width: 600px) {
   .footer-inner ul.footer-list li:first-child {
     padding-right: 0px;
-    padding-top: 25px;
+    padding-top: 18px;
   }
 }
 .footer-inner p.footer-copylight {
@@ -1541,8 +1714,8 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   font-size: 14px;
   line-height: 1.214;
   text-align: center;
-  padding-top: 59px;
-  padding-bottom: 50px;
+  padding-top: 52px;
+  letter-spacing: -0.1px;
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
 }

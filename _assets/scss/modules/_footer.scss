@@ -13,6 +13,7 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
 .footer {
   width: 100vw;
   max-width: 1366px;
+  height: 244px;
   background-color: #f8f8f8;
 
   /* スマートフォン */
@@ -33,7 +34,8 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
       font-size: 24px;
       line-height: 1.166; // 28/24
       text-align: center;
-      padding-top: 50px;
+      padding-top: 45px;
+      padding-left: 4px;
 
       /* スマートフォン */
       @include mixin.sp(600px) {
@@ -46,7 +48,8 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
       font-weight: 700; //bold
       font-size: 16px;
       line-height: 1.75; // 28/16
-      padding-top: 30px;
+      padding-top: 23px;
+
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -66,10 +69,13 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
         }
       }
       li:first-child {
-        padding-right: 30px;
+        padding-left: 31px;
+        padding-right: 32px;
+        letter-spacing: -0.1px;
+
         @include mixin.sp(600px) {
           padding-right: 0px;
-          padding-top: 25px;
+          padding-top: 18px;
         }
       }
     }
@@ -80,8 +86,8 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
       font-size: 14px;
       line-height: 1.214; // 17/14
       text-align: center;
-      padding-top: 59px;
-      padding-bottom: 50px;
+      padding-top: 52px;
+      letter-spacing: -0.1px;
 
       /* スマートフォン */
       @include mixin.sp(600px) {
