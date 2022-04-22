@@ -4,11 +4,9 @@
 /*XDのAV(トラッキング値)letter-spacing”em”で設定
 XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
 
-
 //line-height ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 /*XDの行送り値（px）÷ フォントサイズ（px）をline-heightに指定
 // 28÷15=1.8666...なので1.86。¸line-height : 1.86 ;*/
-
 
 // header＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
@@ -69,6 +67,7 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
         @include mixin.sp(600px) {
             width: 100vw;
             margin: 0;
+            position: relative;
         }
 
         .gnav {
@@ -89,6 +88,11 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
         .logo-img {
             width: 100%;
             height: auto;
+            /* スマートフォン */
+            @include mixin.sp(600px) {
+                width: mixin.clampSp(47, 35);
+                height: mixin.clampSp(47, 35);
+            }
         }
 
         /* pc 1367px以上  */
@@ -107,8 +111,6 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
 
         /* スマートフォン */
         @include mixin.sp(600px) {
-            width: mixin.clampSp(47, 30);
-            height: mixin.clampSp(47, 30);
         }
     }
 
@@ -119,6 +121,13 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
         width: auto;
         height: 50px;
         margin-top: 22px;
+
+        /* スマートフォン */
+        @include mixin.sp(600px) {
+            display: inline-block;
+            width: mixin.clampSp(200, 150);
+            // background-color: red;
+        }
 
         .tagline-txt {
             // font-weight: 400;//regular
@@ -145,7 +154,10 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
 
             /* スマートフォン */
             @include mixin.sp(600px) {
-                font-size: mixin.variableFontSp(24, 14);
+                font-size: mixin.variableFontSp(24, 16);
+                display: inline-block;
+                width: mixin.clampSp(200, 150);
+                margin: 15px 0px 0px 10px;
             }
         }
     }
@@ -263,9 +275,14 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
         /* スマートフォン */
         @include mixin.sp(600px) {
             display: block;
-            margin-top: 24px;
-            margin-left: mixin.clampSp(230, 150);
-            color: blue;
+            // margin-top: mixin.clampSp(10,8);
+            // margin-left: mixin.clampSp(230, 50);
+            position: absolute;
+            top:12px;
+            right:25px;
+            color: #444444;
+            transform: scale(0.6,0.6);
+            
         }
     }
 }

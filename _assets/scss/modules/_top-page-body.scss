@@ -10,6 +10,7 @@
 
   /* スマートフォン */
   @include mixin.sp(600px) {
+    font-size: mixin.variableFontSp(32, 24);
   }
 }
 
@@ -27,6 +28,8 @@
   @include mixin.sp(600px) {
   }
 }
+
+// ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
 //  section1  first-view ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
@@ -97,7 +100,7 @@
       p {
         // font-weight: 400;//regular
         font-weight: 700; //bold
-        font-size: 32px;
+        font-size: mixin.variableFontSp(32, 26);
         line-height: 1.1875; // 38/32
         text-align: center;
       }
@@ -134,11 +137,12 @@
 
     /* スマートフォン */
     @include mixin.sp(600px) {
-      margin-top: 20px;
+      margin-top: 12px;
       margin-left: 0px;
 
       p {
         text-align: center;
+        font-size: mixin.variableFontSp(16, 14);
       }
     }
   }
@@ -166,7 +170,7 @@
 
     /* スマートフォン */
     @include mixin.sp(600px) {
-      margin-top: 20px;
+      margin-top: 30px;
       margin-left: 0px;
     }
   }
@@ -276,6 +280,7 @@
 
     /* スマートフォン */
     @include mixin.sp(600px) {
+      font-size: mixin.variableFontSp(28, 22);
     }
   }
 
@@ -299,6 +304,7 @@
 
     /* スマートフォン */
     @include mixin.sp(600px) {
+      font-size: mixin.variableFontSp(28, 22);
     }
   }
 
@@ -308,6 +314,7 @@
 
     /* スマートフォン */
     @include mixin.sp(600px) {
+      font-size: mixin.variableFontSp(28, 22);
     }
   }
 
@@ -326,6 +333,7 @@
       width: 100vw;
       margin-left: 0px;
       align-items: center;
+      margin-bottom: 0px;
     }
 
     .ft-img-wrapper {
@@ -336,14 +344,32 @@
       }
     }
 
+    .ft-img01 {
+      /* スマートフォン */
+      @include mixin.sp(600px) {
+        transform: scale(0.8, 0.8);
+      }
+    }
+
     .ft-img02 {
       padding-top: 62px;
       padding-left: 83px;
+
+      /* スマートフォン */
+      @include mixin.sp(600px) {
+        padding-left: 0px;
+        transform: scale(0.8, 0.8);
+      }
     }
 
     .ft-img03 {
       padding-top: 65px;
       padding-left: 31px;
+      /* スマートフォン */
+      @include mixin.sp(600px) {
+        padding-left: 0px;
+        transform: scale(0.8, 0.8);
+      }
     }
 
     // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
@@ -370,6 +396,11 @@
         /* スマートフォン */
         @include mixin.sp(600px) {
           text-align: center;
+          /* スマートフォン */
+          @include mixin.sp(600px) {
+            // color: gray;
+            font-size: mixin.variableFontSp(20, 14);
+          }
         }
       }
 
@@ -392,6 +423,12 @@
 
       .feature-desc01 {
         padding-top: 39px;
+
+        /* スマートフォン */
+        @include mixin.sp(600px) {
+          // color: gray;
+          font-size: mixin.variableFontSp(14, 12);
+        }
       }
 
       // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
@@ -399,6 +436,13 @@
       .feature-desc02 {
         padding-top: 31px;
         padding-left: 63px;
+
+        /* スマートフォン */
+        @include mixin.sp(600px) {
+          // color: gray;
+          font-size: mixin.variableFontSp(14, 12);
+          padding-left: 0px;
+        }
       }
 
       // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
@@ -407,6 +451,14 @@
         padding-top: 24px;
         padding-left: 20px;
         line-height: 1.75;
+
+        /* スマートフォン */
+        @include mixin.sp(600px) {
+          // color: gray;
+          font-size: mixin.variableFontSp(14, 12);
+          padding-left: 0px;
+          padding-bottom: 50px;
+        }
       }
     }
 
@@ -423,6 +475,8 @@
 
         /* スマートフォン */
         @include mixin.sp(600px) {
+          padding-top: 40px;
+          padding-left: 0px;
         }
       }
     }
@@ -430,6 +484,7 @@
     .desc-box03 {
       /* スマートフォン */
       @include mixin.sp(600px) {
+        padding-left: 0px;
       }
 
       .feature-desc-str03 {
@@ -438,6 +493,8 @@
 
         /* スマートフォン */
         @include mixin.sp(600px) {
+          padding-top: 40px;
+          padding-left: 0px;
         }
       }
     }
@@ -474,14 +531,14 @@
   @include mixin.sp(600px) {
     height: auto;
     padding-bottom: 50px;
-    background-color: red;
+    // background-color: red;
   }
 
   .price-ttl {
     padding-top: 58px;
   }
   .price-sub-ttl {
-    transform: translate(-2px,-1px);
+    transform: translate(-2px, -1px);
     letter-spacing: 0.2px;
   }
 
@@ -489,7 +546,10 @@
 
   .price-container {
     margin-top: 71px;
-    // margin-bottom: 33px;
+    /* スマートフォン */
+    @include mixin.sp(600px) {
+      margin-top: 20px;
+    }
 
     // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
@@ -546,20 +606,42 @@
 
       .pice-table-hd01 {
         height: 94px;
+        /* スマートフォン */
+        @include mixin.sp(600px) {
+          height: 75px;
+          vertical-align: middle;
+        }
       }
 
       .pice-table-hd02 {
         height: 100px;
         padding-top: 41px;
+        /* スマートフォン */
+        @include mixin.sp(600px) {
+          height: 75px;
+          padding-top: 0px;
+          vertical-align: middle;
+        }
       }
 
       .pice-table-hd03 {
         height: 103px;
+        /* スマートフォン */
+        @include mixin.sp(600px) {
+          height: 75px;
+          vertical-align: middle;
+        }
       }
 
       .pice-table-hd04 {
         height: 113px;
         padding-top: 20px;
+        /* スマートフォン */
+        @include mixin.sp(600px) {
+          height: 75px;
+          padding-top: 0px;
+          vertical-align: middle;
+        }
       }
 
       // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
@@ -589,21 +671,49 @@
       .pice-table-dt01 {
         padding-top: 33.5px;
         letter-spacing: -0.3px;
+
+        /* スマートフォン */
+        @include mixin.sp(600px) {
+          height: 75px;
+          padding-top: 0px;
+          vertical-align: middle;
+        }
       }
 
       .pice-table-dt02 {
         padding-top: 42px;
-        transform: translate(-1px,0px);
+        transform: translate(-1px, 0px);
+
+        /* スマートフォン */
+        @include mixin.sp(600px) {
+          height: 75px;
+          padding-top: 0px;
+          vertical-align: middle;
+        }
       }
 
       .pice-table-dt03 {
         padding-top: 36.5px;
-        transform: translate(-1px,0px);
+        transform: translate(-1px, 0px);
+
+        /* スマートフォン */
+        @include mixin.sp(600px) {
+          height: 75px;
+          padding-top: 0px;
+          vertical-align: middle;
+        }
       }
 
       .pice-table-dt04 {
         padding-top: 37.5px;
-        transform: translate(-1px,0px);
+        transform: translate(-1px, 0px);
+
+        /* スマートフォン */
+        @include mixin.sp(600px) {
+          height: 75px;
+          padding-top: 0px;
+          vertical-align: middle;
+        }
       }
     }
   }
@@ -628,6 +738,13 @@
   height: auto;
   background-color: #ffff;
 
+  /* スマートフォン */
+  @include mixin.sp(600px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
   .faq-ttl {
@@ -649,7 +766,9 @@
 
     /* スマートフォン */
     @include mixin.sp(600px) {
-      width: 85%;
+      width: 90vw;
+      margin-left: calc(10vw / 2);
+      padding-bottom: 65px;
     }
   }
 
@@ -822,104 +941,201 @@
   background-color: #eefbfb;
   display: flex;
   flex-direction: column;
+  padding-bottom: 35px;
+
+  /* スマートフォン */
+  @include mixin.sp(600px) {
+    padding-bottom: 100px;
+  }
 
   .blog-ttl {
     padding-top: 60px;
   }
 
   .blog-sub-ttl {
-   transform: translate(-1px,-2px);
-   letter-spacing: 0.5px;
-    
+    transform: translate(-1px, -2px);
+    letter-spacing: 0.5px;
   }
 }
 
 // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
-.blog-cards__container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 55px;
+/* 共通 ------------------------------*/
+*[class*="cp-"],
+*[class*="cp-"] * {
+  box-sizing: border-box;
+}
 
-  // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+/* セクション */
+.cp-section {
+  padding: 55px 0;
+}
 
-  div:nth-child(2) {
-    margin: 0 30px 0 30px;
-  }
-
-  // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
-
-  .blog-card {
-    background-color: rgb(198, 188, 188);
-    width: 389px;
-    height: 387px;
-    background: #fff;
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
-    margin-bottom: 91px;
-
-    // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
-
-    .card-item {
-      width: 100%;
-      height: 100%;
-
-      // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
-
-      .card-img-wrapper {
-        .card-img {
-          width: 389px;
-          height: 69%; // 267px / 387px
-        }
-      }
-
-      // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
-
-      .card-body {
-        width: 93%;
-        height: 31%; //  (387 -267) / 387
-        position: relative;
-        margin-left: 0;
-
-        .card-ttl-txt {
-          display: inline-block;
-          // background-color: red;
-          width: 100%;
-          padding-top: 14px;
-          padding-left: 19px;
-          // font-weight: 400;//regular
-          font-weight: 700; //bold
-          font-size: 18px;
-          line-height: 1.42; // 26/18
-        }
-
-        .card-ttl-txt01 {
-          letter-spacing: -0.2px;
-        }
-
-        .card-ttl-txt02 {
-        }
-
-        .card-ttl-txt03 {
-          transform: translate(0px,-1px);
-        }
-
-        // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
-
-        .datetime {
-          // font-weight: 400;//regular
-          font-weight: 700; //bold
-          font-size: 16px;
-          line-height: 1.625; // 26/16
-          position: absolute;
-          bottom: 2px;
-          right: 10px;
-          letter-spacing: -0.5px;
-        }
-      }
-    }
+/* コンテナー */
+.cp-container {
+  width: 100%;
+  max-width: 1366px;
+  // margin: auto;
+  padding-right: 60px;
+  padding-left: 70px;
+  /* スマートフォン */
+  @include mixin.sp(600px) {
+    width: 90vw;
+    margin-right: calc(10vw / 2);
+    margin-left: calc(10vw / 2);
   }
 }
+
+// /* ラベル */
+// .cp-label {
+//     display: inline-block;
+//     padding: 4px 8px;
+//     font-size: 12px;
+//     color: #fff;
+//     background: #707070;
+// }
+
+/* 画像 */
+img {
+  vertical-align: bottom;
+}
+
+/* スマートフォン */
+@include mixin.sp(600px) {
+  /* セクション */
+  .cp-section {
+    padding: 40px 0;
+  }
+  /* コンテナー */
+  .cp-container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+/* 更新情報 ------------------------------*/
+.cp-infoCard01 {
+  display: flex;
+  flex-wrap: nowrap;
+  /* スマートフォン */
+  @include mixin.sp(600px) {
+    flex-direction: column;
+  }
+}
+
+/* アイテム */
+.cp-infoCard01__item {
+  width: 389px;
+  height: 387px;
+  background-color: #ffffff;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  position: relative;
+  /* スマートフォン */
+  @include mixin.sp(600px) {
+  }
+}
+
+.cp-infoCard01__item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.cp-infoCard01__item:nth-child(n + 4) {
+  margin-top: 40px;
+}
+.cp-infoCard01__item a {
+  display: block;
+  transition: 0.2s ease-in-out;
+  text-decoration: none;
+}
+.cp-infoCard01__item a:hover {
+  opacity: 0.7;
+}
+
+/* 画像 */
+.cp-infoCard01__image img {
+  width: 100%;
+  height: 260px;
+}
+
+.cp-infoCard01__info {
+  margin-top: 11px;
+  margin-left: 18px;
+}
+
+/* テキスト */
+.cp-infoCard01__text {
+  // font-weight: 400;//regular
+  font-weight: 700; //bold
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: left;
+  /* スマートフォン */
+  @include mixin.sp(600px) {
+    width: 95%;
+    font-size: mixin.variableFontSp(18, 14);
+  }
+}
+
+.txt02 {
+  line-height: 1.45;
+  display: inline-block;
+  width: 350px;
+  /* スマートフォン */
+  @include mixin.sp(600px) {
+    width: 95%;
+    font-size: mixin.variableFontSp(18, 14);
+  }
+}
+.txt03 {
+  line-height: 1.45;
+  display: inline-block;
+  width: 330px;
+  letter-spacing: 0px;
+  /* スマートフォン */
+  @include mixin.sp(600px) {
+    width: 95%;
+    font-size: mixin.variableFontSp(18, 14);
+  }
+}
+
+/* 日付 */
+.cp-infoCard01__date {
+  // font-weight: 400;//regular
+  font-weight: 700; //bold
+  font-size: 16px;
+  line-height: 1.86; // 26/14
+  text-align: right;
+  letter-spacing: -2px;
+  position: absolute;
+  right: 40px;
+  bottom: 7px;
+    /* スマートフォン */
+    @include mixin.sp(600px) {
+      width: 95%;
+      font-size: mixin.variableFontSp(16,14);
+      letter-spacing: -1px;
+      right: 20px;
+      bottom: 15px;
+    }
+}
+
+/* スマートフォン */
+@include mixin.sp(600px) {
+  /* アイテム */
+  .cp-infoCard01__item {
+    width: calc(100% / 1);
+  }
+  .cp-infoCard01__item:not(:last-child) {
+    margin-right: 0;
+  }
+  .cp-infoCard01__item:nth-child(2n-1) {
+    margin-right: 0;
+  }
+  .cp-infoCard01__item:nth-child(n + 2) {
+    margin-top: 32px;
+  }
+}
+
 
 //  section5 blog ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
@@ -928,7 +1144,6 @@
 .works-inner {
   background-color: #fff;
   height: 701px;
-  // background-color: rgb(245, 161, 225);
   display: flex;
   flex-direction: column;
 
@@ -939,7 +1154,7 @@
   }
 
   .works-sub-ttl {
-    transform: translate(2px,-2px);
+    transform: translate(2px, -2px);
   }
 }
 
@@ -949,6 +1164,11 @@
   width: 1356px;
   margin-top: 69px;
   margin-bottom: 90px;
+
+  /* スマートフォン */
+  @include mixin.sp(600px) {
+    width: 100vw;
+  }
 }
 
 .swiper-wrapper {
@@ -956,14 +1176,22 @@
   transition-timing-function: linear;
   display: flex;
   flex-direction: row;
+
+  /* スマートフォン */
+  @include mixin.sp(600px) {
+    width: 100%;
+    padding-left: calc(50% - (1024px / 2));
+    height: 768px;
+  }
+  .swiper-slide {
+    width: 180px !important;
+    height: 200px !important;
+  }
 }
 
 .works-card {
-  // width: 322px;
   height: 415px;
   background-color: #ffffff;
-  // padding-right: 35px ;
-  // padding-right: 35px;
 
   // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
@@ -1049,6 +1277,10 @@
   height: 1027px;
   background: linear-gradient(90deg, #05a5fa 0%, #63fbd7 100%, #67ffd6 100%);
 
+  /* スマートフォン */
+  @include mixin.sp(600px) {
+    width: 100vw;
+  }
   // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
   .contact-inner {
@@ -1067,8 +1299,8 @@
 
     .contact-sub-ttl {
       color: #ffffff;
-     transform: translate(3px,-5.5px);
-     letter-spacing: 0.5px;
+      transform: translate(3px, -5.5px);
+      letter-spacing: 0.5px;
     }
 
     .contact-l3-header {
@@ -1091,6 +1323,11 @@
     margin: 0 auto;
     margin-top: 39px;
 
+    /* スマートフォン */
+    @include mixin.sp(600px) {
+      width: 90vw;
+    }
+
     .form__name {
       display: flex;
       flex-direction: column;
@@ -1104,6 +1341,12 @@
         color: #333;
         padding-top: 32px;
         padding-left: 63px;
+
+        /* スマートフォン */
+        @include mixin.sp(600px) {
+          padding-left: 0px;
+          text-align: center;
+        }
       }
 
       .form-input-name {
@@ -1113,6 +1356,13 @@
         margin-top: 32px;
         margin-left: 64px;
         border: none;
+
+        /* スマートフォン */
+        @include mixin.sp(600px) {
+          width: 90%;
+          margin: 0 auto;
+          margin-top: 20px;
+        }
       }
     }
     .form__email {
@@ -1129,6 +1379,12 @@
         color: #333;
         padding-top: 28px;
         padding-left: 63px;
+
+        /* スマートフォン */
+        @include mixin.sp(600px) {
+          padding-left: 0px;
+          text-align: center;
+        }
       }
 
       .form-input-email {
@@ -1138,6 +1394,13 @@
         margin-top: 33px;
         margin-left: 64px;
         border: none;
+
+        /* スマートフォン */
+        @include mixin.sp(600px) {
+          width: 90%;
+          margin: 0 auto;
+          margin-top: 20px;
+        }
       }
     }
     .form__inquiry {
@@ -1154,6 +1417,12 @@
         color: #333;
         padding-top: 21px;
         padding-left: 63px;
+
+        /* スマートフォン */
+        @include mixin.sp(600px) {
+          padding-left: 0px;
+          text-align: center;
+        }
       }
 
       .form-textarea-inquiry {
@@ -1163,6 +1432,13 @@
         margin-top: 33px;
         margin-left: 64px;
         border: none;
+
+        /* スマートフォン */
+        @include mixin.sp(600px) {
+          width: 90%;
+          margin: 0 auto;
+          margin-top: 20px;
+        }
       }
     }
 
@@ -1173,7 +1449,7 @@
       line-height: 26px;
       text-align: center;
       color: #fff;
-      
+
       display: inline-block;
       width: 60px;
       height: 30px;
@@ -1181,19 +1457,18 @@
       border-radius: 10px;
       margin-left: 19px;
       //微調整
-      transform: translate(0px,-3px);
+      transform: translate(0px, -3px);
     }
 
-.rqurd-lbl02{
-//微調整
-transform: translate(-1px,-1px);
-}
+    .rqurd-lbl02 {
+      //微調整
+      transform: translate(-1px, -1px);
+    }
 
-.rqurd-lbl03{
-//微調整
-transform: translate(-4px,-2px);
-}
-
+    .rqurd-lbl03 {
+      //微調整
+      transform: translate(-4px, -2px);
+    }
   }
 
   .privacy-policy-wrapper {
@@ -1223,8 +1498,6 @@ transform: translate(-4px,-2px);
   }
 
   .submit-btn {
-    //disabledの時はグレー
-
     // font-weight: 400;//regular
     font-weight: 700; //bold
     font-size: 14px;
@@ -1238,6 +1511,13 @@ transform: translate(-4px,-2px);
     display: block;
     margin: 0 auto;
     margin-top: 28px;
+  }
+
+  .submit-btn[disabled] {
+    border: none;
+    border-radius: 10px;
+    background: rgb(163, 162, 162);
+    box-shadow: none;
   }
 }
 

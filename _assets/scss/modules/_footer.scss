@@ -24,6 +24,7 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
     width: 100%;
     height: 100%;
 
+
     /* スマートフォン */
     @include mixin.sp(600px) {
     }
