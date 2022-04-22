@@ -31,6 +31,7 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
 
     /* タブレット */
     @include mixin.tab(1025px) {
+        justify-content: flex-start;
     }
 
     /* スマートフォン */
@@ -61,6 +62,9 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
 
         /* タブレット */
         @include mixin.tab(1025px) {
+            width: 100vw;
+            margin: 0;
+            position: relative;
         }
 
         /* スマートフォン */
@@ -71,6 +75,11 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
         }
 
         .gnav {
+
+                  /* タブレット */
+        @include mixin.tab(1025px) {
+            display: none;
+        }
             /* スマートフォン */
             @include mixin.sp(600px) {
                 display: none;
@@ -122,11 +131,18 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
         height: 50px;
         margin-top: 22px;
 
+           /* タブレット */
+           @include mixin.tab(1025px) {
+            display: inline-block;
+            width: mixin.clampSp(400, 200);
+            margin-top: 25px;
+            margin-left: 28px;
+           }
+
         /* スマートフォン */
         @include mixin.sp(600px) {
             display: inline-block;
             width: mixin.clampSp(200, 150);
-            // background-color: red;
         }
 
         .tagline-txt {
@@ -149,7 +165,12 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
 
             /* タブレット */
             @include mixin.tab(1025px) {
-                font-size: mixin.variableFontTab(24, 16);
+                font-size: mixin.variableFontSp(24, 24);
+                display: inline-block;
+                width: mixin.clampTab(450,200);
+                // background-color: red;
+                // margin: 0px 0px 0px 25px;
+
             }
 
             /* スマートフォン */
@@ -171,7 +192,6 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
             font-size: 16px;
             line-height: 1.18; // 19/16
             display: inline-block;
-
             margin-top: 36px;
         }
 
@@ -250,6 +270,7 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
 
         /* タブレット */
         @include mixin.tab(1025px) {
+            display: none;
         }
 
         /* スマートフォン */
@@ -270,13 +291,17 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
 
         /* タブレット */
         @include mixin.tab(1025px) {
+            display: block;
+            position: absolute;
+            top:12px;
+            right:45px;
+            color: #444444;
+            transform: scale(0.6,0.6);
         }
 
         /* スマートフォン */
         @include mixin.sp(600px) {
             display: block;
-            // margin-top: mixin.clampSp(10,8);
-            // margin-left: mixin.clampSp(230, 50);
             position: absolute;
             top:12px;
             right:25px;

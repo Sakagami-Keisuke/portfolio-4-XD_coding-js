@@ -486,6 +486,11 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
 }
+@media not all and (min-width: 1025px) {
+  .header {
+    justify-content: flex-start;
+  }
+}
 @media not all and (min-width: 600px) {
   .header {
     justify-content: flex-start;
@@ -517,6 +522,13 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
     height: 100%;
   }
 }
+@media not all and (min-width: 1025px) {
+  .header__inner {
+    width: 100vw;
+    margin: 0;
+    position: relative;
+  }
+}
 @media not all and (min-width: 600px) {
   .header__inner {
     width: 100vw;
@@ -525,8 +537,15 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   }
 }
 .header__inner .gnav {
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 1025px) {
+  .header__inner .gnav {
+    display: none;
+  }
 }
 @media not all and (min-width: 600px) {
   .header__inner .gnav {
@@ -568,8 +587,18 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   width: auto;
   height: 50px;
   margin-top: 22px;
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 1025px) {
+  .header a {
+    display: inline-block;
+    width: clamp(200px, 67vw, 400px);
+    margin-top: 25px;
+    margin-left: 28px;
+  }
 }
 @media not all and (min-width: 600px) {
   .header a {
@@ -600,7 +629,9 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
 }
 @media not all and (min-width: 1025px) {
   .header a .tagline-txt {
-    font-size: calc(16px + ((1vw - 6px)) * 1.8867924528);
+    font-size: calc(24px + ((1vw - 3.75px)) * 0);
+    display: inline-block;
+    width: clamp(200px, 44vw, 450px);
   }
 }
 @media not all and (min-width: 600px) {
@@ -667,6 +698,11 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
 }
+@media not all and (min-width: 1025px) {
+  .header .button {
+    display: none;
+  }
+}
 @media not all and (min-width: 600px) {
   .header .button {
     display: none;
@@ -682,6 +718,16 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   /* $** pxを含まずそれより小さい */
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 1025px) {
+  .header .fa-bars {
+    display: block;
+    position: absolute;
+    top: 12px;
+    right: 45px;
+    color: #444444;
+    transform: scale(0.6, 0.6);
+  }
 }
 @media not all and (min-width: 600px) {
   .header .fa-bars {
@@ -700,8 +746,15 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   line-height: 1.1875;
   padding-top: 80px;
   text-align: center;
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 1025px) {
+  .cmn-content-ttl {
+    font-size: calc(32px + ((1vw - 6px)) * 0);
+  }
 }
 @media not all and (min-width: 600px) {
   .cmn-content-ttl {
@@ -715,9 +768,8 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   line-height: 1.187;
   padding-top: 19px;
   text-align: center;
-  /* スマートフォン */
-  /* $** pxを含まずそれより小さい */
 }
+
 .fv-inner {
   position: relative;
   width: 100vw;
@@ -735,6 +787,15 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   /* $** pxを含まずそれより小さい */
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 1025px) {
+  .fv-inner {
+    background-image: url("/images/circle.png");
+    background-repeat: no-repeat;
+    background-size: 700px 700px;
+    background-position: bottom;
+    align-items: center;
+  }
 }
 @media not all and (min-width: 600px) {
   .fv-inner {
@@ -764,6 +825,17 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   font-size: 32px;
   line-height: 1.7;
   text-align: left;
+}
+@media not all and (min-width: 1025px) {
+  .fv-inner__first-line {
+    margin-top: 170px;
+    margin-left: 0px;
+  }
+  .fv-inner__first-line p {
+    font-weight: 700;
+    line-height: 1.1875;
+    text-align: center;
+  }
 }
 @media not all and (min-width: 600px) {
   .fv-inner__first-line {
@@ -797,6 +869,15 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   line-height: 1.7;
   text-align: left;
 }
+@media not all and (min-width: 1025px) {
+  .fv-inner__second-line {
+    margin-top: 25px;
+    margin-left: 0px;
+  }
+  .fv-inner__second-line p {
+    text-align: center;
+  }
+}
 @media not all and (min-width: 600px) {
   .fv-inner__second-line {
     margin-top: 12px;
@@ -822,6 +903,12 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
 }
+@media not all and (min-width: 1025px) {
+  .fv-inner .fv-inquiry-button {
+    margin-top: 40px;
+    margin-left: 0px;
+  }
+}
 @media not all and (min-width: 600px) {
   .fv-inner .fv-inquiry-button {
     margin-top: 30px;
@@ -833,8 +920,15 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   position: absolute;
   top: -30px;
   left: 744px;
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 1025px) {
+  .fv-inner .fv-img-01 {
+    display: none;
+  }
 }
 @media not all and (min-width: 600px) {
   .fv-inner .fv-img-01 {
@@ -844,8 +938,15 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
 .fv-inner .fv-img-01 .fv-img-circle {
   width: 708px;
   height: 711px;
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 1025px) {
+  .fv-inner .fv-img-01 .fv-img-circle {
+    display: none;
+  }
 }
 @media not all and (min-width: 600px) {
   .fv-inner .fv-img-01 .fv-img-circle {
@@ -857,8 +958,17 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   position: absolute;
   top: 225px;
   left: 676px;
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 1025px) {
+  .fv-inner .fv-img-02 {
+    z-index: 200;
+    top: 525px;
+    left: calc((100vw - 250px) / 2);
+  }
 }
 @media not all and (min-width: 600px) {
   .fv-inner .fv-img-02 {
@@ -870,8 +980,16 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
 .fv-inner .fv-img-02 .fv-img-main {
   width: 518px;
   height: 430px;
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 1025px) {
+  .fv-inner .fv-img-02 .fv-img-main {
+    width: 250px;
+    height: 200px;
+  }
 }
 @media not all and (min-width: 600px) {
   .fv-inner .fv-img-02 .fv-img-main {
@@ -883,8 +1001,15 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
 .feature-inner {
   height: 1809px;
   background-color: #fff;
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 1025px) {
+  .feature-inner {
+    height: 2500px;
+  }
 }
 @media not all and (min-width: 600px) {
   .feature-inner {
@@ -896,23 +1021,26 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   padding-top: 76px;
   padding-right: 5px;
   text-align: center;
-  /* スマートフォン */
-  /* $** pxを含まずそれより小さい */
 }
 .feature-inner .ft-sub-ttl {
   line-height: 1.187;
   padding-top: 16px;
   padding-right: 9px;
   text-align: center;
-  /* スマートフォン */
-  /* $** pxを含まずそれより小さい */
 }
 .feature-inner .lower-ttl {
   font-weight: 700;
   font-size: 28px;
   line-height: 1.214;
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 1025px) {
+  .feature-inner .lower-ttl {
+    font-size: calc(22px + ((1vw - 6px)) * 1.4150943396);
+  }
 }
 @media not all and (min-width: 600px) {
   .feature-inner .lower-ttl {
@@ -923,14 +1051,19 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   margin-top: 62px;
   margin-bottom: 54px;
   text-align: center;
-  /* スマートフォン */
-  /* $** pxを含まずそれより小さい */
 }
 .feature-inner .ft-lower-ttl-02 {
   margin-top: 62px;
   text-align: center;
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 1025px) {
+  .feature-inner .ft-lower-ttl-02 {
+    font-size: calc(22px + ((1vw - 6px)) * 1.4150943396);
+  }
 }
 @media not all and (min-width: 600px) {
   .feature-inner .ft-lower-ttl-02 {
@@ -954,8 +1087,19 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   display: flex;
   justify-content: flex-start;
   margin-bottom: 85px;
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 1025px) {
+  .feature-inner .ft-container {
+    flex-direction: column;
+    width: 100vw;
+    margin-left: 0px;
+    align-items: center;
+    margin-bottom: 0px;
+  }
 }
 @media not all and (min-width: 600px) {
   .feature-inner .ft-container {
@@ -968,8 +1112,6 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
 }
 .feature-inner .ft-container .ft-img-wrapper {
   display: inline-block;
-  /* スマートフォン */
-  /* $** pxを含まずそれより小さい */
 }
 .feature-inner .ft-container .ft-img01 {
   /* スマートフォン */
@@ -1006,8 +1148,15 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
 }
 .feature-inner .ft-container .description-box {
   margin-left: 158px;
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 1025px) {
+  .feature-inner .ft-container .description-box {
+    margin-left: 0px;
+  }
 }
 @media not all and (min-width: 600px) {
   .feature-inner .ft-container .description-box {
@@ -1021,18 +1170,20 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   text-align: left;
   line-height: 2;
   letter-spacing: -0.15px;
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
 }
-@media not all and (min-width: 600px) {
+@media not all and (min-width: 1025px) {
   .feature-inner .ft-container .description-box .description--strong {
     text-align: center;
-    /* スマートフォン */
-    /* $** pxを含まずそれより小さい */
+    font-size: calc(14px + ((1vw - 6px)) * 1.4150943396);
   }
 }
 @media not all and (min-width: 600px) {
   .feature-inner .ft-container .description-box .description--strong {
+    text-align: center;
     font-size: calc(14px + ((1vw - 3.75px)) * 2.6785714286);
   }
 }
@@ -1040,8 +1191,15 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   font-weight: 700;
   font-size: 16px;
   line-height: 1.625;
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 1025px) {
+  .feature-inner .ft-container .description-box .description {
+    text-align: center;
+  }
 }
 @media not all and (min-width: 600px) {
   .feature-inner .ft-container .description-box .description {
@@ -1050,8 +1208,15 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
 }
 .feature-inner .ft-container .description-box .feature-desc01 {
   padding-top: 39px;
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 1025px) {
+  .feature-inner .ft-container .description-box .feature-desc01 {
+    font-size: calc(12px + ((1vw - 6px)) * 0.4716981132);
+  }
 }
 @media not all and (min-width: 600px) {
   .feature-inner .ft-container .description-box .feature-desc01 {
@@ -1061,8 +1226,16 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
 .feature-inner .ft-container .description-box .feature-desc02 {
   padding-top: 31px;
   padding-left: 63px;
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 1025px) {
+  .feature-inner .ft-container .description-box .feature-desc02 {
+    font-size: calc(12px + ((1vw - 6px)) * 0.4716981132);
+    padding-left: 0px;
+  }
 }
 @media not all and (min-width: 600px) {
   .feature-inner .ft-container .description-box .feature-desc02 {
@@ -1074,8 +1247,17 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   padding-top: 24px;
   padding-left: 20px;
   line-height: 1.75;
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 1025px) {
+  .feature-inner .ft-container .description-box .feature-desc03 {
+    font-size: calc(12px + ((1vw - 6px)) * 0.4716981132);
+    padding-left: 0px;
+    padding-bottom: 50px;
+  }
 }
 @media not all and (min-width: 600px) {
   .feature-inner .ft-container .description-box .feature-desc03 {
@@ -1091,8 +1273,16 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
 .feature-inner .ft-container .desc-box02 .feature-desc-str02 {
   padding-top: 59px;
   padding-left: 63px;
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 1025px) {
+  .feature-inner .ft-container .desc-box02 .feature-desc-str02 {
+    padding-top: 40px;
+    padding-left: 0px;
+  }
 }
 @media not all and (min-width: 600px) {
   .feature-inner .ft-container .desc-box02 .feature-desc-str02 {
@@ -1112,8 +1302,16 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
 .feature-inner .ft-container .desc-box03 .feature-desc-str03 {
   padding-top: 80px;
   padding-left: 14px;
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 1025px) {
+  .feature-inner .ft-container .desc-box03 .feature-desc-str03 {
+    padding-top: 40px;
+    padding-left: 0px;
+  }
 }
 @media not all and (min-width: 600px) {
   .feature-inner .ft-container .desc-box03 .feature-desc-str03 {
@@ -1127,8 +1325,15 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   margin-left: 0px;
   width: 100vw;
   max-width: 1366px;
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 1025px) {
+  .feature-inner .ft-container-rev {
+    flex-direction: column;
+  }
 }
 @media not all and (min-width: 600px) {
   .feature-inner .ft-container-rev {
@@ -1142,8 +1347,16 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   background-color: #eefbfb;
   display: flex;
   flex-direction: column;
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 1025px) {
+  .price-inner {
+    height: auto;
+    padding-bottom: 50px;
+  }
 }
 @media not all and (min-width: 600px) {
   .price-inner {
@@ -1160,8 +1373,15 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
 }
 .price-inner .price-container {
   margin-top: 71px;
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 1025px) {
+  .price-inner .price-container {
+    margin-top: 20px;
+  }
 }
 @media not all and (min-width: 600px) {
   .price-inner .price-container {
@@ -1176,8 +1396,15 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   background-color: #fff;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
   margin: 0 auto;
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 1025px) {
+  .price-inner .price-container .price-table {
+    width: 90%;
+  }
 }
 @media not all and (min-width: 600px) {
   .price-inner .price-container .price-table {
@@ -1188,8 +1415,6 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   font-weight: 700;
   font-size: 16px;
   line-height: 1.75;
-  /* スマートフォン */
-  /* $** pxを含まずそれより小さい */
 }
 .price-inner .price-container .price-table__header {
   width: 290px;
@@ -1198,8 +1423,23 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   padding: 30px 30px 30px 19px;
   border: solid 1px;
   border-color: #e5e5e5;
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 1025px) {
+  .price-inner .price-container .price-table__header {
+    padding: 0;
+    display: block;
+    width: 100%;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    /*左右中央揃え*/
+    align-items: center;
+    /*上下中央揃え*/
+  }
 }
 @media not all and (min-width: 600px) {
   .price-inner .price-container .price-table__header {
@@ -1216,8 +1456,16 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
 }
 .price-inner .price-container .price-table .pice-table-hd01 {
   height: 94px;
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 1025px) {
+  .price-inner .price-container .price-table .pice-table-hd01 {
+    height: 75px;
+    vertical-align: middle;
+  }
 }
 @media not all and (min-width: 600px) {
   .price-inner .price-container .price-table .pice-table-hd01 {
@@ -1228,8 +1476,17 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
 .price-inner .price-container .price-table .pice-table-hd02 {
   height: 100px;
   padding-top: 41px;
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 1025px) {
+  .price-inner .price-container .price-table .pice-table-hd02 {
+    ight: 75px;
+    padding-top: 0px;
+    vertical-align: middle;
+  }
 }
 @media not all and (min-width: 600px) {
   .price-inner .price-container .price-table .pice-table-hd02 {
@@ -1240,8 +1497,16 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
 }
 .price-inner .price-container .price-table .pice-table-hd03 {
   height: 103px;
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 1025px) {
+  .price-inner .price-container .price-table .pice-table-hd03 {
+    height: 75px;
+    vertical-align: middle;
+  }
 }
 @media not all and (min-width: 600px) {
   .price-inner .price-container .price-table .pice-table-hd03 {
@@ -1252,8 +1517,17 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
 .price-inner .price-container .price-table .pice-table-hd04 {
   height: 113px;
   padding-top: 20px;
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 1025px) {
+  .price-inner .price-container .price-table .pice-table-hd04 {
+    height: 75px;
+    padding-top: 0px;
+    vertical-align: middle;
+  }
 }
 @media not all and (min-width: 600px) {
   .price-inner .price-container .price-table .pice-table-hd04 {
@@ -1268,8 +1542,24 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   padding-left: 30px;
   border: solid 1px;
   border-color: #e5e5e5;
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 1025px) {
+  .price-inner .price-container .price-table__data {
+    padding: 0;
+    display: block;
+    width: 100%;
+    height: 55px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    /*左右中央揃え*/
+    align-items: center;
+    /*上下中央揃え*/
+  }
 }
 @media not all and (min-width: 600px) {
   .price-inner .price-container .price-table__data {
@@ -1288,8 +1578,17 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
 .price-inner .price-container .price-table .pice-table-dt01 {
   padding-top: 33.5px;
   letter-spacing: -0.3px;
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 1025px) {
+  .price-inner .price-container .price-table .pice-table-dt01 {
+    height: 75px;
+    padding-top: 0px;
+    vertical-align: middle;
+  }
 }
 @media not all and (min-width: 600px) {
   .price-inner .price-container .price-table .pice-table-dt01 {
@@ -1301,8 +1600,17 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
 .price-inner .price-container .price-table .pice-table-dt02 {
   padding-top: 42px;
   transform: translate(-1px, 0px);
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 1025px) {
+  .price-inner .price-container .price-table .pice-table-dt02 {
+    height: 75px;
+    padding-top: 0px;
+    vertical-align: middle;
+  }
 }
 @media not all and (min-width: 600px) {
   .price-inner .price-container .price-table .pice-table-dt02 {
@@ -1314,8 +1622,17 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
 .price-inner .price-container .price-table .pice-table-dt03 {
   padding-top: 36.5px;
   transform: translate(-1px, 0px);
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 1025px) {
+  .price-inner .price-container .price-table .pice-table-dt03 {
+    height: 75px;
+    padding-top: 0px;
+    vertical-align: middle;
+  }
 }
 @media not all and (min-width: 600px) {
   .price-inner .price-container .price-table .pice-table-dt03 {
@@ -1327,8 +1644,17 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
 .price-inner .price-container .price-table .pice-table-dt04 {
   padding-top: 37.5px;
   transform: translate(-1px, 0px);
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 1025px) {
+  .price-inner .price-container .price-table .pice-table-dt04 {
+    height: 75px;
+    padding-top: 0px;
+    vertical-align: middle;
+  }
 }
 @media not all and (min-width: 600px) {
   .price-inner .price-container .price-table .pice-table-dt04 {
@@ -1348,8 +1674,17 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
 .faq-inner {
   height: auto;
   background-color: white;
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 1025px) {
+  .faq-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 @media not all and (min-width: 600px) {
   .faq-inner {
@@ -1370,8 +1705,17 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   margin-left: 240px;
   margin-top: 35px;
   padding-bottom: 86px;
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 1025px) {
+  .faq-inner .accordion {
+    width: 85vw;
+    margin-left: 7.5vw;
+    padding-bottom: 65px;
+  }
 }
 @media not all and (min-width: 600px) {
   .faq-inner .accordion {
@@ -1396,12 +1740,19 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   line-height: 1.86;
   text-align: center;
   cursor: pointer;
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
 }
+@media not all and (min-width: 1025px) {
+  .faq-inner .acd-label {
+    letter-spacing: -1px;
+  }
+}
 @media not all and (min-width: 600px) {
   .faq-inner .acd-label {
-    font-size: calc(11px + ((1vw - 3.75px)) * 1.3392857143);
+    font-size: calc(12px + ((1vw - 3.75px)) * 0.8928571429);
     letter-spacing: -1px;
   }
 }
@@ -1429,8 +1780,19 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   line-height: 1.83;
   text-align: left;
   padding: 14.5px 0px 0px 35px;
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 1025px) {
+  .faq-inner .acd-content01 p {
+    font-size: calc(12px + ((1vw - 6px)) * 0.4716981132);
+    letter-spacing: -1px;
+    padding-top: 15px;
+    padding-right: 35px;
+    padding-bottom: 15px;
+  }
 }
 @media not all and (min-width: 600px) {
   .faq-inner .acd-content01 p {
@@ -1454,8 +1816,19 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   line-height: 1.86;
   text-align: left;
   padding: 19px 0px 0px 36px;
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 1025px) {
+  .faq-inner .acd-content02 p {
+    font-size: calc(12px + ((1vw - 6px)) * 0.4716981132);
+    letter-spacing: -1px;
+    padding-top: 15px;
+    padding-right: 35px;
+    padding-bottom: 15px;
+  }
 }
 @media not all and (min-width: 600px) {
   .faq-inner .acd-content02 p {
@@ -1480,8 +1853,19 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   text-align: left;
   letter-spacing: -0.1px;
   padding: 21px 0px 0px 36px;
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 1025px) {
+  .faq-inner .acd-content03 p {
+    font-size: calc(12px + ((1vw - 6px)) * 0.4716981132);
+    letter-spacing: -1px;
+    padding-top: 15px;
+    padding-right: 35px;
+    padding-bottom: 15px;
+  }
 }
 @media not all and (min-width: 600px) {
   .faq-inner .acd-content03 p {
@@ -1494,8 +1878,15 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
 }
 .faq-inner .acd-check:checked + .acd-label + .acd-content01 {
   height: 93px;
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 1025px) {
+  .faq-inner .acd-check:checked + .acd-label + .acd-content01 {
+    height: auto;
+  }
 }
 @media not all and (min-width: 600px) {
   .faq-inner .acd-check:checked + .acd-label + .acd-content01 {
@@ -1504,8 +1895,15 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
 }
 .faq-inner .acd-check:checked + .acd-label + .acd-content02 {
   height: 70px;
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 1025px) {
+  .faq-inner .acd-check:checked + .acd-label + .acd-content02 {
+    height: auto;
+  }
 }
 @media not all and (min-width: 600px) {
   .faq-inner .acd-check:checked + .acd-label + .acd-content02 {
@@ -1514,8 +1912,15 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
 }
 .faq-inner .acd-check:checked + .acd-label + .acd-content03 {
   height: 95px;
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 1025px) {
+  .faq-inner .acd-check:checked + .acd-label + .acd-content03 {
+    height: auto;
+  }
 }
 @media not all and (min-width: 600px) {
   .faq-inner .acd-check:checked + .acd-label + .acd-content03 {
@@ -1530,6 +1935,8 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   display: flex;
   flex-direction: column;
   padding-bottom: 35px;
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
 }
@@ -1563,8 +1970,19 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   max-width: 1366px;
   padding-right: 60px;
   padding-left: 70px;
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 1025px) {
+  .cp-container {
+    width: 90vw;
+    margin-right: 5vw;
+    margin-left: 5vw;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
 }
 @media not all and (min-width: 600px) {
   .cp-container {
@@ -1579,6 +1997,20 @@ img {
   vertical-align: bottom;
 }
 
+/* タブレット */
+/* $** pxを含まずそれより小さい */
+@media not all and (min-width: 1025px) {
+  /* セクション */
+  .cp-section {
+    padding: 40px 0;
+  }
+
+  /* コンテナー */
+  .cp-container {
+    margin: 0;
+    padding: 0;
+  }
+}
 /* スマートフォン */
 /* $** pxを含まずそれより小さい */
 @media not all and (min-width: 600px) {
@@ -1597,8 +2029,17 @@ img {
 .cp-infoCard01 {
   display: flex;
   flex-wrap: nowrap;
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 1025px) {
+  .cp-infoCard01 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
 }
 @media not all and (min-width: 600px) {
   .cp-infoCard01 {
@@ -1613,8 +2054,15 @@ img {
   background-color: #ffffff;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
   position: relative;
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 1025px) {
+  .cp-infoCard01__item {
+    margin: 20px 20px 20px 20px;
+  }
 }
 .cp-infoCard01__item:not(:nth-child(3n)) {
   margin-right: 30px;
@@ -1651,8 +2099,16 @@ img {
   font-size: 18px;
   line-height: 1.5;
   text-align: left;
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 1025px) {
+  .cp-infoCard01__text {
+    width: 95%;
+    font-size: calc(14px + ((1vw - 6px)) * 0.9433962264);
+  }
 }
 @media not all and (min-width: 600px) {
   .cp-infoCard01__text {
@@ -1665,8 +2121,16 @@ img {
   line-height: 1.45;
   display: inline-block;
   width: 350px;
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 1025px) {
+  .txt02 {
+    width: 95%;
+    font-size: calc(14px + ((1vw - 6px)) * 0.9433962264);
+  }
 }
 @media not all and (min-width: 600px) {
   .txt02 {
@@ -1680,8 +2144,16 @@ img {
   display: inline-block;
   width: 330px;
   letter-spacing: 0px;
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 1025px) {
+  .txt03 {
+    width: 95%;
+    font-size: calc(14px + ((1vw - 6px)) * 0.9433962264);
+  }
 }
 @media not all and (min-width: 600px) {
   .txt03 {
@@ -1700,8 +2172,19 @@ img {
   position: absolute;
   right: 40px;
   bottom: 7px;
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 1025px) {
+  .cp-infoCard01__date {
+    width: 95%;
+    font-size: calc(14px + ((1vw - 6px)) * 0.4716981132);
+    letter-spacing: -1px;
+    right: 20px;
+    bottom: 15px;
+  }
 }
 @media not all and (min-width: 600px) {
   .cp-infoCard01__date {
@@ -1713,6 +2196,24 @@ img {
   }
 }
 
+/* タブレット */
+/* $** pxを含まずそれより小さい */
+@media not all and (min-width: 1025px) {
+  /* アイテム */
+  .cp-infoCard01__item {
+    width: 45%;
+  }
+
+  .cp-infoCard01__item:nth-child(2n-1) {
+    margin: 0;
+    margin: 10px 10px 10px 15px;
+  }
+
+  .cp-infoCard01__item:nth-child(n+2) {
+    margin: 0;
+    margin: 10px 10px 10px 15px;
+  }
+}
 /* スマートフォン */
 /* $** pxを含まずそれより小さい */
 @media not all and (min-width: 600px) {
@@ -1750,6 +2251,8 @@ img {
   width: 1356px;
   margin-top: 69px;
   margin-bottom: 90px;
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
 }
@@ -1763,14 +2266,23 @@ img {
   transition-timing-function: linear;
   display: flex;
   flex-direction: row;
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 1025px) {
+  .swiper-wrapper {
+    width: 100%;
+    height: 450px;
+    padding-left: calc(50% - 512px);
+  }
 }
 @media not all and (min-width: 600px) {
   .swiper-wrapper {
     width: 100%;
+    height: 450px;
     padding-left: calc(50% - 512px);
-    height: 768px;
   }
 }
 .swiper-wrapper .swiper-slide {
@@ -1791,6 +2303,20 @@ img {
   border-color: #dddddd;
   display: flex;
   flex-direction: column;
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
+  /* スマートフォン */
+  /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 1025px) {
+  .works-card .works-card-item {
+    height: 400px;
+  }
+}
+@media not all and (min-width: 600px) {
+  .works-card .works-card-item {
+    height: 400px;
+  }
 }
 .works-card .works-card-item .works-card__img-wrapper {
   width: 320px;
@@ -1834,14 +2360,35 @@ img {
   padding-top: 25.5px;
   padding-left: 1px;
   letter-spacing: -0.1px;
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
+  /* スマートフォン */
+  /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 1025px) {
+  .works-card .works-card-item .works-card-body .detail {
+    padding-top: 15px;
+  }
+}
+@media not all and (min-width: 600px) {
+  .works-card .works-card-item .works-card-body .detail {
+    padding-top: 15px;
+  }
 }
 
 .contact {
   width: 1366px;
   height: 1027px;
   background: linear-gradient(90deg, #05a5fa 0%, #63fbd7 100%, #67ffd6 100%);
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 1025px) {
+  .contact {
+    width: 100vw;
+  }
 }
 @media not all and (min-width: 600px) {
   .contact {
@@ -1879,8 +2426,15 @@ img {
   filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16));
   margin: 0 auto;
   margin-top: 39px;
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 1025px) {
+  .contact .contact-form-container {
+    width: 90vw;
+  }
 }
 @media not all and (min-width: 600px) {
   .contact .contact-form-container {
@@ -1899,8 +2453,16 @@ img {
   color: #333;
   padding-top: 32px;
   padding-left: 63px;
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 1025px) {
+  .contact .contact-form-container .form__name .form-label-name {
+    padding-left: 0px;
+    text-align: center;
+  }
 }
 @media not all and (min-width: 600px) {
   .contact .contact-form-container .form__name .form-label-name {
@@ -1915,8 +2477,17 @@ img {
   margin-top: 32px;
   margin-left: 64px;
   border: none;
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 1025px) {
+  .contact .contact-form-container .form__name .form-input-name {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
 }
 @media not all and (min-width: 600px) {
   .contact .contact-form-container .form__name .form-input-name {
@@ -1938,8 +2509,16 @@ img {
   color: #333;
   padding-top: 28px;
   padding-left: 63px;
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 1025px) {
+  .contact .contact-form-container .form__email .form-label-email {
+    padding-left: 0px;
+    text-align: center;
+  }
 }
 @media not all and (min-width: 600px) {
   .contact .contact-form-container .form__email .form-label-email {
@@ -1954,8 +2533,17 @@ img {
   margin-top: 33px;
   margin-left: 64px;
   border: none;
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 1025px) {
+  .contact .contact-form-container .form__email .form-input-email {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
 }
 @media not all and (min-width: 600px) {
   .contact .contact-form-container .form__email .form-input-email {
@@ -1977,8 +2565,16 @@ img {
   color: #333;
   padding-top: 21px;
   padding-left: 63px;
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 1025px) {
+  .contact .contact-form-container .form__inquiry .form-label-inquiry {
+    padding-left: 0px;
+    text-align: center;
+  }
 }
 @media not all and (min-width: 600px) {
   .contact .contact-form-container .form__inquiry .form-label-inquiry {
@@ -1993,8 +2589,17 @@ img {
   margin-top: 33px;
   margin-left: 64px;
   border: none;
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 1025px) {
+  .contact .contact-form-container .form__inquiry .form-textarea-inquiry {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
 }
 @media not all and (min-width: 600px) {
   .contact .contact-form-container .form__inquiry .form-textarea-inquiry {

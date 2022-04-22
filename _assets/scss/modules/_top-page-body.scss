@@ -8,6 +8,11 @@
   padding-top: 80px;
   text-align: center;
 
+  /* タブレット */
+  @include mixin.tab(1025px) {
+    font-size: mixin.variableFontTab(32, 32);
+  }
+
   /* スマートフォン */
   @include mixin.sp(600px) {
     font-size: mixin.variableFontSp(32, 24);
@@ -23,10 +28,6 @@
   line-height: 1.187; // 19/16
   padding-top: 19px;
   text-align: center;
-
-  /* スマートフォン */
-  @include mixin.sp(600px) {
-  }
 }
 
 // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
@@ -53,6 +54,11 @@
 
   /* タブレット */
   @include mixin.tab(1025px) {
+    background-image: url("/images/circle.png"); //localhost:3000 distからのパス
+    background-repeat: no-repeat;
+    background-size: 700px 700px;
+    background-position: bottom;
+    align-items: center;
   }
 
   /* スマートフォン */
@@ -90,6 +96,14 @@
 
     /* タブレット */
     @include mixin.tab(1025px) {
+      margin-top: 170px;
+      margin-left: 0px;
+      p {
+        // font-weight: 400;//regular
+        font-weight: 700; //bold
+        line-height: 1.1875; // 38/32
+        text-align: center;
+      }
     }
 
     /* スマートフォン */
@@ -133,6 +147,13 @@
 
     /* タブレット */
     @include mixin.tab(1025px) {
+      margin-top: 25px;
+      margin-left: 0px;
+
+      p {
+        text-align: center;
+        // font-size: mixin.variableFontSp(16, 14);
+      }
     }
 
     /* スマートフォン */
@@ -166,6 +187,8 @@
 
     /* タブレット */
     @include mixin.tab(1025px) {
+      margin-top: 40px;
+      margin-left: 0px;
     }
 
     /* スマートフォン */
@@ -183,6 +206,11 @@
     top: -30px;
     left: 744px;
 
+    /* タブレット */
+    @include mixin.tab(1025px) {
+      display: none;
+    }
+
     /* スマートフォン */
     @include mixin.sp(600px) {
       display: none;
@@ -193,6 +221,11 @@
     .fv-img-circle {
       width: 708px;
       height: 711px;
+
+      /* タブレット */
+      @include mixin.tab(1025px) {
+        display: none;
+      }
 
       /* スマートフォン */
       @include mixin.sp(600px) {
@@ -209,6 +242,13 @@
     top: 225px;
     left: 676px;
 
+    /* タブレット */
+    @include mixin.tab(1025px) {
+      z-index: 200;
+      top: 525px;
+      left: calc((100vw - 250px) / 2);
+    }
+
     /* スマートフォン */
     @include mixin.sp(600px) {
       z-index: 200;
@@ -221,6 +261,12 @@
     .fv-img-main {
       width: 518px;
       height: 430px;
+
+      /* タブレット */
+      @include mixin.tab(1025px) {
+        width: 250px;
+        height: 200px;
+      }
 
       /* スマートフォン */
       @include mixin.sp(600px) {
@@ -239,6 +285,11 @@
   height: 1809px;
   background-color: #fff;
 
+  /* タブレット */
+  @include mixin.tab(1025px) {
+    height: 2500px;
+  }
+
   /* スマートフォン */
   @include mixin.sp(600px) {
     height: 2500px;
@@ -251,10 +302,6 @@
     padding-top: 76px;
     padding-right: 5px;
     text-align: center;
-
-    /* スマートフォン */
-    @include mixin.sp(600px) {
-    }
   }
 
   // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
@@ -264,10 +311,6 @@
     padding-top: 16px;
     padding-right: 9px;
     text-align: center;
-
-    /* スマートフォン */
-    @include mixin.sp(600px) {
-    }
   }
 
   // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
@@ -277,6 +320,11 @@
     font-weight: 700; //bold
     font-size: 28px;
     line-height: 1.214; // 34/28
+
+    /* タブレット */
+    @include mixin.tab(1025px) {
+      font-size: mixin.variableFontTab(28, 22);
+    }
 
     /* スマートフォン */
     @include mixin.sp(600px) {
@@ -290,10 +338,6 @@
     margin-top: 62px;
     margin-bottom: 54px;
     text-align: center;
-
-    /* スマートフォン */
-    @include mixin.sp(600px) {
-    }
   }
 
   // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
@@ -301,6 +345,11 @@
   .ft-lower-ttl-02 {
     margin-top: 62px;
     text-align: center;
+
+    /* タブレット */
+    @include mixin.tab(1025px) {
+      font-size: mixin.variableFontTab(28, 22);
+    }
 
     /* スマートフォン */
     @include mixin.sp(600px) {
@@ -327,6 +376,15 @@
     justify-content: flex-start;
     margin-bottom: 85px;
 
+    /* タブレット */
+    @include mixin.tab(1025px) {
+      flex-direction: column;
+      width: 100vw;
+      margin-left: 0px;
+      align-items: center;
+      margin-bottom: 0px;
+    }
+
     /* スマートフォン */
     @include mixin.sp(600px) {
       flex-direction: column;
@@ -338,10 +396,6 @@
 
     .ft-img-wrapper {
       display: inline-block;
-
-      /* スマートフォン */
-      @include mixin.sp(600px) {
-      }
     }
 
     .ft-img01 {
@@ -377,6 +431,11 @@
     .description-box {
       margin-left: 158px;
 
+      /* タブレット */
+      @include mixin.tab(1025px) {
+        margin-left: 0px;
+      }
+
       /* スマートフォン */
       @include mixin.sp(600px) {
         margin-left: 0px;
@@ -393,14 +452,16 @@
         line-height: 2; // 48/24
         letter-spacing: -0.15px;
 
+        /* タブレット */
+        @include mixin.tab(1025px) {
+          text-align: center;
+          font-size: mixin.variableFontTab(20, 14);
+        }
+
         /* スマートフォン */
         @include mixin.sp(600px) {
           text-align: center;
-          /* スマートフォン */
-          @include mixin.sp(600px) {
-            // color: gray;
-            font-size: mixin.variableFontSp(20, 14);
-          }
+          font-size: mixin.variableFontSp(20, 14);
         }
       }
 
@@ -411,7 +472,11 @@
         font-weight: 700; //bold
         font-size: 16px;
         line-height: 1.625; // 26/16
-        // padding-top: 39px;
+
+        /* タブレット */
+        @include mixin.tab(1025px) {
+          text-align: center;
+        }
 
         /* スマートフォン */
         @include mixin.sp(600px) {
@@ -424,9 +489,13 @@
       .feature-desc01 {
         padding-top: 39px;
 
+        /* タブレット */
+        @include mixin.tab(1025px) {
+          font-size: mixin.variableFontTab(14, 12);
+        }
+
         /* スマートフォン */
         @include mixin.sp(600px) {
-          // color: gray;
           font-size: mixin.variableFontSp(14, 12);
         }
       }
@@ -437,9 +506,14 @@
         padding-top: 31px;
         padding-left: 63px;
 
+        /* タブレット */
+        @include mixin.tab(1025px) {
+          font-size: mixin.variableFontTab(14, 12);
+          padding-left: 0px;
+        }
+
         /* スマートフォン */
         @include mixin.sp(600px) {
-          // color: gray;
           font-size: mixin.variableFontSp(14, 12);
           padding-left: 0px;
         }
@@ -452,9 +526,14 @@
         padding-left: 20px;
         line-height: 1.75;
 
+        /* タブレット */
+        @include mixin.tab(1025px) {
+          font-size: mixin.variableFontTab(14, 12);
+          padding-left: 0px;
+          padding-bottom: 50px;
+        }
         /* スマートフォン */
         @include mixin.sp(600px) {
-          // color: gray;
           font-size: mixin.variableFontSp(14, 12);
           padding-left: 0px;
           padding-bottom: 50px;
@@ -472,6 +551,12 @@
       .feature-desc-str02 {
         padding-top: 59px;
         padding-left: 63px;
+
+        /* タブレット */
+        @include mixin.tab(1025px) {
+          padding-top: 40px;
+          padding-left: 0px;
+        }
 
         /* スマートフォン */
         @include mixin.sp(600px) {
@@ -491,6 +576,11 @@
         padding-top: 80px;
         padding-left: 14px;
 
+        /* タブレット */
+        @include mixin.tab(1025px) {
+          padding-top: 40px;
+          padding-left: 0px;
+        }
         /* スマートフォン */
         @include mixin.sp(600px) {
           padding-top: 40px;
@@ -509,6 +599,10 @@
     width: 100vw;
     max-width: 1366px;
 
+    /* タブレット */
+    @include mixin.tab(1025px) {
+      flex-direction: column;
+    }
     /* スマートフォン */
     @include mixin.sp(600px) {
       flex-direction: column;
@@ -527,11 +621,16 @@
   display: flex;
   flex-direction: column;
 
+  /* タブレット */
+  @include mixin.tab(1025px) {
+    height: auto;
+    padding-bottom: 50px;
+  }
+
   /* スマートフォン */
   @include mixin.sp(600px) {
     height: auto;
     padding-bottom: 50px;
-    // background-color: red;
   }
 
   .price-ttl {
@@ -546,6 +645,12 @@
 
   .price-container {
     margin-top: 71px;
+
+    /* タブレット */
+    @include mixin.tab(1025px) {
+      margin-top: 20px;
+    }
+
     /* スマートフォン */
     @include mixin.sp(600px) {
       margin-top: 20px;
@@ -562,6 +667,11 @@
       box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
       margin: 0 auto;
 
+      /* タブレット */
+      @include mixin.tab(1025px) {
+        width: 90%;
+      }
+
       /* スマートフォン */
       @include mixin.sp(600px) {
         width: 85%;
@@ -574,10 +684,6 @@
         font-weight: 700; //bold
         font-size: 16px;
         line-height: 1.75; // 28/16
-
-        /* スマートフォン */
-        @include mixin.sp(600px) {
-        }
       }
 
       // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
@@ -589,6 +695,19 @@
         padding: 30px 30px 30px 19px;
         border: solid 1px;
         border-color: #e5e5e5;
+
+        /* タブレット */
+        @include mixin.tab(1025px) {
+          padding: 0;
+          display: block;
+          width: 100%;
+          height: 55px;
+          display: flex;
+          justify-content: center;
+          /*左右中央揃え*/
+          align-items: center;
+          /*上下中央揃え*/
+        }
 
         /* スマートフォン */
         @include mixin.sp(600px) {
@@ -606,6 +725,13 @@
 
       .pice-table-hd01 {
         height: 94px;
+
+        /* タブレット */
+        @include mixin.tab(1025px) {
+          height: 75px;
+          vertical-align: middle;
+        }
+
         /* スマートフォン */
         @include mixin.sp(600px) {
           height: 75px;
@@ -616,6 +742,14 @@
       .pice-table-hd02 {
         height: 100px;
         padding-top: 41px;
+
+        /* タブレット */
+        @include mixin.tab(1025px) {
+          ight: 75px;
+          padding-top: 0px;
+          vertical-align: middle;
+        }
+
         /* スマートフォン */
         @include mixin.sp(600px) {
           height: 75px;
@@ -626,6 +760,13 @@
 
       .pice-table-hd03 {
         height: 103px;
+
+        /* タブレット */
+        @include mixin.tab(1025px) {
+          height: 75px;
+          vertical-align: middle;
+        }
+
         /* スマートフォン */
         @include mixin.sp(600px) {
           height: 75px;
@@ -636,6 +777,14 @@
       .pice-table-hd04 {
         height: 113px;
         padding-top: 20px;
+
+        /* タブレット */
+        @include mixin.tab(1025px) {
+          height: 75px;
+          padding-top: 0px;
+          vertical-align: middle;
+        }
+
         /* スマートフォン */
         @include mixin.sp(600px) {
           height: 75px;
@@ -652,6 +801,20 @@
         padding-left: 30px;
         border: solid 1px;
         border-color: #e5e5e5;
+
+        /* タブレット */
+        @include mixin.tab(1025px) {
+          padding: 0;
+          display: block;
+          width: 100%;
+          height: 55px;
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          /*左右中央揃え*/
+          align-items: center;
+          /*上下中央揃え*/
+        }
 
         /* スマートフォン */
         @include mixin.sp(600px) {
@@ -672,6 +835,13 @@
         padding-top: 33.5px;
         letter-spacing: -0.3px;
 
+        /* タブレット */
+        @include mixin.tab(1025px) {
+          height: 75px;
+          padding-top: 0px;
+          vertical-align: middle;
+        }
+
         /* スマートフォン */
         @include mixin.sp(600px) {
           height: 75px;
@@ -683,6 +853,13 @@
       .pice-table-dt02 {
         padding-top: 42px;
         transform: translate(-1px, 0px);
+
+        /* タブレット */
+        @include mixin.tab(1025px) {
+          height: 75px;
+          padding-top: 0px;
+          vertical-align: middle;
+        }
 
         /* スマートフォン */
         @include mixin.sp(600px) {
@@ -696,6 +873,13 @@
         padding-top: 36.5px;
         transform: translate(-1px, 0px);
 
+        /* タブレット */
+        @include mixin.tab(1025px) {
+          height: 75px;
+          padding-top: 0px;
+          vertical-align: middle;
+        }
+
         /* スマートフォン */
         @include mixin.sp(600px) {
           height: 75px;
@@ -707,6 +891,13 @@
       .pice-table-dt04 {
         padding-top: 37.5px;
         transform: translate(-1px, 0px);
+
+        /* タブレット */
+        @include mixin.tab(1025px) {
+          height: 75px;
+          padding-top: 0px;
+          vertical-align: middle;
+        }
 
         /* スマートフォン */
         @include mixin.sp(600px) {
@@ -738,6 +929,13 @@
   height: auto;
   background-color: #ffff;
 
+  /* タブレット */
+  @include mixin.tab(1025px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   /* スマートフォン */
   @include mixin.sp(600px) {
     display: flex;
@@ -763,6 +961,13 @@
     margin-left: 240px;
     margin-top: 35px;
     padding-bottom: 86px;
+
+    /* タブレット */
+    @include mixin.tab(1025px) {
+      width: 85vw;
+      margin-left: calc(15vw / 2);
+      padding-bottom: 65px;
+    }
 
     /* スマートフォン */
     @include mixin.sp(600px) {
@@ -795,9 +1000,14 @@
     text-align: center;
     cursor: pointer;
 
+    /* タブレット */
+    @include mixin.tab(1025px) {
+      letter-spacing: -1px;
+    }
+
     /* スマートフォン */
     @include mixin.sp(600px) {
-      font-size: mixin.variableFontSp(14, 11);
+      font-size: mixin.variableFontSp(14, 12);
       letter-spacing: -1px;
     }
   }
@@ -833,6 +1043,15 @@
       text-align: left;
       padding: 14.5px 0px 0px 35px;
 
+      /* タブレット */
+      @include mixin.tab(1025px) {
+        font-size: mixin.variableFontTab(14, 12);
+        letter-spacing: -1px;
+        padding-top: 15px;
+        padding-right: 35px;
+        padding-bottom: 15px;
+      }
+
       /* スマートフォン */
       @include mixin.sp(600px) {
         font-size: mixin.variableFontSp(14, 12);
@@ -860,6 +1079,15 @@
       line-height: 1.86; // 26/14
       text-align: left;
       padding: 19px 0px 0px 36px;
+
+      /* タブレット */
+      @include mixin.tab(1025px) {
+        font-size: mixin.variableFontTab(14, 12);
+        letter-spacing: -1px;
+        padding-top: 15px;
+        padding-right: 35px;
+        padding-bottom: 15px;
+      }
 
       /* スマートフォン */
       @include mixin.sp(600px) {
@@ -890,6 +1118,15 @@
       letter-spacing: -0.1px;
       padding: 21px 0px 0px 36px;
 
+      /* タブレット */
+      @include mixin.tab(1025px) {
+        font-size: mixin.variableFontTab(14, 12);
+        letter-spacing: -1px;
+        padding-top: 15px;
+        padding-right: 35px;
+        padding-bottom: 15px;
+      }
+
       /* スマートフォン */
       @include mixin.sp(600px) {
         font-size: mixin.variableFontSp(14, 12);
@@ -906,6 +1143,11 @@
   .acd-check:checked + .acd-label + .acd-content01 {
     height: 93px;
 
+    /* タブレット */
+    @include mixin.tab(1025px) {
+      height: auto;
+    }
+
     /* スマートフォン */
     @include mixin.sp(600px) {
       height: auto;
@@ -915,6 +1157,11 @@
   .acd-check:checked + .acd-label + .acd-content02 {
     height: 70px;
 
+    /* タブレット */
+    @include mixin.tab(1025px) {
+      height: auto;
+    }
+
     /* スマートフォン */
     @include mixin.sp(600px) {
       height: auto;
@@ -923,6 +1170,11 @@
 
   .acd-check:checked + .acd-label + .acd-content03 {
     height: 95px;
+
+    /* タブレット */
+    @include mixin.tab(1025px) {
+      height: auto;
+    }
 
     /* スマートフォン */
     @include mixin.sp(600px) {
@@ -942,6 +1194,10 @@
   display: flex;
   flex-direction: column;
   padding-bottom: 35px;
+
+  /* タブレット */
+  @include mixin.tab(1025px) {
+  }
 
   /* スマートフォン */
   @include mixin.sp(600px) {
@@ -978,6 +1234,16 @@
   // margin: auto;
   padding-right: 60px;
   padding-left: 70px;
+
+  /* タブレット */
+  @include mixin.tab(1025px) {
+    width: 90vw;
+    margin-right: calc(10vw / 2);
+    margin-left: calc(10vw / 2);
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
   /* スマートフォン */
   @include mixin.sp(600px) {
     width: 90vw;
@@ -1000,6 +1266,19 @@ img {
   vertical-align: bottom;
 }
 
+/* タブレット */
+@include mixin.tab(1025px) {
+  /* セクション */
+  .cp-section {
+    padding: 40px 0;
+  }
+  /* コンテナー */
+  .cp-container {
+    margin: 0;
+    padding: 0;
+  }
+}
+
 /* スマートフォン */
 @include mixin.sp(600px) {
   /* セクション */
@@ -1017,6 +1296,14 @@ img {
 .cp-infoCard01 {
   display: flex;
   flex-wrap: nowrap;
+
+  /* タブレット */
+  @include mixin.tab(1025px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
   /* スマートフォン */
   @include mixin.sp(600px) {
     flex-direction: column;
@@ -1030,6 +1317,12 @@ img {
   background-color: #ffffff;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
   position: relative;
+
+  /* タブレット */
+  @include mixin.tab(1025px) {
+    margin: 20px 20px 20px 20px;
+  }
+
   /* スマートフォン */
   @include mixin.sp(600px) {
   }
@@ -1069,6 +1362,13 @@ img {
   font-size: 18px;
   line-height: 1.5;
   text-align: left;
+
+  /* タブレット */
+  @include mixin.tab(1025px) {
+    width: 95%;
+    font-size: mixin.variableFontTab(18, 14);
+  }
+
   /* スマートフォン */
   @include mixin.sp(600px) {
     width: 95%;
@@ -1080,6 +1380,13 @@ img {
   line-height: 1.45;
   display: inline-block;
   width: 350px;
+
+  /* タブレット */
+  @include mixin.tab(1025px) {
+    width: 95%;
+    font-size: mixin.variableFontTab(18, 14);
+  }
+
   /* スマートフォン */
   @include mixin.sp(600px) {
     width: 95%;
@@ -1091,6 +1398,13 @@ img {
   display: inline-block;
   width: 330px;
   letter-spacing: 0px;
+
+  /* タブレット */
+  @include mixin.tab(1025px) {
+    width: 95%;
+    font-size: mixin.variableFontTab(18, 14);
+  }
+
   /* スマートフォン */
   @include mixin.sp(600px) {
     width: 95%;
@@ -1109,14 +1423,42 @@ img {
   position: absolute;
   right: 40px;
   bottom: 7px;
-    /* スマートフォン */
-    @include mixin.sp(600px) {
-      width: 95%;
-      font-size: mixin.variableFontSp(16,14);
-      letter-spacing: -1px;
-      right: 20px;
-      bottom: 15px;
-    }
+
+  /* タブレット */
+  @include mixin.tab(1025px) {
+    width: 95%;
+    font-size: mixin.variableFontTab(16, 14);
+    letter-spacing: -1px;
+    right: 20px;
+    bottom: 15px;
+  }
+
+  /* スマートフォン */
+  @include mixin.sp(600px) {
+    width: 95%;
+    font-size: mixin.variableFontSp(16, 14);
+    letter-spacing: -1px;
+    right: 20px;
+    bottom: 15px;
+  }
+}
+
+/* タブレット */
+@include mixin.tab(1025px) {
+  /* アイテム */
+  .cp-infoCard01__item {
+    width: 45%;
+  }
+  .cp-infoCard01__item:not(:last-child) {
+  }
+  .cp-infoCard01__item:nth-child(2n-1) {
+    margin: 0;
+    margin: 10px 10px 10px 15px;
+  }
+  .cp-infoCard01__item:nth-child(n + 2) {
+    margin: 0;
+    margin: 10px 10px 10px 15px;
+  }
 }
 
 /* スマートフォン */
@@ -1135,7 +1477,6 @@ img {
     margin-top: 32px;
   }
 }
-
 
 //  section5 blog ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
@@ -1165,6 +1506,10 @@ img {
   margin-top: 69px;
   margin-bottom: 90px;
 
+  /* タブレット */
+  @include mixin.tab(1025px) {
+  }
+
   /* スマートフォン */
   @include mixin.sp(600px) {
     width: 100vw;
@@ -1177,12 +1522,20 @@ img {
   display: flex;
   flex-direction: row;
 
+  /* タブレット */
+  @include mixin.tab(1025px) {
+    width: 100%;
+    height: 450px;
+    padding-left: calc(50% - (1024px / 2));
+  }
+
   /* スマートフォン */
   @include mixin.sp(600px) {
     width: 100%;
+    height: 450px;
     padding-left: calc(50% - (1024px / 2));
-    height: 768px;
   }
+
   .swiper-slide {
     width: 180px !important;
     height: 200px !important;
@@ -1204,6 +1557,17 @@ img {
     border-color: #dddddd;
     display: flex;
     flex-direction: column;
+
+    /* タブレット */
+    @include mixin.tab(1025px) {
+      height: 400px;
+    }
+
+    /* スマートフォン */
+    @include mixin.sp(600px) {
+      height: 400px;
+    }
+
     // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
     .works-card__img-wrapper {
@@ -1226,6 +1590,8 @@ img {
       padding-left: 11px;
       margin: 0 auto;
 
+      // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
       .works-card-ttl {
         // font-weight: 400;//regular
         font-weight: 700; //bold
@@ -1234,6 +1600,7 @@ img {
         padding-top: 18px;
       }
 
+      // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
       .wk-cd-ttl02 {
         letter-spacing: 0.8px;
       }
@@ -1258,6 +1625,16 @@ img {
         padding-top: 25.5px;
         padding-left: 1px;
         letter-spacing: -0.1px;
+
+        /* タブレット */
+        @include mixin.tab(1025px) {
+          padding-top: 15px;
+        }
+
+        /* スマートフォン */
+        @include mixin.sp(600px) {
+          padding-top: 15px;
+        }
       }
     }
   }
@@ -1277,6 +1654,11 @@ img {
   height: 1027px;
   background: linear-gradient(90deg, #05a5fa 0%, #63fbd7 100%, #67ffd6 100%);
 
+  /* タブレット */
+  @include mixin.tab(1025px) {
+    width: 100vw;
+  }
+
   /* スマートフォン */
   @include mixin.sp(600px) {
     width: 100vw;
@@ -1286,7 +1668,6 @@ img {
   .contact-inner {
     width: 100%;
     height: 100%;
-    // background-color: red;
     display: flex;
     flex-direction: column;
 
@@ -1303,6 +1684,8 @@ img {
       letter-spacing: 0.5px;
     }
 
+      // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
     .contact-l3-header {
       // font-weight: 400;//regular
       font-weight: 700; //bold
@@ -1315,6 +1698,8 @@ img {
     }
   }
 
+    // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
   .contact-form-container {
     width: 908px;
     height: 689px;
@@ -1323,10 +1708,18 @@ img {
     margin: 0 auto;
     margin-top: 39px;
 
+    /* タブレット */
+    @include mixin.tab(1025px) {
+      width: 90vw;
+    }
+    
+
     /* スマートフォン */
     @include mixin.sp(600px) {
       width: 90vw;
     }
+
+      // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
     .form__name {
       display: flex;
@@ -1342,12 +1735,20 @@ img {
         padding-top: 32px;
         padding-left: 63px;
 
+        /* タブレット */
+        @include mixin.tab(1025px) {
+          padding-left: 0px;
+          text-align: center;
+        }
+
         /* スマートフォン */
         @include mixin.sp(600px) {
           padding-left: 0px;
           text-align: center;
         }
       }
+
+        // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
       .form-input-name {
         width: 499px;
@@ -1357,6 +1758,13 @@ img {
         margin-left: 64px;
         border: none;
 
+        /* タブレット */
+        @include mixin.tab(1025px) {
+          width: 90%;
+          margin: 0 auto;
+          margin-top: 20px;
+        }
+
         /* スマートフォン */
         @include mixin.sp(600px) {
           width: 90%;
@@ -1365,6 +1773,9 @@ img {
         }
       }
     }
+
+      // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
     .form__email {
       display: flex;
       flex-direction: column;
@@ -1380,12 +1791,20 @@ img {
         padding-top: 28px;
         padding-left: 63px;
 
+        /* タブレット */
+        @include mixin.tab(1025px) {
+          padding-left: 0px;
+          text-align: center;
+        }
+
         /* スマートフォン */
         @include mixin.sp(600px) {
           padding-left: 0px;
           text-align: center;
         }
       }
+
+        // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
       .form-input-email {
         width: 499px;
@@ -1395,6 +1814,13 @@ img {
         margin-left: 64px;
         border: none;
 
+        /* タブレット */
+        @include mixin.tab(1025px) {
+          width: 90%;
+          margin: 0 auto;
+          margin-top: 20px;
+        }
+
         /* スマートフォン */
         @include mixin.sp(600px) {
           width: 90%;
@@ -1403,6 +1829,9 @@ img {
         }
       }
     }
+
+      // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
     .form__inquiry {
       display: flex;
       flex-direction: column;
@@ -1418,12 +1847,20 @@ img {
         padding-top: 21px;
         padding-left: 63px;
 
+        /* タブレット */
+        @include mixin.tab(1025px) {
+          padding-left: 0px;
+          text-align: center;
+        }
+
         /* スマートフォン */
         @include mixin.sp(600px) {
           padding-left: 0px;
           text-align: center;
         }
       }
+
+      // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
       .form-textarea-inquiry {
         width: 783px;
@@ -1433,6 +1870,13 @@ img {
         margin-left: 64px;
         border: none;
 
+        /* タブレット */
+        @include mixin.tab(1025px) {
+          width: 90%;
+          margin: 0 auto;
+          margin-top: 20px;
+        }
+
         /* スマートフォン */
         @include mixin.sp(600px) {
           width: 90%;
@@ -1441,6 +1885,8 @@ img {
         }
       }
     }
+
+    // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
     .cmn-required-label {
       // font-weight: 400;//regular
@@ -1460,6 +1906,7 @@ img {
       transform: translate(0px, -3px);
     }
 
+    // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
     .rqurd-lbl02 {
       //微調整
       transform: translate(-1px, -1px);
@@ -1471,6 +1918,8 @@ img {
     }
   }
 
+  // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
   .privacy-policy-wrapper {
     display: flex;
     flex-direction: row;
@@ -1479,11 +1928,15 @@ img {
     vertical-align: middle;
     margin-top: 25px;
 
+    // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
     .form-checkbox {
       transform: scale(1.75);
       margin-top: 2px;
       margin-left: 1px;
     }
+
+    // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
     .privacy-policy-agreement-label {
       // font-weight: 400;//regular
@@ -1496,6 +1949,8 @@ img {
       padding-left: 13px;
     }
   }
+
+  // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
   .submit-btn {
     // font-weight: 400;//regular
