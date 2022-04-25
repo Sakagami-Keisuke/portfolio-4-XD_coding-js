@@ -74,12 +74,12 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
             position: relative;
         }
 
+        // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
         .gnav {
-
-                  /* タブレット */
-        @include mixin.tab(1025px) {
-            display: none;
-        }
+            /* タブレット */
+            @include mixin.tab(1025px) {
+                display: none;
+            }
             /* スマートフォン */
             @include mixin.sp(600px) {
                 display: none;
@@ -97,10 +97,20 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
         .logo-img {
             width: 100%;
             height: auto;
+
+            /* タブレット */
+            @include mixin.tab(1025px) {
+                width: 40px;
+                height: 40px;
+                margin-left: 20px;
+            }
+
+
             /* スマートフォン */
             @include mixin.sp(600px) {
-                width: mixin.clampSp(47, 35);
-                height: mixin.clampSp(47, 35);
+
+                width: 40px;
+                height: 40px;
             }
         }
 
@@ -131,19 +141,20 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
         height: 50px;
         margin-top: 22px;
 
-           /* タブレット */
-           @include mixin.tab(1025px) {
+        /* タブレット */
+        @include mixin.tab(1025px) {
             display: inline-block;
-            width: mixin.clampSp(400, 200);
-            margin-top: 25px;
-            margin-left: 28px;
-           }
+            margin-left: 0px;
+        }
 
         /* スマートフォン */
         @include mixin.sp(600px) {
             display: inline-block;
-            width: mixin.clampSp(200, 150);
+            margin-left: 0px;
         }
+
+
+    // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
         .tagline-txt {
             // font-weight: 400;//regular
@@ -152,7 +163,7 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
             line-height: 1.2; // 17/14
             vertical-align: top;
             display: inline-block;
-            margin: 10px 0 35px 16px;
+            margin: 9px 0 35px 16px;
 
             /* pc 1367px以上  */
             @include mixin.pc-l(1367px) {
@@ -165,20 +176,18 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
 
             /* タブレット */
             @include mixin.tab(1025px) {
-                font-size: mixin.variableFontSp(24, 24);
                 display: inline-block;
-                width: mixin.clampTab(450,200);
-                // background-color: red;
-                // margin: 0px 0px 0px 25px;
-
+                width: 200px;
+                font-size: 22px;
+                margin: 13px 0px 0px 33px;
             }
 
             /* スマートフォン */
             @include mixin.sp(600px) {
-                font-size: mixin.variableFontSp(24, 16);
                 display: inline-block;
-                width: mixin.clampSp(200, 150);
-                margin: 15px 0px 0px 10px;
+                width: 200px;
+                font-size: 22px;
+                margin: 13px 0px 0px 23px;
             }
         }
     }
@@ -217,7 +226,7 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
         }
 
         li:nth-child(2) {
-            margin-left: 45px;
+            margin-left: 42px;
 
             /* pc 1367px以上  */
             @include mixin.pc-l(1367px) {
@@ -237,7 +246,8 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
         }
 
         li:nth-child(3) {
-            margin-left: 44px;
+            margin-left: 46px;
+
 
             /* pc 1367px以上  */
             @include mixin.pc-l(1367px) {
@@ -293,21 +303,21 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
         @include mixin.tab(1025px) {
             display: block;
             position: absolute;
-            top:12px;
-            right:45px;
+            top: 6px;
+            right: 25px;
             color: #444444;
-            transform: scale(0.6,0.6);
+            transform: scale(0.5, 0.5);
         }
 
         /* スマートフォン */
         @include mixin.sp(600px) {
             display: block;
             position: absolute;
-            top:12px;
-            right:25px;
+            top: 6px;
+            right: 25px;
             color: #444444;
-            transform: scale(0.6,0.6);
-            
+            transform: scale(0.5, 0.5);
+
         }
     }
 }

@@ -8,6 +8,10 @@
   padding-top: 80px;
   text-align: center;
 
+  /* PC ~1366px */
+  @include mixin.pc(1366px) {
+  }
+
   /* タブレット */
   @include mixin.tab(1025px) {
     font-size: mixin.variableFontTab(32, 32);
@@ -22,6 +26,7 @@
 // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
 .cmn-content-sub_ttl {
+  color: #3ba6c9;
   // font-weight: 400;//regular
   font-weight: 700; //bold
   font-size: 16px;
@@ -44,13 +49,9 @@
   flex-direction: column;
   align-items: flex-start;
 
-  /* pc 1367px以上  */
-  @include mixin.pc-l(1367px) {
-  }
-
-  /* PC */
-  @include mixin.pc(1366px) {
-  }
+  // /* PC ~1366px */
+  // @include mixin.pc(1366px) {
+  // }
 
   /* タブレット */
   @include mixin.tab(1025px) {
@@ -82,22 +83,21 @@
       // font-weight: 400;//regular
       font-weight: 700; //bold
       font-size: 32px;
-      line-height: 1.7;
+      line-height: 1.68;
       text-align: left;
+      letter-spacing: 0px;
     }
 
-    /* pc 1367px以上  */
-    @include mixin.pc-l(1367px) {
-    }
-
-    /* PC */
+    /* PC ~1366px */
     @include mixin.pc(1366px) {
+      margin-left: mixin.clampPc(192, 60);
     }
 
     /* タブレット */
     @include mixin.tab(1025px) {
       margin-top: 170px;
       margin-left: 0px;
+
       p {
         // font-weight: 400;//regular
         font-weight: 700; //bold
@@ -137,12 +137,9 @@
       text-align: left;
     }
 
-    /* pc 1367px以上  */
-    @include mixin.pc-l(1367px) {
-    }
-
-    /* PC */
+    /* PC ~1366px */
     @include mixin.pc(1366px) {
+      margin-left: mixin.clampPc(192, 60);
     }
 
     /* タブレット */
@@ -152,7 +149,6 @@
 
       p {
         text-align: center;
-        // font-size: mixin.variableFontSp(16, 14);
       }
     }
 
@@ -177,12 +173,9 @@
     margin-top: 42px;
     margin-left: 192px;
 
-    /* pc 1367px以上  */
-    @include mixin.pc-l(1367px) {
-    }
-
-    /* PC */
+    /* PC ~1366px */
     @include mixin.pc(1366px) {
+      margin-left: mixin.clampPc(192, 100);
     }
 
     /* タブレット */
@@ -205,6 +198,11 @@
     position: absolute;
     top: -30px;
     left: 744px;
+
+    /* PC ~1366px */
+    @include mixin.pc(1366px) {
+      left: mixin.clampPc(744, 100);
+    }
 
     /* タブレット */
     @include mixin.tab(1025px) {
@@ -242,6 +240,11 @@
     top: 225px;
     left: 676px;
 
+    /* PC ~1366px */
+    @include mixin.pc(1366px) {
+      left: mixin.clampPc(676, 500);
+    }
+
     /* タブレット */
     @include mixin.tab(1025px) {
       z-index: 200;
@@ -261,6 +264,10 @@
     .fv-img-main {
       width: 518px;
       height: 430px;
+
+      /* PC ~1366px */
+      @include mixin.pc(1366px) {
+      }
 
       /* タブレット */
       @include mixin.tab(1025px) {
@@ -300,7 +307,7 @@
   .ft-ttl {
     line-height: 1.1875; // 38/32
     padding-top: 76px;
-    padding-right: 5px;
+    padding-right: 4px;
     text-align: center;
   }
 
@@ -309,7 +316,8 @@
   .ft-sub-ttl {
     line-height: 1.187; // 19/16
     padding-top: 16px;
-    padding-right: 9px;
+    padding-right: 5px;
+    letter-spacing: 0.5px;
     text-align: center;
   }
 
@@ -358,8 +366,9 @@
   }
 
   .ft-lower-ttl-03 {
-    margin-top: 140px;
+    margin-top: 138px;
     text-align: center;
+    letter-spacing: -0.5px;
 
     /* スマートフォン */
     @include mixin.sp(600px) {
@@ -376,6 +385,13 @@
     justify-content: flex-start;
     margin-bottom: 85px;
 
+    /* PC ~1366px */
+    @include mixin.pc(1366px) {
+      width: 100vw;
+      margin-left: 0px;
+      justify-content: center;
+    }
+
     /* タブレット */
     @include mixin.tab(1025px) {
       flex-direction: column;
@@ -390,13 +406,17 @@
       flex-direction: column;
       width: 100vw;
       margin-left: 0px;
-      align-items: center;
       margin-bottom: 0px;
+      align-items: center;
     }
+
+    // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
     .ft-img-wrapper {
       display: inline-block;
     }
+
+    // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
     .ft-img01 {
       /* スマートフォン */
@@ -405,20 +425,17 @@
       }
     }
 
+    // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
     .ft-img02 {
       padding-top: 62px;
-      padding-left: 83px;
+      padding-left: 76px;
 
-      /* スマートフォン */
-      @include mixin.sp(600px) {
-        padding-left: 0px;
-        transform: scale(0.8, 0.8);
+      /* PC ~1366px */
+      @include mixin.pc(1366px) {
+        padding-left: mixin.clampPc(76, 0);
       }
-    }
 
-    .ft-img03 {
-      padding-top: 65px;
-      padding-left: 31px;
       /* スマートフォン */
       @include mixin.sp(600px) {
         padding-left: 0px;
@@ -428,12 +445,42 @@
 
     // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
+    .ft-img03 {
+      padding-top: 66px;
+      padding-left: 30px;
+
+      /* PC ~1366px */
+      @include mixin.pc(1366px) {
+        padding-left: 0px;
+      }
+
+      /* スマートフォン */
+      @include mixin.sp(600px) {
+        padding-left: 0px;
+        transform: scale(0.8, 0.8);
+      }
+    }
+
+    // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+    .desc-box01 {
+      padding-left: 0;
+    }
+
     .description-box {
       margin-left: 158px;
+
+      /* PC ~1366px */
+      @include mixin.pc(1366px) {
+        width: 55vw;
+        margin-left: 0;
+        padding-left: mixin.clampPc(158, 0);
+      }
 
       /* タブレット */
       @include mixin.tab(1025px) {
         margin-left: 0px;
+        text-align: center;
       }
 
       /* スマートフォン */
@@ -447,21 +494,30 @@
         // font-weight: 400;//regular
         font-weight: 700; //bold
         font-size: 24px;
-        padding-top: 37.5px;
+        padding-top: 39px;
         text-align: left;
         line-height: 2; // 48/24
         letter-spacing: -0.15px;
+
+        /* PC ~1366px */
+        @include mixin.pc(1366px) {
+        }
 
         /* タブレット */
         @include mixin.tab(1025px) {
           text-align: center;
           font-size: mixin.variableFontTab(20, 14);
+          display: inline-block;
+          width: 60vw;
+          text-align: left;
         }
 
         /* スマートフォン */
         @include mixin.sp(600px) {
           text-align: center;
           font-size: mixin.variableFontSp(20, 14);
+          width: 60vw;
+          text-align: left;
         }
       }
 
@@ -473,6 +529,10 @@
         font-size: 16px;
         line-height: 1.625; // 26/16
 
+        /* PC ~1366px */
+        @include mixin.pc(1366px) {
+        }
+
         /* タブレット */
         @include mixin.tab(1025px) {
           text-align: center;
@@ -480,18 +540,27 @@
 
         /* スマートフォン */
         @include mixin.sp(600px) {
-          text-align: center;
+          text-align: left;
+          width: 60vw;
+          text-align: left;
         }
       }
 
       // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
       .feature-desc01 {
-        padding-top: 39px;
+        padding-top: 36px;
+
+        /* PC ~1366px */
+        @include mixin.pc(1366px) {
+        }
 
         /* タブレット */
         @include mixin.tab(1025px) {
           font-size: mixin.variableFontTab(14, 12);
+          display: inline-block;
+          width: 60vw;
+          text-align: left;
         }
 
         /* スマートフォン */
@@ -503,19 +572,34 @@
       // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
       .feature-desc02 {
+        width: 520px;
         padding-top: 31px;
         padding-left: 63px;
+        letter-spacing: 0.1px;
+
+        /* PC ~1366px */
+        @include mixin.pc(1366px) {
+          padding-left: 0;
+          span {
+            display: none;
+          }
+        }
 
         /* タブレット */
         @include mixin.tab(1025px) {
           font-size: mixin.variableFontTab(14, 12);
           padding-left: 0px;
+          display: inline-block;
+          width: 60vw;
+          text-align: left;
         }
 
         /* スマートフォン */
         @include mixin.sp(600px) {
           font-size: mixin.variableFontSp(14, 12);
           padding-left: 0px;
+          display: inline-block;
+          width: 60vw;
         }
       }
 
@@ -526,47 +610,111 @@
         padding-left: 20px;
         line-height: 1.75;
 
+        /* PC ~1366px */
+        @include mixin.pc(1366px) {
+          padding-left: 0px;
+          span {
+            display: none;
+          }
+        }
+
         /* タブレット */
         @include mixin.tab(1025px) {
           font-size: mixin.variableFontTab(14, 12);
           padding-left: 0px;
           padding-bottom: 50px;
+          display: inline-block;
+          width: 60vw;
+          text-align: left;
         }
+
         /* スマートフォン */
         @include mixin.sp(600px) {
           font-size: mixin.variableFontSp(14, 12);
           padding-left: 0px;
           padding-bottom: 50px;
+          display: inline-block;
+          width: 60vw;
         }
+      }
+    }
+
+    .desc-box01 {
+      padding-left: 0;
+
+      /* タブレット */
+      @include mixin.tab(1025px) {
+        width: 80vw;
       }
     }
 
     // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
     .desc-box02 {
-      /* スマートフォン */
-      @include mixin.sp(600px) {
+      /* PC ~1366px */
+      @include mixin.pc-l(1367px) {
       }
 
+      /* タブレット */
+      @include mixin.tab(1025px) {
+        width: 80vw;
+        padding: 0;
+      }
+      /* スマートフォン */
+      @include mixin.sp(600px) {
+        width: 80vw;
+      }
+      // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
       .feature-desc-str02 {
+        width: 30vw;
+        letter-spacing: 0.1px;
         padding-top: 59px;
         padding-left: 63px;
+
+        /* PC ~1366px */
+        @include mixin.pc(1366px) {
+          padding-left: 0;
+
+          span {
+            display: none;
+          }
+        }
 
         /* タブレット */
         @include mixin.tab(1025px) {
           padding-top: 40px;
           padding-left: 0px;
+          width: 60vw;
+          text-align: left;
         }
 
         /* スマートフォン */
         @include mixin.sp(600px) {
           padding-top: 40px;
           padding-left: 0px;
+          width: 60vw;
+          text-align: left;
         }
       }
     }
 
+    // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
     .desc-box03 {
+      /* PC ~1366px */
+      @include mixin.pc(1366px) {
+        padding-left: 75px;
+        padding-left: mixin.clampPc(150, 75);
+      }
+
+      /* タブレット */
+      @include mixin.tab(1025px) {
+        width: 80vw;
+        padding: 0;
+        text-align: center;
+      }
+
       /* スマートフォン */
       @include mixin.sp(600px) {
         padding-left: 0px;
@@ -575,16 +723,34 @@
       .feature-desc-str03 {
         padding-top: 80px;
         padding-left: 14px;
+        line-height: 2;
+        letter-spacing: 0.12px;
+
+        /* PC ~1366px */
+        @include mixin.pc(1366px) {
+          padding-left: 0px;
+        }
 
         /* タブレット */
         @include mixin.tab(1025px) {
           padding-top: 40px;
           padding-left: 0px;
+          width: 60vw;
+          text-align: left;
+          span {
+            display: none;
+          }
         }
+
         /* スマートフォン */
         @include mixin.sp(600px) {
           padding-top: 40px;
           padding-left: 0px;
+          width: 60vw;
+          text-align: left;
+          span {
+            display: none;
+          }
         }
       }
     }
@@ -599,10 +765,16 @@
     width: 100vw;
     max-width: 1366px;
 
+    /* PC ~1366px */
+    @include mixin.pc(1366px) {
+      justify-content: center;
+    }
+
     /* タブレット */
     @include mixin.tab(1025px) {
       flex-direction: column;
     }
+
     /* スマートフォン */
     @include mixin.sp(600px) {
       flex-direction: column;
@@ -621,6 +793,10 @@
   display: flex;
   flex-direction: column;
 
+  /* PC ~1366px */
+  @include mixin.pc(1366px) {
+  }
+
   /* タブレット */
   @include mixin.tab(1025px) {
     height: auto;
@@ -633,18 +809,27 @@
     padding-bottom: 50px;
   }
 
+  //＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
   .price-ttl {
-    padding-top: 58px;
+    padding-top: 59px;
   }
+
+  //＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
   .price-sub-ttl {
-    transform: translate(-2px, -1px);
-    letter-spacing: 0.2px;
+    transform: translate(-0.5px, -1px);
+    // letter-spacing: -0.5px;
   }
 
   // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
   .price-container {
     margin-top: 71px;
+
+    /* PC ~1366px */
+    @include mixin.pc(1366px) {
+    }
 
     /* タブレット */
     @include mixin.tab(1025px) {
@@ -723,7 +908,7 @@
         }
       }
 
-      .pice-table-hd01 {
+      .price-table-hd01 {
         height: 94px;
 
         /* タブレット */
@@ -739,7 +924,7 @@
         }
       }
 
-      .pice-table-hd02 {
+      .price-table-hd02 {
         height: 100px;
         padding-top: 41px;
 
@@ -758,7 +943,7 @@
         }
       }
 
-      .pice-table-hd03 {
+      .price-table-hd03 {
         height: 103px;
 
         /* タブレット */
@@ -774,7 +959,7 @@
         }
       }
 
-      .pice-table-hd04 {
+      .price-table-hd04 {
         height: 113px;
         padding-top: 20px;
 
@@ -831,9 +1016,10 @@
         }
       }
 
-      .pice-table-dt01 {
+      .price-table-dt01 {
         padding-top: 33.5px;
-        letter-spacing: -0.3px;
+        letter-spacing: -0.5px;
+        transform: translate(2px, 0px);
 
         /* タブレット */
         @include mixin.tab(1025px) {
@@ -850,9 +1036,10 @@
         }
       }
 
-      .pice-table-dt02 {
+      .price-table-dt02 {
         padding-top: 42px;
-        transform: translate(-1px, 0px);
+        letter-spacing: -0.5px;
+        transform: translate(3px, 0px);
 
         /* タブレット */
         @include mixin.tab(1025px) {
@@ -869,9 +1056,10 @@
         }
       }
 
-      .pice-table-dt03 {
+      .price-table-dt03 {
         padding-top: 36.5px;
-        transform: translate(-1px, 0px);
+        letter-spacing: -0.5px;
+        transform: translate(3px, 0px);
 
         /* タブレット */
         @include mixin.tab(1025px) {
@@ -888,9 +1076,10 @@
         }
       }
 
-      .pice-table-dt04 {
+      .price-table-dt04 {
         padding-top: 37.5px;
-        transform: translate(-1px, 0px);
+        letter-spacing: -0.5px;
+        transform: translate(3px, 0px);
 
         /* タブレット */
         @include mixin.tab(1025px) {
@@ -951,7 +1140,7 @@
 
   .faq-sub-ttl {
     padding-top: 16px;
-    padding-right: 3px;
+    transform: translate(-1px, 1px);
   }
 
   // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
@@ -961,6 +1150,12 @@
     margin-left: 240px;
     margin-top: 35px;
     padding-bottom: 86px;
+
+    /* PC ~1366px */
+    @include mixin.pc(1366px) {
+      width: 65vw;
+      margin-left: 18vw;
+    }
 
     /* タブレット */
     @include mixin.tab(1025px) {
@@ -1018,11 +1213,12 @@
 
   .acd-lbl02 {
     padding-top: 15px;
-    padding-left: 5px;
+    padding-left: 6px;
+    letter-spacing: 0px;
   }
 
   .acd-lbl03 {
-    padding-top: 13px;
+    padding-top: 13.5px;
     padding-right: 20px;
   }
 
@@ -1039,9 +1235,17 @@
       // font-weight: 400;//regular
       font-weight: 700; //bold
       font-size: 14px;
-      line-height: 1.83; // 26/14
+      line-height: 1.9;
       text-align: left;
       padding: 14.5px 0px 0px 35px;
+
+      /* PC ~1366px */
+      @include mixin.pc(1366px) {
+        padding-right: 35px;
+        span {
+          display: none;
+        }
+      }
 
       /* タブレット */
       @include mixin.tab(1025px) {
@@ -1076,9 +1280,15 @@
       // font-weight: 400;//regular
       font-weight: 700; //bold
       font-size: 14px;
-      line-height: 1.86; // 26/14
+      line-height: 1.9;
+      letter-spacing: 0.05px;
       text-align: left;
       padding: 19px 0px 0px 36px;
+
+      /* PC ~1366px */
+      @include mixin.pc(1366px) {
+        padding-right: 35px;
+      }
 
       /* タブレット */
       @include mixin.tab(1025px) {
@@ -1113,10 +1323,18 @@
       // font-weight: 400;//regular
       font-weight: 700; //bold
       font-size: 14px;
-      line-height: 1.86; // 26/14
+      line-height: 1.9;
       text-align: left;
-      letter-spacing: -0.1px;
+      letter-spacing: -0.05px;
       padding: 21px 0px 0px 36px;
+
+      /* PC ~1366px */
+      @include mixin.pc(1366px) {
+        padding-right: 35px;
+        span {
+          display: none;
+        }
+      }
 
       /* タブレット */
       @include mixin.tab(1025px) {
@@ -1125,6 +1343,9 @@
         padding-top: 15px;
         padding-right: 35px;
         padding-bottom: 15px;
+        span {
+          display: none;
+        }
       }
 
       /* スマートフォン */
@@ -1134,6 +1355,9 @@
         padding-top: 15px;
         padding-right: 35px;
         padding-bottom: 15px;
+        span {
+          display: none;
+        }
       }
     }
   }
@@ -1204,13 +1428,17 @@
     padding-bottom: 100px;
   }
 
+  // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
   .blog-ttl {
     padding-top: 60px;
   }
 
+  // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
   .blog-sub-ttl {
-    transform: translate(-1px, -2px);
-    letter-spacing: 0.5px;
+    transform: translate(0px, -2px);
+    letter-spacing: 1px;
   }
 }
 
@@ -1272,6 +1500,7 @@ img {
   .cp-section {
     padding: 40px 0;
   }
+
   /* コンテナー */
   .cp-container {
     margin: 0;
@@ -1285,6 +1514,7 @@ img {
   .cp-section {
     padding: 40px 0;
   }
+
   /* コンテナー */
   .cp-container {
     padding-right: 15px;
@@ -1318,6 +1548,11 @@ img {
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
   position: relative;
 
+  /* PC ~1366px */
+  @include mixin.pc(1366px) {
+    width: 28vw;
+  }
+
   /* タブレット */
   @include mixin.tab(1025px) {
     margin: 20px 20px 20px 20px;
@@ -1335,11 +1570,13 @@ img {
 .cp-infoCard01__item:nth-child(n + 4) {
   margin-top: 40px;
 }
+
 .cp-infoCard01__item a {
   display: block;
   transition: 0.2s ease-in-out;
   text-decoration: none;
 }
+
 .cp-infoCard01__item a:hover {
   opacity: 0.7;
 }
@@ -1351,17 +1588,24 @@ img {
 }
 
 .cp-infoCard01__info {
-  margin-top: 11px;
+  margin-top: 12px;
   margin-left: 18px;
 }
 
 /* テキスト */
 .cp-infoCard01__text {
+  width: 350px;
   // font-weight: 400;//regular
   font-weight: 700; //bold
   font-size: 18px;
   line-height: 1.5;
+  letter-spacing: -0.1px;
   text-align: left;
+
+  /* PC ~1366px */
+  @include mixin.pc(1366px) {
+    width: 25vw;
+  }
 
   /* タブレット */
   @include mixin.tab(1025px) {
@@ -1377,38 +1621,67 @@ img {
 }
 
 .txt02 {
+  width: 350px;
   line-height: 1.45;
   display: inline-block;
-  width: 350px;
+
+  /* PC ~1366px */
+  @include mixin.pc(1366px) {
+    width: 25vw;
+    span {
+      display: none;
+    }
+  }
 
   /* タブレット */
   @include mixin.tab(1025px) {
     width: 95%;
     font-size: mixin.variableFontTab(18, 14);
+    span {
+      display: none;
+    }
   }
 
   /* スマートフォン */
   @include mixin.sp(600px) {
     width: 95%;
     font-size: mixin.variableFontSp(18, 14);
+    span {
+      display: none;
+    }
   }
 }
+
 .txt03 {
+  width: 350px;
   line-height: 1.45;
+  padding-top: 0.2px;
   display: inline-block;
-  width: 330px;
-  letter-spacing: 0px;
+
+  /* PC ~1366px */
+  @include mixin.pc(1366px) {
+    width: 25vw;
+    span {
+      display: none;
+    }
+  }
 
   /* タブレット */
   @include mixin.tab(1025px) {
     width: 95%;
     font-size: mixin.variableFontTab(18, 14);
+    span {
+      display: none;
+    }
   }
 
   /* スマートフォン */
   @include mixin.sp(600px) {
     width: 95%;
     font-size: mixin.variableFontSp(18, 14);
+    span {
+      display: none;
+    }
   }
 }
 
@@ -1419,9 +1692,9 @@ img {
   font-size: 16px;
   line-height: 1.86; // 26/14
   text-align: right;
-  letter-spacing: -2px;
+  letter-spacing: -0.8px;
   position: absolute;
-  right: 40px;
+  right: 38px;
   bottom: 7px;
 
   /* タブレット */
@@ -1449,12 +1722,15 @@ img {
   .cp-infoCard01__item {
     width: 45%;
   }
+
   .cp-infoCard01__item:not(:last-child) {
   }
+
   .cp-infoCard01__item:nth-child(2n-1) {
     margin: 0;
     margin: 10px 10px 10px 15px;
   }
+
   .cp-infoCard01__item:nth-child(n + 2) {
     margin: 0;
     margin: 10px 10px 10px 15px;
@@ -1467,12 +1743,15 @@ img {
   .cp-infoCard01__item {
     width: calc(100% / 1);
   }
+
   .cp-infoCard01__item:not(:last-child) {
     margin-right: 0;
   }
+
   .cp-infoCard01__item:nth-child(2n-1) {
     margin-right: 0;
   }
+
   .cp-infoCard01__item:nth-child(n + 2) {
     margin-top: 32px;
   }
@@ -1495,19 +1774,26 @@ img {
   }
 
   .works-sub-ttl {
-    transform: translate(2px, -2px);
+    letter-spacing: 1px;
+    transform: translate(2.5px, -2px);
   }
 }
 
 // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
 .swiper {
-  width: 1356px;
-  margin-top: 69px;
-  margin-bottom: 90px;
+  width: 100vw;
+  max-width: 1365px;
+  margin-top: 68px;
+
+  /* PC ~1366px */
+  @include mixin.pc(1366px) {
+    width: 100vw;
+  }
 
   /* タブレット */
   @include mixin.tab(1025px) {
+    width: 100vw;
   }
 
   /* スマートフォン */
@@ -1516,11 +1802,16 @@ img {
   }
 }
 
+// ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
 .swiper-wrapper {
   //ループ時のアニメーションの緩急を一定にする（デフォルトはease-out）
   transition-timing-function: linear;
-  display: flex;
-  flex-direction: row;
+  width: 100vw;
+  max-width: 1365px;
+  height: 430px !important; //スライド高さ設定
+
+  // background-color: rgb(194, 190, 190);
 
   /* タブレット */
   @include mixin.tab(1025px) {
@@ -1536,21 +1827,12 @@ img {
     padding-left: calc(50% - (1024px / 2));
   }
 
-  .swiper-slide {
-    width: 180px !important;
-    height: 200px !important;
-  }
-}
-
-.works-card {
-  height: 415px;
-  background-color: #ffffff;
-
   // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
-  .works-card-item {
-    width: 320px;
-    height: 405px;
+  .swiper-slide {
+    background-color: #ffffff;
+    width: 320px; //カードの幅
+    height: 405px; //カードの高さ
     box-sizing: content-box; //線を外側にする
     border: solid 1px;
     border-radius: 8px;
@@ -1558,90 +1840,150 @@ img {
     display: flex;
     flex-direction: column;
 
+    /* PC ~1366px */
+    @include mixin.pc(1366px) {
+      // height: 400px;
+    }
+
     /* タブレット */
     @include mixin.tab(1025px) {
-      height: 400px;
+      // height: 400px;
     }
 
     /* スマートフォン */
     @include mixin.sp(600px) {
-      height: 400px;
+      // height: 400px;
+    }
+  }
+
+  .swiper-slide-active {
+    width: 320px !important; //カードの幅
+  }
+
+  .slide01 {
+    //デバッグ用位置調整
+    // margin-left: 8px;
+    width: 320px !important; //カードの幅
+  }
+
+  .slide02 {
+    //カード間余白
+    // margin-left: 56px;
+    width: 320px !important; //カードの幅
+  }
+
+  .slide03 {
+    //カード間余白
+    // margin-left: 56px;
+    width: 320px !important; //カードの幅
+  }
+
+  .slide04 {
+    //カード間余白
+    // margin-left: 56px;
+    width: 320px !important; //カードの幅
+  }
+
+  .slide05 {
+    //カード間余白
+    // margin-left: 56px;
+    width: 320px !important; //カードの幅
+  }
+}
+
+// ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+.card-item {
+  // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+  .works-card__img-wrapper {
+    width: 320px; //カードの幅
+
+    .works-card-img {
+      width: 100%;
+      height: auto;
+      border: 0px;
+      border-radius: 8px 8px 0 0;
+    }
+  }
+
+  // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+  .works-card-body {
+    width: 310px;
+    height: 48.4%; // 100% - 51.6
+    text-align: left;
+
+    // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+    .works-card-ttl {
+      // font-weight: 400;//regular
+      font-weight: 700; //bold
+      font-size: 16px;
+      line-height: 1.65; // 19/16
+      padding-top: 18px;
+      padding-left: 16px;
+      letter-spacing: -0.1px;
+      transform: translate(1px, 0px);
+    }
+
+    // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+    .wk-cd-ttl02 {
+      letter-spacing: 0px;
+      padding-top: 22px;
+    }
+
+    .wk-cd-ttl03 {
+    }
+
+    .wk-cd-ttl04 {
     }
 
     // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
-    .works-card__img-wrapper {
-      width: 320px;
+    .detail {
+      // font-weight: 400;//regular
+      font-weight: 700; //bold
+      font-size: 14px;
+      line-height: 1.65; // 17/14
+      padding-left: 16px;
+      letter-spacing: 0px;
 
-      .works-card-img {
-        width: 100%;
-        height: auto;
-        border: 0px;
-        border-radius: 8px 8px 0 0;
-      }
-    }
-
-    // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
-
-    .works-card-body {
-      width: 300px;
-      height: 48.4%; // 100% - 51.6
-      text-align: left;
-      padding-left: 11px;
-      margin: 0 auto;
-
-      // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
-
-      .works-card-ttl {
-        // font-weight: 400;//regular
-        font-weight: 700; //bold
-        font-size: 16px;
-        line-height: 1.65; // 19/16
-        padding-top: 18px;
-      }
-
-      // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
-      .wk-cd-ttl02 {
-        letter-spacing: 0.8px;
-      }
-      .wk-cd-ttl03 {
+      /* PC ~1366px */
+      @include mixin.pc(1366px) {
         padding-top: 25px;
-        padding-left: 3px;
-        letter-spacing: 0px;
-      }
-      .wk-cd-ttl04 {
-        padding-top: 19px;
-        padding-left: 3px;
-        letter-spacing: 0px;
       }
 
-      // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
-
-      .detail {
-        // font-weight: 400;//regular
-        font-weight: 700; //bold
-        font-size: 14px;
-        line-height: 1.65; // 17/14
-        padding-top: 25.5px;
-        padding-left: 1px;
-        letter-spacing: -0.1px;
-
-        /* タブレット */
-        @include mixin.tab(1025px) {
-          padding-top: 15px;
-        }
-
-        /* スマートフォン */
-        @include mixin.sp(600px) {
-          padding-top: 15px;
-        }
+      /* タブレット */
+      @include mixin.tab(1025px) {
+        padding-top: 15px;
       }
+
+      /* スマートフォン */
+      @include mixin.sp(600px) {
+        padding-top: 15px;
+      }
+    }
+
+    .detail-line01 {
+      padding-top: 25px;
+    }
+
+    .detail-line02 {
+      padding-top: 0px;
+      letter-spacing: 0px;
+    }
+
+    .detail-line03 {
+      padding-top: 2px;
+      letter-spacing: 0px;
     }
   }
 }
+
 //↓デバッグ用
 // .works-card01{
-//   margin-left: 138px;
+//   margin-left: -50px;
 //   margin-right: 0px;
 // }
 
@@ -1654,6 +1996,11 @@ img {
   height: 1027px;
   background: linear-gradient(90deg, #05a5fa 0%, #63fbd7 100%, #67ffd6 100%);
 
+  /* PC ~1366px */
+  @include mixin.pc(1366px) {
+    width: 100vw;
+  }
+
   /* タブレット */
   @include mixin.tab(1025px) {
     width: 100vw;
@@ -1663,6 +2010,7 @@ img {
   @include mixin.sp(600px) {
     width: 100vw;
   }
+
   // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
   .contact-inner {
@@ -1670,6 +2018,8 @@ img {
     height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 
     // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
@@ -1684,7 +2034,7 @@ img {
       letter-spacing: 0.5px;
     }
 
-      // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+    // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
     .contact-l3-header {
       // font-weight: 400;//regular
@@ -1698,7 +2048,7 @@ img {
     }
   }
 
-    // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+  // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
   .contact-form-container {
     width: 908px;
@@ -1708,18 +2058,22 @@ img {
     margin: 0 auto;
     margin-top: 39px;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
     /* タブレット */
     @include mixin.tab(1025px) {
       width: 90vw;
     }
-    
 
     /* スマートフォン */
     @include mixin.sp(600px) {
       width: 90vw;
     }
 
-      // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+    // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
     .form__name {
       display: flex;
@@ -1732,8 +2086,8 @@ img {
         line-height: 26px; // 19/16
         text-align: left;
         color: #333;
-        padding-top: 32px;
-        padding-left: 63px;
+        padding-top: 33px;
+        padding-left: 2px;
 
         /* タブレット */
         @include mixin.tab(1025px) {
@@ -1748,33 +2102,33 @@ img {
         }
       }
 
-        // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+      // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
       .form-input-name {
         width: 499px;
         height: 43px;
         background: #eefbfb;
         margin-top: 32px;
-        margin-left: 64px;
+        margin-left: 2px;
         border: none;
 
         /* タブレット */
         @include mixin.tab(1025px) {
-          width: 90%;
+          width: 70vw;
           margin: 0 auto;
           margin-top: 20px;
         }
 
         /* スマートフォン */
         @include mixin.sp(600px) {
-          width: 90%;
+          width: 70vw;
           margin: 0 auto;
           margin-top: 20px;
         }
       }
     }
 
-      // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+    // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
     .form__email {
       display: flex;
@@ -1788,8 +2142,8 @@ img {
         text-align: left;
         letter-spacing: -0.3px;
         color: #333;
-        padding-top: 28px;
-        padding-left: 63px;
+        padding-top: 27px;
+        padding-left: 2px;
 
         /* タブレット */
         @include mixin.tab(1025px) {
@@ -1804,33 +2158,33 @@ img {
         }
       }
 
-        // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+      // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
       .form-input-email {
         width: 499px;
         height: 43px;
         background: #eefbfb;
         margin-top: 33px;
-        margin-left: 64px;
+        margin-left: 2px;
         border: none;
 
         /* タブレット */
         @include mixin.tab(1025px) {
-          width: 90%;
+          width: 70vw;
           margin: 0 auto;
           margin-top: 20px;
         }
 
         /* スマートフォン */
         @include mixin.sp(600px) {
-          width: 90%;
+          width: 70vw;
           margin: 0 auto;
           margin-top: 20px;
         }
       }
     }
 
-      // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+    // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
     .form__inquiry {
       display: flex;
@@ -1844,8 +2198,8 @@ img {
         letter-spacing: 2.5px;
         text-align: left;
         color: #333;
-        padding-top: 21px;
-        padding-left: 63px;
+        padding-top: 20px;
+        padding-left: 2px;
 
         /* タブレット */
         @include mixin.tab(1025px) {
@@ -1867,19 +2221,19 @@ img {
         height: 179px;
         background: #eefbfb;
         margin-top: 33px;
-        margin-left: 64px;
+        margin-left: 2px;
         border: none;
 
         /* タブレット */
         @include mixin.tab(1025px) {
-          width: 90%;
+          width: 70vw;
           margin: 0 auto;
           margin-top: 20px;
         }
 
         /* スマートフォン */
         @include mixin.sp(600px) {
-          width: 90%;
+          width: 70vw;
           margin: 0 auto;
           margin-top: 20px;
         }
@@ -1903,7 +2257,7 @@ img {
       border-radius: 10px;
       margin-left: 19px;
       //微調整
-      transform: translate(0px, -3px);
+      transform: translate(0px, -2px);
     }
 
     // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
@@ -1914,7 +2268,7 @@ img {
 
     .rqurd-lbl03 {
       //微調整
-      transform: translate(-4px, -2px);
+      transform: translate(-2px, -1px);
     }
   }
 
@@ -1937,6 +2291,11 @@ img {
     }
 
     // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+    input[type=checkbox]{
+      margin-top: 2px;
+      transform: scale(1.6,1.6);
+    }
 
     .privacy-policy-agreement-label {
       // font-weight: 400;//regular
