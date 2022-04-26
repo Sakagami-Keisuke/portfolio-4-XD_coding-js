@@ -9,7 +9,9 @@
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap"
+      rel="stylesheet">
     <!-- google fonts -->
 
 
@@ -43,7 +45,9 @@
       ただデザインを行う際は提携しているデザイナーと連携して対応させていただきますので、別途ご連絡ください。">
     <meta property="twitter:image" content="">
 
-
+    <!-- AOS js Animate on scroll library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!-- swiper js -->
     <link rel="stylesheet"
@@ -98,28 +102,35 @@
         <section>
           <div class="fv-inner">
 
-            <div class="fv-inner__first-line">
+            <div class="fv-inner__first-line" data-aos="zoom-in">
               <p>コーディングの手間を<br>
                 最小に、デザインに注力<br>
                 する助けに</p>
             </div>
-            <div class="fv-inner__second-line">
-              <p>ユアコーディングはコーディングに<br>
+            <div class="fv-inner__second-line data-aos="zoom-in"">
+              <p data-aos="zoom-in">ユアコーディングはコーディングに<br>
                 特化したフリーランス<br>
                 デザインに注力されたい方の<br>
                 助けになります</p>
             </div>
-            <button type="button" class="button fv-inquiry-button">
+            <button type="button" class="button fv-inquiry-button"
+              data-aos="zoom-in">
               お問い合わせ
             </button>
 
             <div class="fv-img-01">
-              <img class="fv-img-circle" src="images/circle.png" alt="circle"
+              <img data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="1000" class="fv-img-circle"
+                src="images/circle.png" alt="circle"
                 loading="lazy">
             </div>
 
             <div class="fv-img-02">
-              <img class="fv-img-main" src="images/main.png" alt="main"
+              <img data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="1000" class="fv-img-main"
+                src="images/main.png" alt="main"
                 loading="lazy">
             </div>
           </div>
@@ -129,17 +140,19 @@
         <!-- section2 feature -->
         <section>
           <div class="feature-inner">
-            <h2 class="cmn-content-ttl ft-ttl">ユアコーディング3つの特徴</h2>
-            <p class="cmn-content-sub_ttl ft-sub-ttl">FEATURES</p>
-
-            <h3 class="lower-ttl ft-lower-ttl01">高速コーディング</h3>
+            <h2 data-aos="zoom-in" class="cmn-content-ttl ft-ttl">ユアコーディング3つの特徴</h2>
+            <p data-aos="zoom-in" class="cmn-content-sub_ttl ft-sub-ttl">FEATURES</p>
+            <h3 data-aos="zoom-in" class="lower-ttl ft-lower-ttl01">高速コーディング</h3>
             <div class="ft-container">
               <figure class="ft-img-wrapper">
-                <img class="ft-img01" src="images/feature01.png"
+                <img data-aos="flip-left"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-duration="1000" class="ft-img01"
+                  src="images/feature01.png"
                   alt="feature01">
               </figure>
 
-              <div class="description-box desc-box01">
+              <div data-aos="zoom-in" class="description-box desc-box01">
                 <p class="description--strong">
                   コーディングに特化したフリーランスのため、スピード感を持った開発が可能。
                 </p>
@@ -152,35 +165,43 @@
               </div>
             </div>
 
-            <h3 class="lower-ttl ft-lower-ttl-02">高品質</h3>
+            <h3 data-aos="zoom-in" class="lower-ttl ft-lower-ttl-02">高品質</h3>
             <div class="ft-container ft-container-rev">
               <figure class="ft-imgwrapper">
-                <img class="ft-img02" src="images/feature02.png"
+                <img data-aos="flip-left"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-duration="1000" class="ft-img02"
+                  src="images/feature02.png"
                   alt="feature02">
               </figure>
 
               <div class="description-box desc-box02">
-                <p class="description--strong feature-desc-str02">
+                <p data-aos="zoom-in" class="description--strong
+                  feature-desc-str02">
                   正しいマークアップで、<span><br></span>内部SEOに強いコーディングを<span><br></span>デフォルトで行います。
                 </p>
-                <p class="description feature-desc02">
+                <p data-aos="zoom-in" class="description feature-desc02">
                   ユアコーディングでは、「予測しやすい」「再利用しやすい」「保守しやすい」「拡張しやすい」と言った設計をもとに<span><br></span>きちんとコーディングを行うため、納品後も安心です。
                 </p>
               </div>
             </div>
 
-            <h3 class="lower-ttl ft-lower-ttl-03">迅速なレスポンス</h3>
+            <h3 data-aos="zoom-in" class="lower-ttl ft-lower-ttl-03">迅速なレスポンス</h3>
             <div class="ft-container">
               <figure class="ft-imgwrapper">
-                <img class="ft-img03" src="images/feature03.png"
+                <img data-aos="flip-left"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-duration="1000" class="ft-img03"
+                  src="images/feature03.png"
                   alt="feature03">
               </figure>
 
               <div class="description-box desc-box03">
-                <p class="description--strong feature-desc-str03">
+                <p data-aos="zoom-in" class="description--strong
+                  feature-desc-str03">
                   原則いただいたメッセージは、<span><br></span>業務時間内であれば6時間以内に<span><br></span>お返しいたします。
                 </p>
-                <p class="description feature-desc03">
+                <p data-aos="zoom-in" class="description feature-desc03">
                   連絡を返さないフリーランスが多い中、<span><br></span>ユアコーディングでは定期的な進捗報告など、<span><br></span>社会人としての基本を踏まえて仕事を行なって<span><br></span>おります。
                 </p>
               </div>
@@ -195,11 +216,12 @@
         <section>
           <div class="price-inner">
 
-            <h2 class="cmn-content-ttl price-ttl">価格</h2>
-            <p class="cmn-content-sub_ttl price-sub-ttl">PRICE</p>
-
+            <h2 data-aos="zoom-in" class="cmn-content-ttl price-ttl">価格</h2>
+            <p data-aos="zoom-in" class="cmn-content-sub_ttl price-sub-ttl">PRICE</p>
             <div class="price-container">
-              <table class="price-table">
+              <table data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="1000" class="price-table">
                 <tbody class="price-table__body">
 
                   <tr class="price-table__row"></tr>
@@ -227,10 +249,9 @@
         <!-- section4 FAQ -->
         <section>
           <div class="faq-inner">
-            <h2 class="cmn-content-ttl faq-ttl">よくある質問</h2>
-            <p class="cmn-content-sub_ttl faq-sub-ttl">FAQ</p>
-
-            <div class="accordion">
+            <h2 data-aos="zoom-in" class="cmn-content-ttl faq-ttl">よくある質問</h2>
+            <p data-aos="zoom-in" class="cmn-content-sub_ttl faq-sub-ttl">FAQ</p>
+            <div data-aos="zoom-in" class="accordion">
               <!-- 指示により展開 -->
               <input type="checkbox" checked id="label1" class="acd-check">
               <label for="label1" class="acd-label acd-lbl01">デザインから一貫してお願いすることは可能でしょうか</label>
@@ -258,9 +279,8 @@
         <!-- section5 blog -->
         <section>
           <div class="blog-inner">
-            <h2 class="cmn-content-ttl blog-ttl">ブログ</h2>
-            <p class="cmn-content-sub_ttl blog-sub-ttl">BLOG</p>
-
+            <h2 data-aos="zoom-in" class="cmn-content-ttl blog-ttl">ブログ</h2>
+            <p data-aos="zoom-in" class="cmn-content-sub_ttl blog-sub-ttl">BLOG</p>
             <div class="blog-cards-area">
               <!-- headタグ内（cssファイルの読み込み記述より前）に記述してください。既に同様の記述を行っている場合は削除してください。 -->
               <link rel="stylesheet"
@@ -269,7 +289,9 @@
                 <ul class="cp-container cp-infoCard01">
 
                   <!-- アイテム -->
-                  <li class="cp-infoCard01__item">
+                  <li data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1000" class="cp-infoCard01__item">
                     <a href="">
                       <!-- 画像 -->
                       <figure class="cp-infoCard01__image">
@@ -290,7 +312,9 @@
                   </li><!-- /アイテム -->
 
                   <!-- アイテム -->
-                  <li class="cp-infoCard01__item">
+                  <li data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1000" class="cp-infoCard01__item">
                     <a href="">
                       <!-- 画像 -->
                       <figure class="cp-infoCard01__image">
@@ -311,7 +335,9 @@
                   </li><!-- /アイテム -->
 
                   <!-- アイテム -->
-                  <li class="cp-infoCard01__item">
+                  <li data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1000" class="cp-infoCard01__item">
                     <a href="">
                       <!-- 画像 -->
                       <figure class="cp-infoCard01__image">
@@ -343,9 +369,8 @@
         <!-- section6 works -->
         <section>
           <div class="works-inner">
-            <h2 class="cmn-content-ttl works-ttl">制作実績</h2>
-            <p class="cmn-content-sub_ttl works-sub-ttl">WORKS</p>
-
+            <h2 data-aos="zoom-in" class="cmn-content-ttl works-ttl">制作実績</h2>
+            <p data-aos="zoom-in" class="cmn-content-sub_ttl works-sub-ttl">WORKS</p>
             <div class="swiper">
               <div class="swiper-wrapper">
                 <!-- Slides01 --><!-- Slides01 --><!-- Slides01 --><!-- Slides01 --><!-- Slides01 -->
@@ -363,8 +388,6 @@
                     </div>
                   </article>
                 </div> <!-- Slides01 --><!-- Slides01 --><!-- Slides01 --><!-- Slides01 --><!-- Slides01 -->
-
-
                 <!-- Slides02 --><!-- Slides02 --><!-- Slides02 --><!-- Slides02 --><!-- Slides02 -->
                 <div class="swiper-slide slide02">
                   <article class="card-item item02">
@@ -380,133 +403,131 @@
                     </div>
                   </article>
                 </div> <!-- Slides02 --><!-- Slides02 --><!-- Slides02 --><!-- Slides02 --><!-- Slides02 -->
+                <!-- Slides03 --><!-- Slides03 --><!-- Slides03 --><!-- Slides03 --><!-- Slides03 --><!-- Slides03 -->
+                <div class="swiper-slide slide03">
+                  <article class="card-item item03">
+                    <figure class="works-card__img-wrapper">
+                      <img src="images/works-card01.png" class="works-card-img"
+                        alt="works-card-img03" loading="lazy">
+                    </figure>
+                    <div class="works-card-body">
+                      <p class="works-card-ttl">株式会社サンプル採用サイトのコーディングを行いました！</p>
+                      <p class="detail detail-line01">採用技術：jQuery,Bootstrap4</p>
+                      <p class="detail detail-line02">実装期間：2週間</p>
+                      <p class="detail detail-line03">担当コーダー：石井</p>
+                    </div>
+                  </article>
+                </div> <!-- Slides03 --><!-- Slides03 --><!-- Slides03 --><!-- Slides03 --><!-- Slides03 -->
+                <!-- Slides04 -->
+                <div class="swiper-slide slide04">
+                  <article class="card-item item04">
+                    <figure class="works-card__img-wrapper">
+                      <img src="images/works-card01.png" class="works-card-img"
+                        alt="works-card-img03" loading="lazy">
+                    </figure>
+                    <div class="works-card-body">
+                      <p class="works-card-ttl">株式会社サンプル採用サイトのコーディングを行いました！</p>
+                      <p class="detail detail-line01">採用技術：jQuery,Bootstrap4</p>
+                      <p class="detail detail-line02">実装期間：2週間</p>
+                      <p class="detail detail-line03">担当コーダー：石井</p>
+                    </div>
+                  </article>
+                </div>
 
 
-              <!-- Slides03 --><!-- Slides03 --><!-- Slides03 --><!-- Slides03 --><!-- Slides03 --><!-- Slides03 -->
-              <div class="swiper-slide slide03">
-                <article class="card-item item03">
-                  <figure class="works-card__img-wrapper">
-                    <img src="images/works-card01.png" class="works-card-img"
-                      alt="works-card-img03" loading="lazy">
-                  </figure>
-                  <div class="works-card-body">
-                    <p class="works-card-ttl">株式会社サンプル採用サイトのコーディングを行いました！</p>
-                    <p class="detail detail-line01">採用技術：jQuery,Bootstrap4</p>
-                    <p class="detail detail-line02">実装期間：2週間</p>
-                    <p class="detail detail-line03">担当コーダー：石井</p>
+                <!-- Slides05 -->
+                <div class="swiper-slide slide05">
+                  <article class="card-item item05">
+                    <figure class="works-card__img-wrapper">
+                      <img src="images/works-card05.png" class="works-card-img"
+                        alt="works-card-img03" loading="lazy">
+                    </figure>
+                    <div class="works-card-body">
+                      <p class="works-card-ttl">コーディングカンファレンスのイベントLPの制作を行いました！</p>
+                      <p class="detail detail-line01">採用技術：jQuery,WordPress</p>
+                      <p class="detail detail-line02">実装期間：4週間</p>
+                      <p class="detail detail-line03">担当コーダー：石井</p>
+                    </div>
+                  </article>
+
+                </div>
+              </section>
+              <!-- section6 works -->
+
+              <!-- section7 contact -->
+              <section class="contact">
+                <div class="contact-inner">
+                  <h2  data-aos="zoom-in" class="cmn-content-ttl contact-ttl">お問い合わせ</h2>
+                  <p  data-aos="zoom-in" class="cmn-content-sub_ttl contact-sub-ttl">CONTACT</p>
+                  <h3  data-aos="zoom-in" class="contact-l3-header">コーディングの人出が足りないとき、<br>
+                    あなたの力になります</h3>
+
+                  <div class="contact-form-container">
+                    <form action="" id="form" class="form">
+
+                      <div class="form__name">
+                        <label for="name" class="form-label-name">お名前
+                          <span class="cmn-required-label">必須</span>
+                        </label>
+                        <input type="text" required class="form-input-name">
+                      </div>
+                      <div class="form__email">
+                        <label for="name" class="form-label-email">メールアドレス
+                          <span class="cmn-required-label rqurd-lbl02">必須</span>
+                        </label>
+                        <input type="text" required class="form-input-email">
+                      </div>
+                      <div class="form__inquiry">
+                        <label for="name" class="form-label-inquiry">お問い合せ内容
+                          <span class="cmn-required-label rqurd-lbl03">必須</span>
+                        </label>
+                        <textarea required class="form-textarea-inquiry"></textarea>
+                      </div>
+
+                      <div class="privacy-policy-wrapper">
+                        <input type="checkbox" required class="checkbox01"
+                          id="privacyCheck">
+                        <label for="privacyCheck"
+                          class="privacy-policy-agreement-label">プライバシーポリシーに同意する
+                        </label>
+                      </div>
+
+                      <input type="submit"
+                        value="送信する" class="button submit-btn" disabled
+                        id="js-submit">
+                    </form>
                   </div>
-                </article>
-              </div> <!-- Slides03 --><!-- Slides03 --><!-- Slides03 --><!-- Slides03 --><!-- Slides03 -->
+                </div>
+              </section>
+              <!-- section7 contact -->
+            </main>
+            <!-- main -->
 
 
-              <!-- Slides04 -->
-              <div class="swiper-slide slide04">
-                <article class="card-item item04">
-                  <figure class="works-card__img-wrapper">
-                    <img src="images/works-card01.png" class="works-card-img"
-                      alt="works-card-img03" loading="lazy">
-                  </figure>
-                  <div class="works-card-body">
-                    <p class="works-card-ttl">株式会社サンプル採用サイトのコーディングを行いました！</p>
-                    <p class="detail detail-line01">採用技術：jQuery,Bootstrap4</p>
-                    <p class="detail detail-line02">実装期間：2週間</p>
-                    <p class="detail detail-line03">担当コーダー：石井</p>
-                  </div>
-                </article>
+            <!-- footer -->
+            <footer>
+              <div class="footer">
+                <div class="footer-inner">
+                  <p class="footer-ttl">ユアコーディング</p>
+                  <ul class="footer-list">
+                    <li class="footer-list__item">
+                      <a href="#">プライバシーポリシー</a>
+                    </li>
+                    <li class="footer-list__item">
+                      <a href="#">個人商取引法に基づく表記</a>
+                    </li>
+                  </ul>
+                  <p class="footer-copylight">©ユアコーディング, All Rights Reserved.</p>
+                </div>
               </div>
-
-
-              <!-- Slides05 -->
-              <div class="swiper-slide slide05">
-                <article class="card-item item05">
-                  <figure class="works-card__img-wrapper">
-                    <img src="images/works-card05.png" class="works-card-img"
-                      alt="works-card-img03" loading="lazy">
-                  </figure>
-                  <div class="works-card-body">
-                    <p class="works-card-ttl">コーディングカンファレンスのイベントLPの制作を行いました！</p>
-                    <p class="detail detail-line01">採用技術：jQuery,WordPress</p>
-                    <p class="detail detail-line02">実装期間：4週間</p>
-                    <p class="detail detail-line03">担当コーダー：石井</p>
-                  </div>
-                </article>
-              
-            </div>
-          </section>
-          <!-- section6 works -->
-
-          <!-- section7 contact -->
-          <section class="contact">
-            <div class="contact-inner">
-              <h2 class="cmn-content-ttl contact-ttl">お問い合わせ</h2>
-              <p class="cmn-content-sub_ttl contact-sub-ttl">CONTACT</p>
-              <h3 class="contact-l3-header">コーディングの人出が足りないとき、<br>
-                あなたの力になります</h3>
-
-              <div class="contact-form-container">
-                <form action="" id="form" class="form">
-
-                  <div class="form__name">
-                    <label for="name" class="form-label-name">お名前
-                      <span class="cmn-required-label">必須</span>
-                    </label>
-                    <input type="text" required class="form-input-name">
-                  </div>
-                  <div class="form__email">
-                    <label for="name" class="form-label-email">メールアドレス
-                      <span class="cmn-required-label rqurd-lbl02">必須</span>
-                    </label>
-                    <input type="text" required class="form-input-email">
-                  </div>
-                  <div class="form__inquiry">
-                    <label for="name" class="form-label-inquiry">お問い合せ内容
-                      <span class="cmn-required-label rqurd-lbl03">必須</span>
-                    </label>
-                    <textarea required class="form-textarea-inquiry"></textarea>
-                  </div>
-
-                  <div class="privacy-policy-wrapper">
-                    <input type="checkbox" required class="checkbox01"
-                      id="privacyCheck">
-                    <label  for="privacyCheck" class="privacy-policy-agreement-label">プライバシーポリシーに同意する
-                    </label>
-                  </div>
-
-                  <input type="submit"
-                    value="送信する" class="button submit-btn" disabled
-                    id="js-submit">
-                </form>
-              </div>
-            </div>
-          </section>
-          <!-- section7 contact -->
-        </main>
-        <!-- main -->
-
-
-        <!-- footer -->
-        <footer>
-          <div class="footer">
-            <div class="footer-inner">
-              <p class="footer-ttl">ユアコーディング</p>
-              <ul class="footer-list">
-                <li class="footer-list__item">
-                  <a href="#">プライバシーポリシー</a>
-                </li>
-                <li class="footer-list__item">
-                  <a href="#">個人商取引法に基づく表記</a>
-                </li>
-              </ul>
-              <p class="footer-copylight">©ユアコーディング, All Rights Reserved.</p>
-            </div>
+            </footer>
+            <!-- footer -->
           </div>
-        </footer>
-        <!-- footer -->
-      </div>
-      <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-      <script src="js/swiper-conf.js"></script>
-      <!-- <script>    const swiper = new Swiper('.slider1', {});    </script> -->
-      <script src="js/jquery.js"></script>
-    </body>
+          <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+          <script src="js/swiper-conf.js"></script>
+          <!-- <script>    const swiper = new Swiper('.slider1', {});    </script> -->
+          <script src="js/jquery.js"></script>
+          <script>AOS.init(); </script>
+        </body>
 
-  </html>
+      </html>
