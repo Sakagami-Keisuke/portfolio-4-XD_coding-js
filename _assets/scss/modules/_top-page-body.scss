@@ -473,8 +473,8 @@
       /* PC ~1366px */
       @include mixin.pc(1366px) {
         width: 55vw;
-        margin-left: 0;
-        padding-left: mixin.clampPc(158, 0);
+        margin-left: 100px;
+ 
       }
 
       /* タブレット */
@@ -501,6 +501,7 @@
 
         /* PC ~1366px */
         @include mixin.pc(1366px) {
+          width: 45vw;
         }
 
         /* タブレット */
@@ -553,6 +554,13 @@
 
         /* PC ~1366px */
         @include mixin.pc(1366px) {
+             font-size: mixin.variableFontTab(14, 12);
+          display: inline-block;
+          width: 45vw;
+          text-align: left;
+          span {
+            display: none;
+          }
         }
 
         /* タブレット */
@@ -561,6 +569,9 @@
           display: inline-block;
           width: 60vw;
           text-align: left;
+          span {
+            display: none;
+          }
         }
 
         /* スマートフォン */
@@ -612,6 +623,7 @@
 
         /* PC ~1366px */
         @include mixin.pc(1366px) {
+          width: 45vw;
           padding-left: 0px;
           span {
             display: none;
@@ -641,6 +653,11 @@
 
     .desc-box01 {
       padding-left: 0;
+
+   /* PC ~1366px */
+   @include mixin.pc-l(1367px) {
+
+  }
 
       /* タブレット */
       @include mixin.tab(1025px) {
@@ -704,8 +721,8 @@
     .desc-box03 {
       /* PC ~1366px */
       @include mixin.pc(1366px) {
-        padding-left: 75px;
-        padding-left: mixin.clampPc(150, 75);
+        padding-left: 0px;
+
       }
 
       /* タブレット */
@@ -728,7 +745,11 @@
 
         /* PC ~1366px */
         @include mixin.pc(1366px) {
+          width: 45vw;
           padding-left: 0px;
+          span {
+            display: none;
+          }
         }
 
         /* タブレット */
@@ -1019,7 +1040,7 @@
       .price-table-dt01 {
         padding-top: 33.5px;
         letter-spacing: -0.5px;
-        transform: translate(2px, 0px);
+        // transform: translate(2px, 0px);
 
         /* タブレット */
         @include mixin.tab(1025px) {
@@ -1039,7 +1060,7 @@
       .price-table-dt02 {
         padding-top: 42px;
         letter-spacing: -0.5px;
-        transform: translate(3px, 0px);
+        // transform: translate(3px, 0px);
 
         /* タブレット */
         @include mixin.tab(1025px) {
@@ -1059,7 +1080,7 @@
       .price-table-dt03 {
         padding-top: 36.5px;
         letter-spacing: -0.5px;
-        transform: translate(3px, 0px);
+        // transform: translate(3px, 0px);
 
         /* タブレット */
         @include mixin.tab(1025px) {
@@ -1079,7 +1100,7 @@
       .price-table-dt04 {
         padding-top: 37.5px;
         letter-spacing: -0.5px;
-        transform: translate(3px, 0px);
+        // transform: translate(3px, 0px);
 
         /* タブレット */
         @include mixin.tab(1025px) {
@@ -1130,6 +1151,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
 
   // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
@@ -1167,8 +1189,8 @@
     /* スマートフォン */
     @include mixin.sp(600px) {
       width: 90vw;
-      margin-left: calc(10vw / 2);
       padding-bottom: 65px;
+      margin: 35px auto;
     }
   }
 
@@ -1474,9 +1496,9 @@
 
   /* スマートフォン */
   @include mixin.sp(600px) {
-    width: 90vw;
-    margin-right: calc(10vw / 2);
-    margin-left: calc(10vw / 2);
+    // width: 90vw;
+    // margin-right: calc(10vw / 2);
+    // margin-left: calc(10vw / 2);
   }
 }
 
@@ -1537,6 +1559,10 @@ img {
   /* スマートフォン */
   @include mixin.sp(600px) {
     flex-direction: column;
+    width: 90vw;
+    margin-right: calc(10vw / 2);
+    margin-left: calc(10vw / 2);
+
   }
 }
 
@@ -1729,11 +1755,21 @@ img {
   .cp-infoCard01__item:nth-child(2n-1) {
     margin: 0;
     margin: 10px 10px 10px 15px;
+
+      /* スマートフォン */
+  @include mixin.sp(600px) {
+    margin: 10px 0px 10px 0px;
+  }
   }
 
   .cp-infoCard01__item:nth-child(n + 2) {
     margin: 0;
     margin: 10px 10px 10px 15px;
+
+          /* スマートフォン */
+  @include mixin.sp(600px) {
+    margin: 10px 0px 10px 0px;
+  }
   }
 }
 
