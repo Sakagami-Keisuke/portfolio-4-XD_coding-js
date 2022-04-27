@@ -1,3 +1,11 @@
+
+##basic認証
+user  :  user
+pass  :  user@1234
+
+
+```php:環境構築 dart gulp sass
+
 mkdir _gulp/
 
 cd _gulp/
@@ -24,3 +32,6 @@ mkdir _static/src
 cd _gulp/
 
 npx gulp
+
+
+```
