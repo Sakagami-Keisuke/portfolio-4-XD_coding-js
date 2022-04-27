@@ -592,7 +592,7 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
     margin: 24px 0 23px 20px;
   }
 }
-.header a {
+.header .taglin-a {
   display: inline-block;
   width: auto;
   height: 50px;
@@ -603,18 +603,18 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   /* $** pxを含まずそれより小さい */
 }
 @media not all and (min-width: 1025px) {
-  .header a {
+  .header .taglin-a {
     display: inline-block;
     margin-left: 0px;
   }
 }
 @media not all and (min-width: 600px) {
-  .header a {
+  .header .taglin-a {
     display: inline-block;
     margin-left: 0px;
   }
 }
-.header a .tagline-txt {
+.header .tagline-txt {
   font-weight: 700;
   font-size: 24px;
   line-height: 1.2;
@@ -631,12 +631,12 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   /* $** pxを含まずそれより小さい */
 }
 @media not all and (min-width: 1366px) {
-  .header a .tagline-txt {
+  .header .tagline-txt {
     font-size: calc(18px + ((1vw - 10.25px)) * 1.7543859649);
   }
 }
 @media not all and (min-width: 1025px) {
-  .header a .tagline-txt {
+  .header .tagline-txt {
     display: inline-block;
     width: 200px;
     font-size: 22px;
@@ -644,7 +644,7 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   }
 }
 @media not all and (min-width: 600px) {
-  .header a .tagline-txt {
+  .header .tagline-txt {
     display: inline-block;
     width: 200px;
     font-size: 22px;
@@ -697,7 +697,7 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   /* $** pxを含まずそれより小さい */
 }
 .header .button {
-  margin: 7px 0 29px 184px;
+  margin: 29px 0 29px 184px;
   /* pc 1367px以上  */
   /* 1920px 以上 */
   /* PC */
@@ -746,6 +746,32 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
     right: 25px;
     color: #444444;
     transform: scale(0.5, 0.5);
+  }
+}
+.header .fa-github {
+  display: block;
+  position: absolute;
+  top: 6px;
+  right: 40px;
+  color: #444444;
+  transform: scale(0.5, 0.5);
+  /* pc 1367px以上  */
+  /* 1920px 以上 */
+  /* PC */
+  /* $** pxを含まずそれより小さい */
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
+  /* スマートフォン */
+  /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 1025px) {
+  .header .fa-github {
+    right: 75px;
+  }
+}
+@media not all and (min-width: 600px) {
+  .header .fa-github {
+    right: 75px;
   }
 }
 

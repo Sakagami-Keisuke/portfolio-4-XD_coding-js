@@ -137,7 +137,7 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
 
     // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
-    a {
+    .taglin-a {
         display: inline-block;
         width: auto;
         height: 50px;
@@ -154,7 +154,7 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
             display: inline-block;
             margin-left: 0px;
         }
-
+    }
 
     // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
@@ -192,7 +192,7 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
                 margin: 13px 0px 0px 23px;
             }
         }
-    }
+
 
     // ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
@@ -267,11 +267,12 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
             @include mixin.sp(600px) {
             }
         }
+        
     }
 
 
     .button {
-        margin: 7px 0 29px 184px;
+        margin: 29px 0 29px 184px;
 
         /* pc 1367px以上  */
         @include mixin.pc-l(1367px) {
@@ -320,7 +321,32 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
             right: 25px;
             color: #444444;
             transform: scale(0.5, 0.5);
-
         }
+    }
+
+    .fa-github {
+        display: block;
+        position: absolute;
+        top: 6px;
+        right: 40px;
+        color: #444444;
+        transform: scale(0.5, 0.5);
+        /* pc 1367px以上  */
+        @include mixin.pc-l(1367px) {
+        }
+
+        /* PC */
+        @include mixin.pc(1366px) {
+        }
+
+        /* タブレット */
+        @include mixin.tab(1025px) {
+            right: 75px;
+          }
+
+        /* スマートフォン */
+        @include mixin.sp(600px) {
+            right: 75px;
+          }
     }
 }
