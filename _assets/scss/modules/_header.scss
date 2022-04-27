@@ -20,7 +20,7 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
     display: flex;
     justify-content: center;
     position: fixed;
-    transform: translateX(-15px);
+    // transform: translateX(-15px);
 
     /* pc 1367px以上  */
     @include mixin.pc-l(1367px) {
@@ -269,8 +269,9 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
         }
     }
 
+
     .button {
-        margin: 29px 0 29px 184px;
+        margin: 7px 0 29px 184px;
 
         /* pc 1367px以上  */
         @include mixin.pc-l(1367px) {

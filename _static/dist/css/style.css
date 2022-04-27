@@ -478,7 +478,6 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   display: flex;
   justify-content: center;
   position: fixed;
-  transform: translateX(-15px);
   /* pc 1367px以上  */
   /* 1920px 以上 */
   /* PC */
@@ -698,7 +697,7 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   /* $** pxを含まずそれより小さい */
 }
 .header .button {
-  margin: 29px 0 29px 184px;
+  margin: 7px 0 29px 184px;
   /* pc 1367px以上  */
   /* 1920px 以上 */
   /* PC */
@@ -1419,12 +1418,20 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   }
 }
 .feature-inner .ft-container .desc-box02 {
+  /* PC 1366px~ */
+  /* 1920px 以上 */
   /* PC ~1366px */
   /* 1920px 以上 */
   /* タブレット */
   /* $** pxを含まずそれより小さい */
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
+}
+@media (min-width: 1367px) {
+  .feature-inner .ft-container .desc-box02 {
+    width: 80vw;
+    max-width: 550px;
+  }
 }
 @media not all and (min-width: 1025px) {
   .feature-inner .ft-container .desc-box02 {

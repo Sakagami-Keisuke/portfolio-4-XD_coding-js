@@ -15,35 +15,36 @@
     <!-- google fonts -->
 
 
-    <link rel="stylesheet"
-      href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <!-- Primary Meta Tags -->
-    <!-- <link rel="icon" href="images/favicon.ico"> -->
-    <title>架空のフリーランスウェブサイト</title>
-    <meta name="title" content="架空のコーダーのホームページ">
+    <title>架空HTMLコーダーのランディングページ</title>
+    <meta name="title" content="架空HTMLコーダーのランディングページ">
     <meta name="description"
       content="コーディングに特化したサービスですので、デザインからお受けすることは基本的にありません。
       ただデザインを行う際は提携しているデザイナーと連携して対応させていただきますので、別途ご連絡ください。">
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url"
-      content="https://sakagami-portfolio.conohawing.com/fictitious-clinic/index.html">
-    <meta property="og:title" content="架空のフリーランスウェブサイト">
+    <meta property="og:url" content="https://metatags.io/">
+    <meta property="og:title" content="架空HTMLコーダーのランディングページ">
     <meta property="og:description"
       content="コーディングに特化したサービスですので、デザインからお受けすることは基本的にありません。
       ただデザインを行う際は提携しているデザイナーと連携して対応させていただきますので、別途ご連絡ください。">
-
-    <meta property="twitter:image" content="">
-
+    <meta property="og:image"
+      content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url"
-      content="https://sakagami-portfolio.conohawing.com/fictitious-clinic/index.html">
-    <meta property="twitter:title" content="架空のフリーランスウェブサイト">
+    <meta property="twitter:url" content="https://metatags.io/">
+    <meta property="twitter:title" content="架空HTMLコーダーのランディングページ">
     <meta property="twitter:description"
       content="コーディングに特化したサービスですので、デザインからお受けすることは基本的にありません。
       ただデザインを行う際は提携しているデザイナーと連携して対応させていただきますので、別途ご連絡ください。">
-    <meta property="twitter:image" content="">
+    <meta property="twitter:image"
+      content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+      href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!-- ファビコン -->
+    <link rel="icon" href="images/favicon.ico">
 
     <!-- AOS js Animate on scroll library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -70,7 +71,6 @@
       <header class="header">
         <div class="header__inner">
 
-
           <div class="header-logo">
             <img class="logo-img" src="images/logo.png" alt="ヘッダーロゴ"
               loading="lazy">
@@ -79,7 +79,6 @@
             <h1 class="tagline-txt">ユアコーディング</h1>
           </a>
 
-
           <nav class="gnav">
             <ul class="gnav__list">
               <li>特徴</li>
@@ -87,9 +86,8 @@
               <li>お問い合わせ</li>
             </ul>
           </nav>
-          <button type="button" class="button header-inquiry-button">
-            お問い合わせ
-          </button>
+          <a href="#contact-area"> <button type="button" class="button
+              header-inquiry-button">お問い合わせ</button></a>
           <i class="fa fa-bars fa-5x"></i>
         </div>
       </header>
@@ -113,10 +111,8 @@
                 デザインに注力されたい方の<br>
                 助けになります</p>
             </div>
-            <button type="button" class="button fv-inquiry-button"
-              data-aos="zoom-in">
-              お問い合わせ
-            </button>
+            <a href="#contact-area"> <button type="button" class="button
+                fv-inquiry-button" data-aos="zoom-in">お問い合わせ</button></a>
 
             <div class="fv-img-01">
               <img data-aos="flip-left"
@@ -455,11 +451,12 @@
               <!-- section6 works -->
 
               <!-- section7 contact -->
-              <section class="contact">
+              <section class="contact" id="contact-area">
                 <div class="contact-inner">
-                  <h2  data-aos="zoom-in" class="cmn-content-ttl contact-ttl">お問い合わせ</h2>
-                  <p  data-aos="zoom-in" class="cmn-content-sub_ttl contact-sub-ttl">CONTACT</p>
-                  <h3  data-aos="zoom-in" class="contact-l3-header">コーディングの人出が足りないとき、<br>
+                  <h2 data-aos="zoom-in" class="cmn-content-ttl contact-ttl">お問い合わせ</h2>
+                  <p data-aos="zoom-in" class="cmn-content-sub_ttl
+                    contact-sub-ttl">CONTACT</p>
+                  <h3 data-aos="zoom-in" class="contact-l3-header">コーディングの人出が足りないとき、<br>
                     あなたの力になります</h3>
 
                   <div class="contact-form-container">
@@ -528,6 +525,10 @@
           <!-- <script>    const swiper = new Swiper('.slider1', {});    </script> -->
           <script src="js/jquery.js"></script>
           <script>AOS.init(); </script>
+
+          <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
+          <script src="js/scroll.js"></script>
         </body>
 
       </html>
