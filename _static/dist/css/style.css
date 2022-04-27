@@ -764,14 +764,50 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
   /* スマートフォン */
   /* $** pxを含まずそれより小さい */
 }
+@media not all and (min-width: 1366px) {
+  .header .fa-github {
+    right: 5px;
+  }
+}
 @media not all and (min-width: 1025px) {
   .header .fa-github {
-    right: 75px;
+    right: 90px;
   }
 }
 @media not all and (min-width: 600px) {
   .header .fa-github {
-    right: 75px;
+    right: 95px;
+  }
+}
+.header .source {
+  display: block;
+  position: absolute;
+  top: 65px;
+  right: 50px;
+  color: #444444;
+  transform: scale(0.7, 0.7);
+  /* pc 1367px以上  */
+  /* 1920px 以上 */
+  /* PC */
+  /* $** pxを含まずそれより小さい */
+  /* タブレット */
+  /* $** pxを含まずそれより小さい */
+  /* スマートフォン */
+  /* $** pxを含まずそれより小さい */
+}
+@media not all and (min-width: 1366px) {
+  .header .source {
+    right: 10px;
+  }
+}
+@media not all and (min-width: 1025px) {
+  .header .source {
+    right: 100px;
+  }
+}
+@media not all and (min-width: 600px) {
+  .header .source {
+    right: 100px;
   }
 }
 

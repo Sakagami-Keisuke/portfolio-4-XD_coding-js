@@ -337,16 +337,43 @@ XDのAV 75 ÷1000 = 0.075　letter-spacing : 0.075em*/
 
         /* PC */
         @include mixin.pc(1366px) {
+            right: 5px;
         }
 
         /* タブレット */
         @include mixin.tab(1025px) {
-            right: 75px;
+            right: 90px;
           }
 
         /* スマートフォン */
         @include mixin.sp(600px) {
-            right: 75px;
+            right: 95px;
+          }
+    }
+    .source {
+        display: block;
+        position: absolute;
+        top: 65px;
+        right: 50px;
+        color: #444444;
+        transform: scale(0.7, 0.7);
+        /* pc 1367px以上  */
+        @include mixin.pc-l(1367px) {
+        }
+
+        /* PC */
+        @include mixin.pc(1366px) {
+            right: 10px;
+        }
+
+        /* タブレット */
+        @include mixin.tab(1025px) {
+            right: 100px;
+          }
+
+        /* スマートフォン */
+        @include mixin.sp(600px) {
+            right:100px;
           }
     }
 }
